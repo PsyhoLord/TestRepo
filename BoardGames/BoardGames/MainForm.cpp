@@ -8,6 +8,8 @@ using namespace System::Windows::Forms;
 [STAThread]
 void main(array<String^>^ args)
 {
+
+	//Comment
 	Application::EnableVisualStyles();
 	Application::SetCompatibleTextRenderingDefault(false);
 
