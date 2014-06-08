@@ -13,4 +13,5 @@ void main(array<String^>^ args)
 
 	BoardGames::MainForm form;
 	Application::Run(%form);
+	//Simple text
 }
