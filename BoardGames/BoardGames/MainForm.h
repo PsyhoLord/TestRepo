@@ -1388,27 +1388,19 @@ namespace BoardGames {
 
 	
 
-	private: System::Void ReloadWithImage(PictureBox^ ChoiceFish, String^ ImageName)
+	private: System::Void ReloadWithImage(PictureBox^ SelectedChip, String^ ImageName)
 	{
-		if (ImageName)
-			(ChoiceFish)->Image = System::Drawing::Image::FromFile(ImageName);
-			//(ChoiceFish)->Text = ImageName;
-		else (ChoiceFish)->Image = nullptr;
-
-		(ChoiceFish)->Text = ImageName;
-
+		SelectedChip->Text = ImageName;
+		if (ImageName) SelectedChip->Image = System::Drawing::Image::FromFile(SelectedChip->Text);
+		else SelectedChip->Image = nullptr;
 	}
 
-	/*
-	private: System::Void ReloadWithImage(PictureBox^ ChoiceFish, String^ ImageName)
+	
+	/*private: System::Void ReloadWithImage(PictureBox^ SelectedChip)
 	{
-		if (ImageName)
-			(ChoiceFish)->Image = System::Drawing::Image::FromFile(ImageName);
+		(SelectedChip)->Image = System::Drawing::Image::FromFile(ImageName);
 		//(ChoiceFish)->Text = ImageName;
-		else (ChoiceFish)->Image = nullptr;
-
-		(ChoiceFish)->Text = ImageName;
-
+		else (SelectedChip)->Image = nullptr;
 	}*/
 
 			 
