@@ -1383,12 +1383,12 @@ namespace BoardGames {
 				 this->h7->Text = NULL;
 				 this->h8->Text = NULL;*/
 
-				 //ReloadAll
+				 
 			 }
 
 	
 
-	private: System::Void Reload(PictureBox^ ChoiceFish, String^ ImageName)
+	private: System::Void ReloadWithImage(PictureBox^ ChoiceFish, String^ ImageName)
 	{
 		if (ImageName)
 			(ChoiceFish)->Image = System::Drawing::Image::FromFile(ImageName);
@@ -1399,35 +1399,56 @@ namespace BoardGames {
 
 	}
 
+	/*
+	private: System::Void ReloadWithImage(PictureBox^ ChoiceFish, String^ ImageName)
+	{
+		if (ImageName)
+			(ChoiceFish)->Image = System::Drawing::Image::FromFile(ImageName);
+		//(ChoiceFish)->Text = ImageName;
+		else (ChoiceFish)->Image = nullptr;
+
+		(ChoiceFish)->Text = ImageName;
+
+	}*/
+
 			 
-private: System::Void Square_Click(System::Object^  sender, System::EventArgs^  e) 
-{
-	PictureBox^ PB;
-	PB = (PictureBox^)sender;
+	private: System::Void Square_Click(System::Object^  sender, System::EventArgs^  e) 
+	{
+		PictureBox^ PB;
+		PB = (PictureBox^)sender;
 	
-	if (PB->Text->Length)
-	{
-		Active = PB;
-		TestLabel->Text = ((PictureBox^)Active)->Text;
-	}
-	else
-	{
-		if (Active)
-		//if (((PictureBox^)Active)->Text)
+		if (PB->Text->Length)
 		{
+			Active = PB;
 			TestLabel->Text = ((PictureBox^)Active)->Text;
-			Reload(PB, ((PictureBox^)Active)->Text);
-			((PictureBox^)Active)->Text = nullptr;
-			Reload((PictureBox^)Active, nullptr);
-			//Active->Image = nullptr;
-			Active = nullptr;
 		}
+		else
+		{
+			if (Active)
+			//if (((PictureBox^)Active)->Text)
+			{
+				TestLabel->Text = ((PictureBox^)Active)->Text;
+				ReloadWithImage(PB, ((PictureBox^)Active)->Text);
+				((PictureBox^)Active)->Text = nullptr;
+				ReloadWithImage((PictureBox^)Active, nullptr);
+				//Active->Image = nullptr;
+				Active = nullptr;
+			}
+		}
+			//this->TestLabel->Text = this->Active->Text;
+	
+	
 	}
-		//this->TestLabel->Text = this->Active->Text;
-	
-	
-}
-private: System::Void NewGameButton_Click(System::Object^  sender, System::EventArgs^  e) {
-}
+	private: System::Void NewGameButton_Click(System::Object^  sender, System::EventArgs^  e)
+	{
+
+	}
+
+			 
+	/*private: bool ReloadAll()
+	{
+
+		return true;
+	}*/
 };
 }
