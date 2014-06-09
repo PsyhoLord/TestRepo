@@ -27,6 +27,7 @@ namespace BoardGames {
 		}
 	private: System::Windows::Forms::Label^  TestLabel;
 	private: System::Windows::Forms::Button^  NewGameButton;
+	private: System::Windows::Forms::Button^  ExitButton;
 
 		// Creating custom variables
 	private: 
@@ -234,6 +235,7 @@ namespace BoardGames {
 			this->label16 = (gcnew System::Windows::Forms::Label());
 			this->TestLabel = (gcnew System::Windows::Forms::Label());
 			this->NewGameButton = (gcnew System::Windows::Forms::Button());
+			this->ExitButton = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->a8))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->b8))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->c8))->BeginInit();
@@ -1135,11 +1137,22 @@ namespace BoardGames {
 			this->NewGameButton->UseVisualStyleBackColor = true;
 			this->NewGameButton->Click += gcnew System::EventHandler(this, &MainForm::NewGameButton_Click);
 			// 
+			// ExitButton
+			// 
+			this->ExitButton->Location = System::Drawing::Point(454, 406);
+			this->ExitButton->Name = L"ExitButton";
+			this->ExitButton->Size = System::Drawing::Size(75, 23);
+			this->ExitButton->TabIndex = 82;
+			this->ExitButton->Text = L"Exit";
+			this->ExitButton->UseVisualStyleBackColor = true;
+			this->ExitButton->Click += gcnew System::EventHandler(this, &MainForm::ExitButton_Click);
+			// 
 			// MainForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(574, 491);
+			this->Controls->Add(this->ExitButton);
 			this->Controls->Add(this->NewGameButton);
 			this->Controls->Add(this->TestLabel);
 			this->Controls->Add(this->label16);
@@ -1396,12 +1409,10 @@ namespace BoardGames {
 	}
 
 	
-	/*private: System::Void ReloadWithImage(PictureBox^ SelectedChip)
+	private: System::Void RefreshImage (PictureBox^ SelectedChip)
 	{
-		(SelectedChip)->Image = System::Drawing::Image::FromFile(ImageName);
-		//(ChoiceFish)->Text = ImageName;
-		else (SelectedChip)->Image = nullptr;
-	}*/
+		SelectedChip->Image = System::Drawing::Image::FromFile(SelectedChip->Text);
+	}
 
 			 
 	private: System::Void Square_Click(System::Object^  sender, System::EventArgs^  e) 
@@ -1442,5 +1453,8 @@ namespace BoardGames {
 
 		return true;
 	}*/
+	private: System::Void ExitButton_Click(System::Object^  sender, System::EventArgs^  e)
+	{
+	}
 };
 }
