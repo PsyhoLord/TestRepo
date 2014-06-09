@@ -22,6 +22,8 @@ namespace BoardGames {
 			//TODO: добавьте код конструктора
 			//
 		}
+	// Creating custom variables
+	private: PictureBox^ Active;
 
 	protected:
 		/// <summary>
@@ -34,138 +36,74 @@ namespace BoardGames {
 				delete components;
 			}
 		}
+	// TABLE
 	private: System::Windows::Forms::PictureBox^  a1;
 	private: System::Windows::Forms::PictureBox^  b1;
 	private: System::Windows::Forms::PictureBox^  c1;
 	private: System::Windows::Forms::PictureBox^  d1;
-	protected:
-
-	protected:
-
-
-
 	private: System::Windows::Forms::PictureBox^  c2;
 	private: System::Windows::Forms::PictureBox^  d2;
-
-
 	private: System::Windows::Forms::PictureBox^  b2;
-
 	private: System::Windows::Forms::PictureBox^  a2;
 	private: System::Windows::Forms::PictureBox^  c4;
-	private: System::Windows::Forms::PictureBox^  d;
-
-
-
+	private: System::Windows::Forms::PictureBox^  d4;
 
 	private: System::Windows::Forms::PictureBox^  b4;
-
 	private: System::Windows::Forms::PictureBox^  a4;
 	private: System::Windows::Forms::PictureBox^  c3;
 	private: System::Windows::Forms::PictureBox^  d3;
-
-
-
 	private: System::Windows::Forms::PictureBox^  b3;
-
 	private: System::Windows::Forms::PictureBox^  a3;
 	private: System::Windows::Forms::PictureBox^  g;
 	private: System::Windows::Forms::PictureBox^  h4;
-
-
-
-
 	private: System::Windows::Forms::PictureBox^  f4;
-
 	private: System::Windows::Forms::PictureBox^  e4;
 	private: System::Windows::Forms::PictureBox^  g3;
 	private: System::Windows::Forms::PictureBox^  h3;
-
-
-
 	private: System::Windows::Forms::PictureBox^  f3;
-
 	private: System::Windows::Forms::PictureBox^  e3;
 	private: System::Windows::Forms::PictureBox^  g2;
 	private: System::Windows::Forms::PictureBox^  h2;
-
-
-
 	private: System::Windows::Forms::PictureBox^  f2;
-
 	private: System::Windows::Forms::PictureBox^  e2;
 	private: System::Windows::Forms::PictureBox^  g1;
 	private: System::Windows::Forms::PictureBox^  h1;
-
-
-
 	private: System::Windows::Forms::PictureBox^  f1;
-
 	private: System::Windows::Forms::PictureBox^  e1;
 	private: System::Windows::Forms::PictureBox^  g8;
 	private: System::Windows::Forms::PictureBox^  h8;
-
-
-
 	private: System::Windows::Forms::PictureBox^  f8;
-
 	private: System::Windows::Forms::PictureBox^  e8;
 	private: System::Windows::Forms::PictureBox^  g7;
 	private: System::Windows::Forms::PictureBox^  h7;
-
-
-
 	private: System::Windows::Forms::PictureBox^  f7;
-
 	private: System::Windows::Forms::PictureBox^  e7;
 	private: System::Windows::Forms::PictureBox^  g6;
-private: System::Windows::Forms::PictureBox^  h6;
-
-
-
+	private: System::Windows::Forms::PictureBox^  h6;
 	private: System::Windows::Forms::PictureBox^  f6;
-
 	private: System::Windows::Forms::PictureBox^  e6;
-private: System::Windows::Forms::PictureBox^  g5;
-private: System::Windows::Forms::PictureBox^  h5;
-
-
-
+	private: System::Windows::Forms::PictureBox^  g5;
+	private: System::Windows::Forms::PictureBox^  h5;
 	private: System::Windows::Forms::PictureBox^  f5;
-
 	private: System::Windows::Forms::PictureBox^  e5;
-
 	private: System::Windows::Forms::PictureBox^  c8;
 	private: System::Windows::Forms::PictureBox^  d8;
-
-
 	private: System::Windows::Forms::PictureBox^  b8;
-
 	private: System::Windows::Forms::PictureBox^  a8;
 	private: System::Windows::Forms::PictureBox^  c7;
 	private: System::Windows::Forms::PictureBox^  d7;
-
-
-
 	private: System::Windows::Forms::PictureBox^  b7;
-
 	private: System::Windows::Forms::PictureBox^  a7;
 	private: System::Windows::Forms::PictureBox^  c6;
-private: System::Windows::Forms::PictureBox^  d6;
-
-
-
+	private: System::Windows::Forms::PictureBox^  d6;
 	private: System::Windows::Forms::PictureBox^  b6;
-
 	private: System::Windows::Forms::PictureBox^  a6;
 	private: System::Windows::Forms::PictureBox^  c5;
-private: System::Windows::Forms::PictureBox^  d5;
-
-
-
+	private: System::Windows::Forms::PictureBox^  d5;
 	private: System::Windows::Forms::PictureBox^  b5;
-
 	private: System::Windows::Forms::PictureBox^  a5;
-
+	
+	// Board Marks
 	private: System::Windows::Forms::Label^  label1;
 	private: System::Windows::Forms::Label^  label2;
 	private: System::Windows::Forms::Label^  label3;
@@ -191,6 +129,7 @@ private: System::Windows::Forms::PictureBox^  d5;
 		/// </summary>
 		System::ComponentModel::Container ^components;
 
+		// Initializition of components
 #pragma region Windows Form Designer generated code
 		/// <summary>
 		/// ќб€зательный метод дл€ поддержки конструктора - не измен€йте
@@ -208,7 +147,7 @@ private: System::Windows::Forms::PictureBox^  d5;
 			this->b2 = (gcnew System::Windows::Forms::PictureBox());
 			this->a2 = (gcnew System::Windows::Forms::PictureBox());
 			this->c4 = (gcnew System::Windows::Forms::PictureBox());
-			this->d = (gcnew System::Windows::Forms::PictureBox());
+			this->d4 = (gcnew System::Windows::Forms::PictureBox());
 			this->b4 = (gcnew System::Windows::Forms::PictureBox());
 			this->a4 = (gcnew System::Windows::Forms::PictureBox());
 			this->c3 = (gcnew System::Windows::Forms::PictureBox());
@@ -288,7 +227,7 @@ private: System::Windows::Forms::PictureBox^  d5;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->b2))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->a2))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->c4))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->d))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->d4))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->b4))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->a4))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->c3))->BeginInit();
@@ -444,16 +383,16 @@ private: System::Windows::Forms::PictureBox^  d5;
 			this->c4->TabStop = false;
 			this->c4->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
-			// d
+			// d4
 			// 
-			this->d->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"d.BackgroundImage")));
-			this->d->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"d.Image")));
-			this->d->Location = System::Drawing::Point(180, 180);
-			this->d->Name = L"d";
-			this->d->Size = System::Drawing::Size(50, 50);
-			this->d->TabIndex = 14;
-			this->d->TabStop = false;
-			this->d->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			this->d4->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"d4.BackgroundImage")));
+			this->d4->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"d4.Image")));
+			this->d4->Location = System::Drawing::Point(180, 180);
+			this->d4->Name = L"d4";
+			this->d4->Size = System::Drawing::Size(50, 50);
+			this->d4->TabIndex = 14;
+			this->d4->TabStop = false;
+			this->d4->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// b4
 			// 
@@ -1165,7 +1104,7 @@ private: System::Windows::Forms::PictureBox^  d5;
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(517, 481);
+			this->ClientSize = System::Drawing::Size(574, 445);
 			this->Controls->Add(this->label16);
 			this->Controls->Add(this->label15);
 			this->Controls->Add(this->label14);
@@ -1231,7 +1170,7 @@ private: System::Windows::Forms::PictureBox^  d5;
 			this->Controls->Add(this->f1);
 			this->Controls->Add(this->e1);
 			this->Controls->Add(this->c4);
-			this->Controls->Add(this->d);
+			this->Controls->Add(this->d4);
 			this->Controls->Add(this->b4);
 			this->Controls->Add(this->a4);
 			this->Controls->Add(this->c3);
@@ -1258,7 +1197,7 @@ private: System::Windows::Forms::PictureBox^  d5;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->b2))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->a2))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->c4))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->d))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->d4))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->b4))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->a4))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->c3))->EndInit();
@@ -1320,7 +1259,54 @@ private: System::Windows::Forms::PictureBox^  d5;
 #pragma endregion
 	private: System::Void MainForm_Load(System::Object^  sender, System::EventArgs^  e) 
 	{
+		ColorName();
 	}
+			 private: System::Void ColorName()
+			 {
+				 String^ ColorFishka1 = "Brown";
+				 String^ ColorFishka2 = "Blue";
+
+				 this->a8->Text = ColorFishka1;
+				 this->a7->Text = ColorFishka1;
+				 this->a6->Text = ColorFishka1;
+				 this->a5->Text = ColorFishka1;
+
+				 this->b8->Text = ColorFishka1;
+				 this->b7->Text = ColorFishka1;
+				 this->b6->Text = ColorFishka1;
+				 this->b5->Text = ColorFishka1;
+
+				 this->c8->Text = ColorFishka1;
+				 this->c7->Text = ColorFishka1;
+				 this->c6->Text = ColorFishka1;
+				 this->c5->Text = ColorFishka1;
+
+				 this->d8->Text = ColorFishka1;
+				 this->d7->Text = ColorFishka1;
+				 this->d6->Text = ColorFishka1;
+				 this->d5->Text = ColorFishka1;
+
+				 this->e1->Text = ColorFishka2;
+				 this->e2->Text = ColorFishka2;
+				 this->e3->Text = ColorFishka2;
+				 this->e4->Text = ColorFishka2;
+
+				 this->h1->Text = ColorFishka2;
+				 this->h2->Text = ColorFishka2;
+				 this->h3->Text = ColorFishka2;
+				 this->h4->Text = ColorFishka2;
+
+				 this->f1->Text = ColorFishka2;
+				 this->f2->Text = ColorFishka2;
+				 this->f3->Text = ColorFishka2;
+				 this->f4->Text = ColorFishka2;
+
+				 this->g1->Text = ColorFishka2;
+				 this->g2->Text = ColorFishka2;
+				 this->g3->Text = ColorFishka2;
+				 this->g4->Text = ColorFishka2;
+			 }
+
 private: System::Void Square_Click(System::Object^  sender, System::EventArgs^  e) 
 {
 
