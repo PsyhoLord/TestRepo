@@ -26,7 +26,8 @@ namespace BoardGames {
 			//
 		}
 	private: System::Windows::Forms::Label^  TestLabel;
-	
+	private: System::Windows::Forms::Button^  NewGameButton;
+
 		// Creating custom variables
 	private: 
 		// String^ ColorFishka1;
@@ -232,6 +233,7 @@ namespace BoardGames {
 			this->label15 = (gcnew System::Windows::Forms::Label());
 			this->label16 = (gcnew System::Windows::Forms::Label());
 			this->TestLabel = (gcnew System::Windows::Forms::Label());
+			this->NewGameButton = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->a8))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->b8))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->c8))->BeginInit();
@@ -1123,11 +1125,22 @@ namespace BoardGames {
 			this->TestLabel->TabIndex = 80;
 			this->TestLabel->Text = L"label17";
 			// 
+			// NewGameButton
+			// 
+			this->NewGameButton->Location = System::Drawing::Point(454, 30);
+			this->NewGameButton->Name = L"NewGameButton";
+			this->NewGameButton->Size = System::Drawing::Size(75, 23);
+			this->NewGameButton->TabIndex = 81;
+			this->NewGameButton->Text = L"New Game";
+			this->NewGameButton->UseVisualStyleBackColor = true;
+			this->NewGameButton->Click += gcnew System::EventHandler(this, &MainForm::NewGameButton_Click);
+			// 
 			// MainForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(574, 491);
+			this->Controls->Add(this->NewGameButton);
 			this->Controls->Add(this->TestLabel);
 			this->Controls->Add(this->label16);
 			this->Controls->Add(this->label15);
@@ -1413,6 +1426,8 @@ private: System::Void Square_Click(System::Object^  sender, System::EventArgs^  
 		//this->TestLabel->Text = this->Active->Text;
 	
 	
+}
+private: System::Void NewGameButton_Click(System::Object^  sender, System::EventArgs^  e) {
 }
 };
 }
