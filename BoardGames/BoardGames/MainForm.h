@@ -34,71 +34,138 @@ namespace BoardGames {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::PictureBox^  pictureBox1;
+	private: System::Windows::Forms::PictureBox^  a1;
+	private: System::Windows::Forms::PictureBox^  b1;
+	private: System::Windows::Forms::PictureBox^  c1;
+	private: System::Windows::Forms::PictureBox^  d1;
 	protected:
-	private: System::Windows::Forms::PictureBox^  pictureBox2;
-	private: System::Windows::Forms::PictureBox^  pictureBox3;
-	private: System::Windows::Forms::PictureBox^  pictureBox4;
-	private: System::Windows::Forms::PictureBox^  pictureBox5;
-	private: System::Windows::Forms::PictureBox^  pictureBox6;
-	private: System::Windows::Forms::PictureBox^  pictureBox7;
-	private: System::Windows::Forms::PictureBox^  pictureBox8;
-	private: System::Windows::Forms::PictureBox^  pictureBox9;
-	private: System::Windows::Forms::PictureBox^  pictureBox10;
-	private: System::Windows::Forms::PictureBox^  pictureBox11;
-	private: System::Windows::Forms::PictureBox^  pictureBox12;
-	private: System::Windows::Forms::PictureBox^  pictureBox13;
-	private: System::Windows::Forms::PictureBox^  pictureBox14;
-	private: System::Windows::Forms::PictureBox^  pictureBox15;
-	private: System::Windows::Forms::PictureBox^  pictureBox16;
-	private: System::Windows::Forms::PictureBox^  pictureBox17;
-	private: System::Windows::Forms::PictureBox^  pictureBox18;
-	private: System::Windows::Forms::PictureBox^  pictureBox19;
-	private: System::Windows::Forms::PictureBox^  pictureBox20;
-	private: System::Windows::Forms::PictureBox^  pictureBox21;
-	private: System::Windows::Forms::PictureBox^  pictureBox22;
-	private: System::Windows::Forms::PictureBox^  pictureBox23;
-	private: System::Windows::Forms::PictureBox^  pictureBox24;
-	private: System::Windows::Forms::PictureBox^  pictureBox25;
-	private: System::Windows::Forms::PictureBox^  pictureBox26;
-	private: System::Windows::Forms::PictureBox^  pictureBox27;
-	private: System::Windows::Forms::PictureBox^  pictureBox28;
-	private: System::Windows::Forms::PictureBox^  pictureBox29;
-	private: System::Windows::Forms::PictureBox^  pictureBox30;
-	private: System::Windows::Forms::PictureBox^  pictureBox31;
-	private: System::Windows::Forms::PictureBox^  pictureBox32;
-	private: System::Windows::Forms::PictureBox^  pictureBox33;
-	private: System::Windows::Forms::PictureBox^  pictureBox34;
-	private: System::Windows::Forms::PictureBox^  pictureBox35;
-	private: System::Windows::Forms::PictureBox^  pictureBox36;
-	private: System::Windows::Forms::PictureBox^  pictureBox37;
-	private: System::Windows::Forms::PictureBox^  pictureBox38;
-	private: System::Windows::Forms::PictureBox^  pictureBox39;
-	private: System::Windows::Forms::PictureBox^  pictureBox40;
-	private: System::Windows::Forms::PictureBox^  pictureBox41;
-	private: System::Windows::Forms::PictureBox^  pictureBox42;
-	private: System::Windows::Forms::PictureBox^  pictureBox43;
-	private: System::Windows::Forms::PictureBox^  pictureBox44;
-	private: System::Windows::Forms::PictureBox^  pictureBox45;
-	private: System::Windows::Forms::PictureBox^  pictureBox46;
-	private: System::Windows::Forms::PictureBox^  pictureBox47;
-	private: System::Windows::Forms::PictureBox^  pictureBox48;
-	private: System::Windows::Forms::PictureBox^  pictureBox49;
-	private: System::Windows::Forms::PictureBox^  pictureBox50;
-	private: System::Windows::Forms::PictureBox^  pictureBox51;
-	private: System::Windows::Forms::PictureBox^  pictureBox52;
-	private: System::Windows::Forms::PictureBox^  pictureBox53;
-	private: System::Windows::Forms::PictureBox^  pictureBox54;
-	private: System::Windows::Forms::PictureBox^  pictureBox55;
-	private: System::Windows::Forms::PictureBox^  pictureBox56;
-	private: System::Windows::Forms::PictureBox^  pictureBox57;
-	private: System::Windows::Forms::PictureBox^  pictureBox58;
-	private: System::Windows::Forms::PictureBox^  pictureBox59;
-	private: System::Windows::Forms::PictureBox^  pictureBox60;
-	private: System::Windows::Forms::PictureBox^  pictureBox61;
-	private: System::Windows::Forms::PictureBox^  pictureBox62;
-	private: System::Windows::Forms::PictureBox^  pictureBox63;
-	private: System::Windows::Forms::PictureBox^  pictureBox64;
+
+	protected:
+
+
+
+	private: System::Windows::Forms::PictureBox^  c2;
+	private: System::Windows::Forms::PictureBox^  d2;
+
+
+	private: System::Windows::Forms::PictureBox^  b2;
+
+	private: System::Windows::Forms::PictureBox^  a2;
+	private: System::Windows::Forms::PictureBox^  c4;
+	private: System::Windows::Forms::PictureBox^  d;
+
+
+
+
+	private: System::Windows::Forms::PictureBox^  b4;
+
+	private: System::Windows::Forms::PictureBox^  a4;
+	private: System::Windows::Forms::PictureBox^  c3;
+	private: System::Windows::Forms::PictureBox^  d3;
+
+
+
+	private: System::Windows::Forms::PictureBox^  b3;
+
+	private: System::Windows::Forms::PictureBox^  a3;
+	private: System::Windows::Forms::PictureBox^  g;
+	private: System::Windows::Forms::PictureBox^  h4;
+
+
+
+
+	private: System::Windows::Forms::PictureBox^  f4;
+
+	private: System::Windows::Forms::PictureBox^  e4;
+	private: System::Windows::Forms::PictureBox^  g3;
+	private: System::Windows::Forms::PictureBox^  h3;
+
+
+
+	private: System::Windows::Forms::PictureBox^  f3;
+
+	private: System::Windows::Forms::PictureBox^  e3;
+	private: System::Windows::Forms::PictureBox^  g2;
+	private: System::Windows::Forms::PictureBox^  h2;
+
+
+
+	private: System::Windows::Forms::PictureBox^  f2;
+
+	private: System::Windows::Forms::PictureBox^  e2;
+	private: System::Windows::Forms::PictureBox^  g1;
+	private: System::Windows::Forms::PictureBox^  h1;
+
+
+
+	private: System::Windows::Forms::PictureBox^  f1;
+
+	private: System::Windows::Forms::PictureBox^  e1;
+	private: System::Windows::Forms::PictureBox^  g8;
+	private: System::Windows::Forms::PictureBox^  h8;
+
+
+
+	private: System::Windows::Forms::PictureBox^  f8;
+
+	private: System::Windows::Forms::PictureBox^  e8;
+	private: System::Windows::Forms::PictureBox^  g7;
+	private: System::Windows::Forms::PictureBox^  h7;
+
+
+
+	private: System::Windows::Forms::PictureBox^  f7;
+
+	private: System::Windows::Forms::PictureBox^  e7;
+	private: System::Windows::Forms::PictureBox^  g6;
+private: System::Windows::Forms::PictureBox^  h6;
+
+
+
+	private: System::Windows::Forms::PictureBox^  f6;
+
+	private: System::Windows::Forms::PictureBox^  e6;
+private: System::Windows::Forms::PictureBox^  g5;
+private: System::Windows::Forms::PictureBox^  h5;
+
+
+
+	private: System::Windows::Forms::PictureBox^  f5;
+
+	private: System::Windows::Forms::PictureBox^  e5;
+
+	private: System::Windows::Forms::PictureBox^  c8;
+	private: System::Windows::Forms::PictureBox^  d8;
+
+
+	private: System::Windows::Forms::PictureBox^  b8;
+
+	private: System::Windows::Forms::PictureBox^  a8;
+	private: System::Windows::Forms::PictureBox^  c7;
+	private: System::Windows::Forms::PictureBox^  d7;
+
+
+
+	private: System::Windows::Forms::PictureBox^  b7;
+
+	private: System::Windows::Forms::PictureBox^  a7;
+	private: System::Windows::Forms::PictureBox^  c6;
+private: System::Windows::Forms::PictureBox^  d6;
+
+
+
+	private: System::Windows::Forms::PictureBox^  b6;
+
+	private: System::Windows::Forms::PictureBox^  a6;
+	private: System::Windows::Forms::PictureBox^  c5;
+private: System::Windows::Forms::PictureBox^  d5;
+
+
+
+	private: System::Windows::Forms::PictureBox^  b5;
+
+	private: System::Windows::Forms::PictureBox^  a5;
+
 	private: System::Windows::Forms::Label^  label1;
 	private: System::Windows::Forms::Label^  label2;
 	private: System::Windows::Forms::Label^  label3;
@@ -132,70 +199,70 @@ namespace BoardGames {
 		void InitializeComponent(void)
 		{
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(MainForm::typeid));
-			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox3 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox4 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox5 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox6 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox7 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox8 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox9 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox10 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox11 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox12 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox13 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox14 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox15 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox16 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox17 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox18 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox19 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox20 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox21 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox22 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox23 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox24 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox25 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox26 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox27 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox28 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox29 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox30 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox31 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox32 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox33 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox34 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox35 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox36 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox37 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox38 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox39 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox40 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox41 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox42 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox43 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox44 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox45 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox46 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox47 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox48 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox49 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox50 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox51 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox52 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox53 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox54 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox55 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox56 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox57 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox58 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox59 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox60 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox61 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox62 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox63 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox64 = (gcnew System::Windows::Forms::PictureBox());
+			this->a1 = (gcnew System::Windows::Forms::PictureBox());
+			this->b1 = (gcnew System::Windows::Forms::PictureBox());
+			this->c1 = (gcnew System::Windows::Forms::PictureBox());
+			this->d1 = (gcnew System::Windows::Forms::PictureBox());
+			this->c2 = (gcnew System::Windows::Forms::PictureBox());
+			this->d2 = (gcnew System::Windows::Forms::PictureBox());
+			this->b2 = (gcnew System::Windows::Forms::PictureBox());
+			this->a2 = (gcnew System::Windows::Forms::PictureBox());
+			this->c4 = (gcnew System::Windows::Forms::PictureBox());
+			this->d = (gcnew System::Windows::Forms::PictureBox());
+			this->b4 = (gcnew System::Windows::Forms::PictureBox());
+			this->a4 = (gcnew System::Windows::Forms::PictureBox());
+			this->c3 = (gcnew System::Windows::Forms::PictureBox());
+			this->d3 = (gcnew System::Windows::Forms::PictureBox());
+			this->b3 = (gcnew System::Windows::Forms::PictureBox());
+			this->a3 = (gcnew System::Windows::Forms::PictureBox());
+			this->g = (gcnew System::Windows::Forms::PictureBox());
+			this->h4 = (gcnew System::Windows::Forms::PictureBox());
+			this->f4 = (gcnew System::Windows::Forms::PictureBox());
+			this->e4 = (gcnew System::Windows::Forms::PictureBox());
+			this->g3 = (gcnew System::Windows::Forms::PictureBox());
+			this->h3 = (gcnew System::Windows::Forms::PictureBox());
+			this->f3 = (gcnew System::Windows::Forms::PictureBox());
+			this->e3 = (gcnew System::Windows::Forms::PictureBox());
+			this->g2 = (gcnew System::Windows::Forms::PictureBox());
+			this->h2 = (gcnew System::Windows::Forms::PictureBox());
+			this->f2 = (gcnew System::Windows::Forms::PictureBox());
+			this->e2 = (gcnew System::Windows::Forms::PictureBox());
+			this->g1 = (gcnew System::Windows::Forms::PictureBox());
+			this->h1 = (gcnew System::Windows::Forms::PictureBox());
+			this->f1 = (gcnew System::Windows::Forms::PictureBox());
+			this->e1 = (gcnew System::Windows::Forms::PictureBox());
+			this->g8 = (gcnew System::Windows::Forms::PictureBox());
+			this->h8 = (gcnew System::Windows::Forms::PictureBox());
+			this->f8 = (gcnew System::Windows::Forms::PictureBox());
+			this->e8 = (gcnew System::Windows::Forms::PictureBox());
+			this->g7 = (gcnew System::Windows::Forms::PictureBox());
+			this->h7 = (gcnew System::Windows::Forms::PictureBox());
+			this->f7 = (gcnew System::Windows::Forms::PictureBox());
+			this->e7 = (gcnew System::Windows::Forms::PictureBox());
+			this->g6 = (gcnew System::Windows::Forms::PictureBox());
+			this->h6 = (gcnew System::Windows::Forms::PictureBox());
+			this->f6 = (gcnew System::Windows::Forms::PictureBox());
+			this->e6 = (gcnew System::Windows::Forms::PictureBox());
+			this->g5 = (gcnew System::Windows::Forms::PictureBox());
+			this->h5 = (gcnew System::Windows::Forms::PictureBox());
+			this->f5 = (gcnew System::Windows::Forms::PictureBox());
+			this->e5 = (gcnew System::Windows::Forms::PictureBox());
+			this->c8 = (gcnew System::Windows::Forms::PictureBox());
+			this->d8 = (gcnew System::Windows::Forms::PictureBox());
+			this->b8 = (gcnew System::Windows::Forms::PictureBox());
+			this->a8 = (gcnew System::Windows::Forms::PictureBox());
+			this->c7 = (gcnew System::Windows::Forms::PictureBox());
+			this->d7 = (gcnew System::Windows::Forms::PictureBox());
+			this->b7 = (gcnew System::Windows::Forms::PictureBox());
+			this->a7 = (gcnew System::Windows::Forms::PictureBox());
+			this->c6 = (gcnew System::Windows::Forms::PictureBox());
+			this->d6 = (gcnew System::Windows::Forms::PictureBox());
+			this->b6 = (gcnew System::Windows::Forms::PictureBox());
+			this->a6 = (gcnew System::Windows::Forms::PictureBox());
+			this->c5 = (gcnew System::Windows::Forms::PictureBox());
+			this->d5 = (gcnew System::Windows::Forms::PictureBox());
+			this->b5 = (gcnew System::Windows::Forms::PictureBox());
+			this->a5 = (gcnew System::Windows::Forms::PictureBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
@@ -212,743 +279,743 @@ namespace BoardGames {
 			this->label14 = (gcnew System::Windows::Forms::Label());
 			this->label15 = (gcnew System::Windows::Forms::Label());
 			this->label16 = (gcnew System::Windows::Forms::Label());
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox4))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox5))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox6))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox7))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox8))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox9))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox10))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox11))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox12))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox13))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox14))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox15))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox16))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox17))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox18))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox19))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox20))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox21))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox22))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox23))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox24))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox25))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox26))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox27))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox28))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox29))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox30))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox31))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox32))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox33))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox34))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox35))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox36))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox37))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox38))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox39))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox40))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox41))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox42))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox43))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox44))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox45))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox46))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox47))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox48))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox49))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox50))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox51))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox52))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox53))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox54))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox55))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox56))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox57))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox58))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox59))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox60))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox61))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox62))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox63))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox64))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->a1))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->b1))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->c1))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->d1))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->c2))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->d2))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->b2))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->a2))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->c4))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->d))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->b4))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->a4))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->c3))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->d3))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->b3))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->a3))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->g))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->h4))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->f4))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->e4))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->g3))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->h3))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->f3))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->e3))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->g2))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->h2))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->f2))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->e2))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->g1))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->h1))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->f1))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->e1))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->g8))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->h8))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->f8))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->e8))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->g7))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->h7))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->f7))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->e7))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->g6))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->h6))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->f6))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->e6))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->g5))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->h5))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->f5))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->e5))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->c8))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->d8))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->b8))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->a8))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->c7))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->d7))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->b7))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->a7))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->c6))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->d6))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->b6))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->a6))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->c5))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->d5))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->b5))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->a5))->BeginInit();
 			this->SuspendLayout();
 			// 
-			// pictureBox1
-			// 
-			this->pictureBox1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.BackgroundImage")));
-			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(30, 30);
-			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(50, 50);
-			this->pictureBox1->TabIndex = 0;
-			this->pictureBox1->TabStop = false;
-			this->pictureBox1->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox2
-			// 
-			this->pictureBox2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.BackgroundImage")));
-			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
-			this->pictureBox2->Location = System::Drawing::Point(80, 30);
-			this->pictureBox2->Name = L"pictureBox2";
-			this->pictureBox2->Size = System::Drawing::Size(50, 50);
-			this->pictureBox2->TabIndex = 1;
-			this->pictureBox2->TabStop = false;
-			this->pictureBox2->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox3
-			// 
-			this->pictureBox3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox3.BackgroundImage")));
-			this->pictureBox3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox3.Image")));
-			this->pictureBox3->Location = System::Drawing::Point(130, 30);
-			this->pictureBox3->Name = L"pictureBox3";
-			this->pictureBox3->Size = System::Drawing::Size(50, 50);
-			this->pictureBox3->TabIndex = 3;
-			this->pictureBox3->TabStop = false;
-			this->pictureBox3->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox4
-			// 
-			this->pictureBox4->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox4.BackgroundImage")));
-			this->pictureBox4->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox4.Image")));
-			this->pictureBox4->Location = System::Drawing::Point(180, 30);
-			this->pictureBox4->Name = L"pictureBox4";
-			this->pictureBox4->Size = System::Drawing::Size(50, 50);
-			this->pictureBox4->TabIndex = 2;
-			this->pictureBox4->TabStop = false;
-			this->pictureBox4->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox5
-			// 
-			this->pictureBox5->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox5.BackgroundImage")));
-			this->pictureBox5->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox5.Image")));
-			this->pictureBox5->Location = System::Drawing::Point(130, 80);
-			this->pictureBox5->Name = L"pictureBox5";
-			this->pictureBox5->Size = System::Drawing::Size(50, 50);
-			this->pictureBox5->TabIndex = 7;
-			this->pictureBox5->TabStop = false;
-			this->pictureBox5->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox6
-			// 
-			this->pictureBox6->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox6.BackgroundImage")));
-			this->pictureBox6->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox6.Image")));
-			this->pictureBox6->Location = System::Drawing::Point(180, 80);
-			this->pictureBox6->Name = L"pictureBox6";
-			this->pictureBox6->Size = System::Drawing::Size(50, 50);
-			this->pictureBox6->TabIndex = 6;
-			this->pictureBox6->TabStop = false;
-			this->pictureBox6->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox7
-			// 
-			this->pictureBox7->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox7.BackgroundImage")));
-			this->pictureBox7->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox7.Image")));
-			this->pictureBox7->Location = System::Drawing::Point(80, 80);
-			this->pictureBox7->Name = L"pictureBox7";
-			this->pictureBox7->Size = System::Drawing::Size(50, 50);
-			this->pictureBox7->TabIndex = 5;
-			this->pictureBox7->TabStop = false;
-			this->pictureBox7->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox8
-			// 
-			this->pictureBox8->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox8.BackgroundImage")));
-			this->pictureBox8->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox8.Image")));
-			this->pictureBox8->Location = System::Drawing::Point(30, 80);
-			this->pictureBox8->Name = L"pictureBox8";
-			this->pictureBox8->Size = System::Drawing::Size(50, 50);
-			this->pictureBox8->TabIndex = 4;
-			this->pictureBox8->TabStop = false;
-			this->pictureBox8->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox9
-			// 
-			this->pictureBox9->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox9.BackgroundImage")));
-			this->pictureBox9->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox9.Image")));
-			this->pictureBox9->Location = System::Drawing::Point(130, 180);
-			this->pictureBox9->Name = L"pictureBox9";
-			this->pictureBox9->Size = System::Drawing::Size(50, 50);
-			this->pictureBox9->TabIndex = 15;
-			this->pictureBox9->TabStop = false;
-			this->pictureBox9->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox10
-			// 
-			this->pictureBox10->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox10.BackgroundImage")));
-			this->pictureBox10->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox10.Image")));
-			this->pictureBox10->Location = System::Drawing::Point(180, 180);
-			this->pictureBox10->Name = L"pictureBox10";
-			this->pictureBox10->Size = System::Drawing::Size(50, 50);
-			this->pictureBox10->TabIndex = 14;
-			this->pictureBox10->TabStop = false;
-			this->pictureBox10->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox11
-			// 
-			this->pictureBox11->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox11.BackgroundImage")));
-			this->pictureBox11->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox11.Image")));
-			this->pictureBox11->Location = System::Drawing::Point(80, 180);
-			this->pictureBox11->Name = L"pictureBox11";
-			this->pictureBox11->Size = System::Drawing::Size(50, 50);
-			this->pictureBox11->TabIndex = 13;
-			this->pictureBox11->TabStop = false;
-			this->pictureBox11->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox12
-			// 
-			this->pictureBox12->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox12.BackgroundImage")));
-			this->pictureBox12->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox12.Image")));
-			this->pictureBox12->Location = System::Drawing::Point(30, 180);
-			this->pictureBox12->Name = L"pictureBox12";
-			this->pictureBox12->Size = System::Drawing::Size(50, 50);
-			this->pictureBox12->TabIndex = 12;
-			this->pictureBox12->TabStop = false;
-			this->pictureBox12->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox13
-			// 
-			this->pictureBox13->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox13.BackgroundImage")));
-			this->pictureBox13->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox13.Image")));
-			this->pictureBox13->Location = System::Drawing::Point(130, 130);
-			this->pictureBox13->Name = L"pictureBox13";
-			this->pictureBox13->Size = System::Drawing::Size(50, 50);
-			this->pictureBox13->TabIndex = 11;
-			this->pictureBox13->TabStop = false;
-			this->pictureBox13->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox14
-			// 
-			this->pictureBox14->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox14.BackgroundImage")));
-			this->pictureBox14->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox14.Image")));
-			this->pictureBox14->Location = System::Drawing::Point(180, 130);
-			this->pictureBox14->Name = L"pictureBox14";
-			this->pictureBox14->Size = System::Drawing::Size(50, 50);
-			this->pictureBox14->TabIndex = 10;
-			this->pictureBox14->TabStop = false;
-			this->pictureBox14->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox15
-			// 
-			this->pictureBox15->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox15.BackgroundImage")));
-			this->pictureBox15->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox15.Image")));
-			this->pictureBox15->Location = System::Drawing::Point(80, 130);
-			this->pictureBox15->Name = L"pictureBox15";
-			this->pictureBox15->Size = System::Drawing::Size(50, 50);
-			this->pictureBox15->TabIndex = 9;
-			this->pictureBox15->TabStop = false;
-			this->pictureBox15->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox16
-			// 
-			this->pictureBox16->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox16.BackgroundImage")));
-			this->pictureBox16->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox16.Image")));
-			this->pictureBox16->Location = System::Drawing::Point(30, 130);
-			this->pictureBox16->Name = L"pictureBox16";
-			this->pictureBox16->Size = System::Drawing::Size(50, 50);
-			this->pictureBox16->TabIndex = 8;
-			this->pictureBox16->TabStop = false;
-			this->pictureBox16->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox17
-			// 
-			this->pictureBox17->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox17.BackgroundImage")));
-			this->pictureBox17->Location = System::Drawing::Point(330, 180);
-			this->pictureBox17->Name = L"pictureBox17";
-			this->pictureBox17->Size = System::Drawing::Size(50, 50);
-			this->pictureBox17->TabIndex = 31;
-			this->pictureBox17->TabStop = false;
-			this->pictureBox17->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox18
-			// 
-			this->pictureBox18->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox18.BackgroundImage")));
-			this->pictureBox18->Location = System::Drawing::Point(380, 180);
-			this->pictureBox18->Name = L"pictureBox18";
-			this->pictureBox18->Size = System::Drawing::Size(50, 50);
-			this->pictureBox18->TabIndex = 30;
-			this->pictureBox18->TabStop = false;
-			this->pictureBox18->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox19
-			// 
-			this->pictureBox19->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox19.BackgroundImage")));
-			this->pictureBox19->Location = System::Drawing::Point(280, 180);
-			this->pictureBox19->Name = L"pictureBox19";
-			this->pictureBox19->Size = System::Drawing::Size(50, 50);
-			this->pictureBox19->TabIndex = 29;
-			this->pictureBox19->TabStop = false;
-			this->pictureBox19->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox20
-			// 
-			this->pictureBox20->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox20.BackgroundImage")));
-			this->pictureBox20->Location = System::Drawing::Point(230, 180);
-			this->pictureBox20->Name = L"pictureBox20";
-			this->pictureBox20->Size = System::Drawing::Size(50, 50);
-			this->pictureBox20->TabIndex = 28;
-			this->pictureBox20->TabStop = false;
-			this->pictureBox20->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox21
-			// 
-			this->pictureBox21->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox21.BackgroundImage")));
-			this->pictureBox21->Location = System::Drawing::Point(330, 130);
-			this->pictureBox21->Name = L"pictureBox21";
-			this->pictureBox21->Size = System::Drawing::Size(50, 50);
-			this->pictureBox21->TabIndex = 27;
-			this->pictureBox21->TabStop = false;
-			this->pictureBox21->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox22
-			// 
-			this->pictureBox22->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox22.BackgroundImage")));
-			this->pictureBox22->Location = System::Drawing::Point(380, 130);
-			this->pictureBox22->Name = L"pictureBox22";
-			this->pictureBox22->Size = System::Drawing::Size(50, 50);
-			this->pictureBox22->TabIndex = 26;
-			this->pictureBox22->TabStop = false;
-			this->pictureBox22->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox23
-			// 
-			this->pictureBox23->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox23.BackgroundImage")));
-			this->pictureBox23->Location = System::Drawing::Point(280, 130);
-			this->pictureBox23->Name = L"pictureBox23";
-			this->pictureBox23->Size = System::Drawing::Size(50, 50);
-			this->pictureBox23->TabIndex = 25;
-			this->pictureBox23->TabStop = false;
-			this->pictureBox23->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox24
-			// 
-			this->pictureBox24->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox24.BackgroundImage")));
-			this->pictureBox24->Location = System::Drawing::Point(230, 130);
-			this->pictureBox24->Name = L"pictureBox24";
-			this->pictureBox24->Size = System::Drawing::Size(50, 50);
-			this->pictureBox24->TabIndex = 24;
-			this->pictureBox24->TabStop = false;
-			this->pictureBox24->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox25
-			// 
-			this->pictureBox25->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox25.BackgroundImage")));
-			this->pictureBox25->Location = System::Drawing::Point(330, 80);
-			this->pictureBox25->Name = L"pictureBox25";
-			this->pictureBox25->Size = System::Drawing::Size(50, 50);
-			this->pictureBox25->TabIndex = 23;
-			this->pictureBox25->TabStop = false;
-			this->pictureBox25->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox26
-			// 
-			this->pictureBox26->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox26.BackgroundImage")));
-			this->pictureBox26->Location = System::Drawing::Point(380, 80);
-			this->pictureBox26->Name = L"pictureBox26";
-			this->pictureBox26->Size = System::Drawing::Size(50, 50);
-			this->pictureBox26->TabIndex = 22;
-			this->pictureBox26->TabStop = false;
-			this->pictureBox26->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox27
-			// 
-			this->pictureBox27->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox27.BackgroundImage")));
-			this->pictureBox27->Location = System::Drawing::Point(280, 80);
-			this->pictureBox27->Name = L"pictureBox27";
-			this->pictureBox27->Size = System::Drawing::Size(50, 50);
-			this->pictureBox27->TabIndex = 21;
-			this->pictureBox27->TabStop = false;
-			this->pictureBox27->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox28
-			// 
-			this->pictureBox28->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox28.BackgroundImage")));
-			this->pictureBox28->Location = System::Drawing::Point(230, 80);
-			this->pictureBox28->Name = L"pictureBox28";
-			this->pictureBox28->Size = System::Drawing::Size(50, 50);
-			this->pictureBox28->TabIndex = 20;
-			this->pictureBox28->TabStop = false;
-			this->pictureBox28->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox29
-			// 
-			this->pictureBox29->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox29.BackgroundImage")));
-			this->pictureBox29->Location = System::Drawing::Point(330, 30);
-			this->pictureBox29->Name = L"pictureBox29";
-			this->pictureBox29->Size = System::Drawing::Size(50, 50);
-			this->pictureBox29->TabIndex = 19;
-			this->pictureBox29->TabStop = false;
-			this->pictureBox29->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox30
-			// 
-			this->pictureBox30->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox30.BackgroundImage")));
-			this->pictureBox30->Location = System::Drawing::Point(380, 30);
-			this->pictureBox30->Name = L"pictureBox30";
-			this->pictureBox30->Size = System::Drawing::Size(50, 50);
-			this->pictureBox30->TabIndex = 18;
-			this->pictureBox30->TabStop = false;
-			this->pictureBox30->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox31
-			// 
-			this->pictureBox31->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox31.BackgroundImage")));
-			this->pictureBox31->Location = System::Drawing::Point(280, 30);
-			this->pictureBox31->Name = L"pictureBox31";
-			this->pictureBox31->Size = System::Drawing::Size(50, 50);
-			this->pictureBox31->TabIndex = 17;
-			this->pictureBox31->TabStop = false;
-			this->pictureBox31->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox32
-			// 
-			this->pictureBox32->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox32.BackgroundImage")));
-			this->pictureBox32->Location = System::Drawing::Point(230, 30);
-			this->pictureBox32->Name = L"pictureBox32";
-			this->pictureBox32->Size = System::Drawing::Size(50, 50);
-			this->pictureBox32->TabIndex = 16;
-			this->pictureBox32->TabStop = false;
-			this->pictureBox32->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox33
-			// 
-			this->pictureBox33->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox33.BackgroundImage")));
-			this->pictureBox33->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox33.Image")));
-			this->pictureBox33->Location = System::Drawing::Point(330, 380);
-			this->pictureBox33->Name = L"pictureBox33";
-			this->pictureBox33->Size = System::Drawing::Size(50, 50);
-			this->pictureBox33->TabIndex = 63;
-			this->pictureBox33->TabStop = false;
-			this->pictureBox33->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox34
-			// 
-			this->pictureBox34->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox34.BackgroundImage")));
-			this->pictureBox34->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox34.Image")));
-			this->pictureBox34->Location = System::Drawing::Point(380, 380);
-			this->pictureBox34->Name = L"pictureBox34";
-			this->pictureBox34->Size = System::Drawing::Size(50, 50);
-			this->pictureBox34->TabIndex = 62;
-			this->pictureBox34->TabStop = false;
-			this->pictureBox34->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox35
-			// 
-			this->pictureBox35->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox35.BackgroundImage")));
-			this->pictureBox35->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox35.Image")));
-			this->pictureBox35->Location = System::Drawing::Point(280, 380);
-			this->pictureBox35->Name = L"pictureBox35";
-			this->pictureBox35->Size = System::Drawing::Size(50, 50);
-			this->pictureBox35->TabIndex = 61;
-			this->pictureBox35->TabStop = false;
-			this->pictureBox35->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox36
-			// 
-			this->pictureBox36->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox36.BackgroundImage")));
-			this->pictureBox36->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox36.Image")));
-			this->pictureBox36->Location = System::Drawing::Point(230, 380);
-			this->pictureBox36->Name = L"pictureBox36";
-			this->pictureBox36->Size = System::Drawing::Size(50, 50);
-			this->pictureBox36->TabIndex = 60;
-			this->pictureBox36->TabStop = false;
-			this->pictureBox36->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox37
-			// 
-			this->pictureBox37->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox37.BackgroundImage")));
-			this->pictureBox37->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox37.Image")));
-			this->pictureBox37->Location = System::Drawing::Point(330, 330);
-			this->pictureBox37->Name = L"pictureBox37";
-			this->pictureBox37->Size = System::Drawing::Size(50, 50);
-			this->pictureBox37->TabIndex = 59;
-			this->pictureBox37->TabStop = false;
-			this->pictureBox37->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox38
-			// 
-			this->pictureBox38->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox38.BackgroundImage")));
-			this->pictureBox38->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox38.Image")));
-			this->pictureBox38->Location = System::Drawing::Point(380, 330);
-			this->pictureBox38->Name = L"pictureBox38";
-			this->pictureBox38->Size = System::Drawing::Size(50, 50);
-			this->pictureBox38->TabIndex = 58;
-			this->pictureBox38->TabStop = false;
-			this->pictureBox38->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox39
-			// 
-			this->pictureBox39->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox39.BackgroundImage")));
-			this->pictureBox39->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox39.Image")));
-			this->pictureBox39->Location = System::Drawing::Point(280, 330);
-			this->pictureBox39->Name = L"pictureBox39";
-			this->pictureBox39->Size = System::Drawing::Size(50, 50);
-			this->pictureBox39->TabIndex = 57;
-			this->pictureBox39->TabStop = false;
-			this->pictureBox39->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox40
-			// 
-			this->pictureBox40->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox40.BackgroundImage")));
-			this->pictureBox40->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox40.Image")));
-			this->pictureBox40->Location = System::Drawing::Point(230, 330);
-			this->pictureBox40->Name = L"pictureBox40";
-			this->pictureBox40->Size = System::Drawing::Size(50, 50);
-			this->pictureBox40->TabIndex = 56;
-			this->pictureBox40->TabStop = false;
-			this->pictureBox40->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox41
-			// 
-			this->pictureBox41->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox41.BackgroundImage")));
-			this->pictureBox41->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox41.Image")));
-			this->pictureBox41->Location = System::Drawing::Point(330, 280);
-			this->pictureBox41->Name = L"pictureBox41";
-			this->pictureBox41->Size = System::Drawing::Size(50, 50);
-			this->pictureBox41->TabIndex = 55;
-			this->pictureBox41->TabStop = false;
-			this->pictureBox41->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox42
-			// 
-			this->pictureBox42->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox42.BackgroundImage")));
-			this->pictureBox42->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox42.Image")));
-			this->pictureBox42->Location = System::Drawing::Point(380, 280);
-			this->pictureBox42->Name = L"pictureBox42";
-			this->pictureBox42->Size = System::Drawing::Size(50, 50);
-			this->pictureBox42->TabIndex = 54;
-			this->pictureBox42->TabStop = false;
-			this->pictureBox42->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox43
-			// 
-			this->pictureBox43->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox43.BackgroundImage")));
-			this->pictureBox43->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox43.Image")));
-			this->pictureBox43->Location = System::Drawing::Point(280, 280);
-			this->pictureBox43->Name = L"pictureBox43";
-			this->pictureBox43->Size = System::Drawing::Size(50, 50);
-			this->pictureBox43->TabIndex = 53;
-			this->pictureBox43->TabStop = false;
-			this->pictureBox43->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox44
-			// 
-			this->pictureBox44->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox44.BackgroundImage")));
-			this->pictureBox44->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox44.Image")));
-			this->pictureBox44->Location = System::Drawing::Point(230, 280);
-			this->pictureBox44->Name = L"pictureBox44";
-			this->pictureBox44->Size = System::Drawing::Size(50, 50);
-			this->pictureBox44->TabIndex = 52;
-			this->pictureBox44->TabStop = false;
-			this->pictureBox44->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox45
-			// 
-			this->pictureBox45->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox45.BackgroundImage")));
-			this->pictureBox45->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox45.Image")));
-			this->pictureBox45->Location = System::Drawing::Point(330, 230);
-			this->pictureBox45->Name = L"pictureBox45";
-			this->pictureBox45->Size = System::Drawing::Size(50, 50);
-			this->pictureBox45->TabIndex = 51;
-			this->pictureBox45->TabStop = false;
-			this->pictureBox45->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox46
-			// 
-			this->pictureBox46->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox46.BackgroundImage")));
-			this->pictureBox46->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox46.Image")));
-			this->pictureBox46->Location = System::Drawing::Point(380, 230);
-			this->pictureBox46->Name = L"pictureBox46";
-			this->pictureBox46->Size = System::Drawing::Size(50, 50);
-			this->pictureBox46->TabIndex = 50;
-			this->pictureBox46->TabStop = false;
-			this->pictureBox46->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox47
-			// 
-			this->pictureBox47->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox47.BackgroundImage")));
-			this->pictureBox47->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox47.Image")));
-			this->pictureBox47->Location = System::Drawing::Point(280, 230);
-			this->pictureBox47->Name = L"pictureBox47";
-			this->pictureBox47->Size = System::Drawing::Size(50, 50);
-			this->pictureBox47->TabIndex = 49;
-			this->pictureBox47->TabStop = false;
-			this->pictureBox47->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox48
-			// 
-			this->pictureBox48->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox48.BackgroundImage")));
-			this->pictureBox48->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox48.Image")));
-			this->pictureBox48->Location = System::Drawing::Point(230, 230);
-			this->pictureBox48->Name = L"pictureBox48";
-			this->pictureBox48->Size = System::Drawing::Size(50, 50);
-			this->pictureBox48->TabIndex = 48;
-			this->pictureBox48->TabStop = false;
-			this->pictureBox48->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox49
-			// 
-			this->pictureBox49->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox49.BackgroundImage")));
-			this->pictureBox49->Location = System::Drawing::Point(130, 380);
-			this->pictureBox49->Name = L"pictureBox49";
-			this->pictureBox49->Size = System::Drawing::Size(50, 50);
-			this->pictureBox49->TabIndex = 47;
-			this->pictureBox49->TabStop = false;
-			this->pictureBox49->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox50
-			// 
-			this->pictureBox50->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox50.BackgroundImage")));
-			this->pictureBox50->Location = System::Drawing::Point(180, 380);
-			this->pictureBox50->Name = L"pictureBox50";
-			this->pictureBox50->Size = System::Drawing::Size(50, 50);
-			this->pictureBox50->TabIndex = 46;
-			this->pictureBox50->TabStop = false;
-			this->pictureBox50->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox51
-			// 
-			this->pictureBox51->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox51.BackgroundImage")));
-			this->pictureBox51->Location = System::Drawing::Point(80, 380);
-			this->pictureBox51->Name = L"pictureBox51";
-			this->pictureBox51->Size = System::Drawing::Size(50, 50);
-			this->pictureBox51->TabIndex = 45;
-			this->pictureBox51->TabStop = false;
-			this->pictureBox51->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox52
-			// 
-			this->pictureBox52->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox52.BackgroundImage")));
-			this->pictureBox52->Location = System::Drawing::Point(30, 380);
-			this->pictureBox52->Name = L"pictureBox52";
-			this->pictureBox52->Size = System::Drawing::Size(50, 50);
-			this->pictureBox52->TabIndex = 44;
-			this->pictureBox52->TabStop = false;
-			this->pictureBox52->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox53
-			// 
-			this->pictureBox53->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox53.BackgroundImage")));
-			this->pictureBox53->Location = System::Drawing::Point(130, 330);
-			this->pictureBox53->Name = L"pictureBox53";
-			this->pictureBox53->Size = System::Drawing::Size(50, 50);
-			this->pictureBox53->TabIndex = 43;
-			this->pictureBox53->TabStop = false;
-			this->pictureBox53->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox54
-			// 
-			this->pictureBox54->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox54.BackgroundImage")));
-			this->pictureBox54->Location = System::Drawing::Point(180, 330);
-			this->pictureBox54->Name = L"pictureBox54";
-			this->pictureBox54->Size = System::Drawing::Size(50, 50);
-			this->pictureBox54->TabIndex = 42;
-			this->pictureBox54->TabStop = false;
-			this->pictureBox54->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox55
-			// 
-			this->pictureBox55->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox55.BackgroundImage")));
-			this->pictureBox55->Location = System::Drawing::Point(80, 330);
-			this->pictureBox55->Name = L"pictureBox55";
-			this->pictureBox55->Size = System::Drawing::Size(50, 50);
-			this->pictureBox55->TabIndex = 41;
-			this->pictureBox55->TabStop = false;
-			this->pictureBox55->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox56
-			// 
-			this->pictureBox56->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox56.BackgroundImage")));
-			this->pictureBox56->Location = System::Drawing::Point(30, 330);
-			this->pictureBox56->Name = L"pictureBox56";
-			this->pictureBox56->Size = System::Drawing::Size(50, 50);
-			this->pictureBox56->TabIndex = 40;
-			this->pictureBox56->TabStop = false;
-			this->pictureBox56->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox57
-			// 
-			this->pictureBox57->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox57.BackgroundImage")));
-			this->pictureBox57->Location = System::Drawing::Point(130, 280);
-			this->pictureBox57->Name = L"pictureBox57";
-			this->pictureBox57->Size = System::Drawing::Size(50, 50);
-			this->pictureBox57->TabIndex = 39;
-			this->pictureBox57->TabStop = false;
-			this->pictureBox57->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox58
-			// 
-			this->pictureBox58->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox58.BackgroundImage")));
-			this->pictureBox58->Location = System::Drawing::Point(180, 280);
-			this->pictureBox58->Name = L"pictureBox58";
-			this->pictureBox58->Size = System::Drawing::Size(50, 50);
-			this->pictureBox58->TabIndex = 38;
-			this->pictureBox58->TabStop = false;
-			this->pictureBox58->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox59
-			// 
-			this->pictureBox59->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox59.BackgroundImage")));
-			this->pictureBox59->Location = System::Drawing::Point(80, 280);
-			this->pictureBox59->Name = L"pictureBox59";
-			this->pictureBox59->Size = System::Drawing::Size(50, 50);
-			this->pictureBox59->TabIndex = 37;
-			this->pictureBox59->TabStop = false;
-			this->pictureBox59->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox60
-			// 
-			this->pictureBox60->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox60.BackgroundImage")));
-			this->pictureBox60->Location = System::Drawing::Point(30, 280);
-			this->pictureBox60->Name = L"pictureBox60";
-			this->pictureBox60->Size = System::Drawing::Size(50, 50);
-			this->pictureBox60->TabIndex = 36;
-			this->pictureBox60->TabStop = false;
-			this->pictureBox60->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox61
-			// 
-			this->pictureBox61->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox61.BackgroundImage")));
-			this->pictureBox61->Location = System::Drawing::Point(130, 230);
-			this->pictureBox61->Name = L"pictureBox61";
-			this->pictureBox61->Size = System::Drawing::Size(50, 50);
-			this->pictureBox61->TabIndex = 35;
-			this->pictureBox61->TabStop = false;
-			this->pictureBox61->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox62
-			// 
-			this->pictureBox62->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox62.BackgroundImage")));
-			this->pictureBox62->Location = System::Drawing::Point(180, 230);
-			this->pictureBox62->Name = L"pictureBox62";
-			this->pictureBox62->Size = System::Drawing::Size(50, 50);
-			this->pictureBox62->TabIndex = 34;
-			this->pictureBox62->TabStop = false;
-			this->pictureBox62->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox63
-			// 
-			this->pictureBox63->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox63.BackgroundImage")));
-			this->pictureBox63->Location = System::Drawing::Point(80, 230);
-			this->pictureBox63->Name = L"pictureBox63";
-			this->pictureBox63->Size = System::Drawing::Size(50, 50);
-			this->pictureBox63->TabIndex = 33;
-			this->pictureBox63->TabStop = false;
-			this->pictureBox63->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// pictureBox64
-			// 
-			this->pictureBox64->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox64.BackgroundImage")));
-			this->pictureBox64->Location = System::Drawing::Point(30, 230);
-			this->pictureBox64->Name = L"pictureBox64";
-			this->pictureBox64->Size = System::Drawing::Size(50, 50);
-			this->pictureBox64->TabIndex = 32;
-			this->pictureBox64->TabStop = false;
-			this->pictureBox64->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// a1
+			// 
+			this->a1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"a1.BackgroundImage")));
+			this->a1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"a1.Image")));
+			this->a1->Location = System::Drawing::Point(30, 30);
+			this->a1->Name = L"a1";
+			this->a1->Size = System::Drawing::Size(50, 50);
+			this->a1->TabIndex = 0;
+			this->a1->TabStop = false;
+			this->a1->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// b1
+			// 
+			this->b1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"b1.BackgroundImage")));
+			this->b1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"b1.Image")));
+			this->b1->Location = System::Drawing::Point(80, 30);
+			this->b1->Name = L"b1";
+			this->b1->Size = System::Drawing::Size(50, 50);
+			this->b1->TabIndex = 1;
+			this->b1->TabStop = false;
+			this->b1->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// c1
+			// 
+			this->c1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"c1.BackgroundImage")));
+			this->c1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"c1.Image")));
+			this->c1->Location = System::Drawing::Point(130, 30);
+			this->c1->Name = L"c1";
+			this->c1->Size = System::Drawing::Size(50, 50);
+			this->c1->TabIndex = 3;
+			this->c1->TabStop = false;
+			this->c1->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// d1
+			// 
+			this->d1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"d1.BackgroundImage")));
+			this->d1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"d1.Image")));
+			this->d1->Location = System::Drawing::Point(180, 30);
+			this->d1->Name = L"d1";
+			this->d1->Size = System::Drawing::Size(50, 50);
+			this->d1->TabIndex = 2;
+			this->d1->TabStop = false;
+			this->d1->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// c2
+			// 
+			this->c2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"c2.BackgroundImage")));
+			this->c2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"c2.Image")));
+			this->c2->Location = System::Drawing::Point(130, 80);
+			this->c2->Name = L"c2";
+			this->c2->Size = System::Drawing::Size(50, 50);
+			this->c2->TabIndex = 7;
+			this->c2->TabStop = false;
+			this->c2->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// d2
+			// 
+			this->d2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"d2.BackgroundImage")));
+			this->d2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"d2.Image")));
+			this->d2->Location = System::Drawing::Point(180, 80);
+			this->d2->Name = L"d2";
+			this->d2->Size = System::Drawing::Size(50, 50);
+			this->d2->TabIndex = 6;
+			this->d2->TabStop = false;
+			this->d2->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// b2
+			// 
+			this->b2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"b2.BackgroundImage")));
+			this->b2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"b2.Image")));
+			this->b2->Location = System::Drawing::Point(80, 80);
+			this->b2->Name = L"b2";
+			this->b2->Size = System::Drawing::Size(50, 50);
+			this->b2->TabIndex = 5;
+			this->b2->TabStop = false;
+			this->b2->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// a2
+			// 
+			this->a2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"a2.BackgroundImage")));
+			this->a2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"a2.Image")));
+			this->a2->Location = System::Drawing::Point(30, 80);
+			this->a2->Name = L"a2";
+			this->a2->Size = System::Drawing::Size(50, 50);
+			this->a2->TabIndex = 4;
+			this->a2->TabStop = false;
+			this->a2->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// c4
+			// 
+			this->c4->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"c4.BackgroundImage")));
+			this->c4->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"c4.Image")));
+			this->c4->Location = System::Drawing::Point(130, 180);
+			this->c4->Name = L"c4";
+			this->c4->Size = System::Drawing::Size(50, 50);
+			this->c4->TabIndex = 15;
+			this->c4->TabStop = false;
+			this->c4->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// d
+			// 
+			this->d->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"d.BackgroundImage")));
+			this->d->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"d.Image")));
+			this->d->Location = System::Drawing::Point(180, 180);
+			this->d->Name = L"d";
+			this->d->Size = System::Drawing::Size(50, 50);
+			this->d->TabIndex = 14;
+			this->d->TabStop = false;
+			this->d->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// b4
+			// 
+			this->b4->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"b4.BackgroundImage")));
+			this->b4->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"b4.Image")));
+			this->b4->Location = System::Drawing::Point(80, 180);
+			this->b4->Name = L"b4";
+			this->b4->Size = System::Drawing::Size(50, 50);
+			this->b4->TabIndex = 13;
+			this->b4->TabStop = false;
+			this->b4->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// a4
+			// 
+			this->a4->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"a4.BackgroundImage")));
+			this->a4->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"a4.Image")));
+			this->a4->Location = System::Drawing::Point(30, 180);
+			this->a4->Name = L"a4";
+			this->a4->Size = System::Drawing::Size(50, 50);
+			this->a4->TabIndex = 12;
+			this->a4->TabStop = false;
+			this->a4->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// c3
+			// 
+			this->c3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"c3.BackgroundImage")));
+			this->c3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"c3.Image")));
+			this->c3->Location = System::Drawing::Point(130, 130);
+			this->c3->Name = L"c3";
+			this->c3->Size = System::Drawing::Size(50, 50);
+			this->c3->TabIndex = 11;
+			this->c3->TabStop = false;
+			this->c3->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// d3
+			// 
+			this->d3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"d3.BackgroundImage")));
+			this->d3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"d3.Image")));
+			this->d3->Location = System::Drawing::Point(180, 130);
+			this->d3->Name = L"d3";
+			this->d3->Size = System::Drawing::Size(50, 50);
+			this->d3->TabIndex = 10;
+			this->d3->TabStop = false;
+			this->d3->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// b3
+			// 
+			this->b3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"b3.BackgroundImage")));
+			this->b3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"b3.Image")));
+			this->b3->Location = System::Drawing::Point(80, 130);
+			this->b3->Name = L"b3";
+			this->b3->Size = System::Drawing::Size(50, 50);
+			this->b3->TabIndex = 9;
+			this->b3->TabStop = false;
+			this->b3->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// a3
+			// 
+			this->a3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"a3.BackgroundImage")));
+			this->a3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"a3.Image")));
+			this->a3->Location = System::Drawing::Point(30, 130);
+			this->a3->Name = L"a3";
+			this->a3->Size = System::Drawing::Size(50, 50);
+			this->a3->TabIndex = 8;
+			this->a3->TabStop = false;
+			this->a3->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// g
+			// 
+			this->g->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"g.BackgroundImage")));
+			this->g->Location = System::Drawing::Point(330, 180);
+			this->g->Name = L"g";
+			this->g->Size = System::Drawing::Size(50, 50);
+			this->g->TabIndex = 31;
+			this->g->TabStop = false;
+			this->g->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// h4
+			// 
+			this->h4->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"h4.BackgroundImage")));
+			this->h4->Location = System::Drawing::Point(380, 180);
+			this->h4->Name = L"h4";
+			this->h4->Size = System::Drawing::Size(50, 50);
+			this->h4->TabIndex = 30;
+			this->h4->TabStop = false;
+			this->h4->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// f4
+			// 
+			this->f4->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"f4.BackgroundImage")));
+			this->f4->Location = System::Drawing::Point(280, 180);
+			this->f4->Name = L"f4";
+			this->f4->Size = System::Drawing::Size(50, 50);
+			this->f4->TabIndex = 29;
+			this->f4->TabStop = false;
+			this->f4->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// e4
+			// 
+			this->e4->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"e4.BackgroundImage")));
+			this->e4->Location = System::Drawing::Point(230, 180);
+			this->e4->Name = L"e4";
+			this->e4->Size = System::Drawing::Size(50, 50);
+			this->e4->TabIndex = 28;
+			this->e4->TabStop = false;
+			this->e4->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// g3
+			// 
+			this->g3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"g3.BackgroundImage")));
+			this->g3->Location = System::Drawing::Point(330, 130);
+			this->g3->Name = L"g3";
+			this->g3->Size = System::Drawing::Size(50, 50);
+			this->g3->TabIndex = 27;
+			this->g3->TabStop = false;
+			this->g3->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// h3
+			// 
+			this->h3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"h3.BackgroundImage")));
+			this->h3->Location = System::Drawing::Point(380, 130);
+			this->h3->Name = L"h3";
+			this->h3->Size = System::Drawing::Size(50, 50);
+			this->h3->TabIndex = 26;
+			this->h3->TabStop = false;
+			this->h3->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// f3
+			// 
+			this->f3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"f3.BackgroundImage")));
+			this->f3->Location = System::Drawing::Point(280, 130);
+			this->f3->Name = L"f3";
+			this->f3->Size = System::Drawing::Size(50, 50);
+			this->f3->TabIndex = 25;
+			this->f3->TabStop = false;
+			this->f3->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// e3
+			// 
+			this->e3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"e3.BackgroundImage")));
+			this->e3->Location = System::Drawing::Point(230, 130);
+			this->e3->Name = L"e3";
+			this->e3->Size = System::Drawing::Size(50, 50);
+			this->e3->TabIndex = 24;
+			this->e3->TabStop = false;
+			this->e3->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// g2
+			// 
+			this->g2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"g2.BackgroundImage")));
+			this->g2->Location = System::Drawing::Point(330, 80);
+			this->g2->Name = L"g2";
+			this->g2->Size = System::Drawing::Size(50, 50);
+			this->g2->TabIndex = 23;
+			this->g2->TabStop = false;
+			this->g2->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// h2
+			// 
+			this->h2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"h2.BackgroundImage")));
+			this->h2->Location = System::Drawing::Point(380, 80);
+			this->h2->Name = L"h2";
+			this->h2->Size = System::Drawing::Size(50, 50);
+			this->h2->TabIndex = 22;
+			this->h2->TabStop = false;
+			this->h2->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// f2
+			// 
+			this->f2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"f2.BackgroundImage")));
+			this->f2->Location = System::Drawing::Point(280, 80);
+			this->f2->Name = L"f2";
+			this->f2->Size = System::Drawing::Size(50, 50);
+			this->f2->TabIndex = 21;
+			this->f2->TabStop = false;
+			this->f2->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// e2
+			// 
+			this->e2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"e2.BackgroundImage")));
+			this->e2->Location = System::Drawing::Point(230, 80);
+			this->e2->Name = L"e2";
+			this->e2->Size = System::Drawing::Size(50, 50);
+			this->e2->TabIndex = 20;
+			this->e2->TabStop = false;
+			this->e2->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// g1
+			// 
+			this->g1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"g1.BackgroundImage")));
+			this->g1->Location = System::Drawing::Point(330, 30);
+			this->g1->Name = L"g1";
+			this->g1->Size = System::Drawing::Size(50, 50);
+			this->g1->TabIndex = 19;
+			this->g1->TabStop = false;
+			this->g1->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// h1
+			// 
+			this->h1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"h1.BackgroundImage")));
+			this->h1->Location = System::Drawing::Point(380, 30);
+			this->h1->Name = L"h1";
+			this->h1->Size = System::Drawing::Size(50, 50);
+			this->h1->TabIndex = 18;
+			this->h1->TabStop = false;
+			this->h1->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// f1
+			// 
+			this->f1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"f1.BackgroundImage")));
+			this->f1->Location = System::Drawing::Point(280, 30);
+			this->f1->Name = L"f1";
+			this->f1->Size = System::Drawing::Size(50, 50);
+			this->f1->TabIndex = 17;
+			this->f1->TabStop = false;
+			this->f1->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// e1
+			// 
+			this->e1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"e1.BackgroundImage")));
+			this->e1->Location = System::Drawing::Point(230, 30);
+			this->e1->Name = L"e1";
+			this->e1->Size = System::Drawing::Size(50, 50);
+			this->e1->TabIndex = 16;
+			this->e1->TabStop = false;
+			this->e1->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// g8
+			// 
+			this->g8->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"g8.BackgroundImage")));
+			this->g8->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"g8.Image")));
+			this->g8->Location = System::Drawing::Point(330, 380);
+			this->g8->Name = L"g8";
+			this->g8->Size = System::Drawing::Size(50, 50);
+			this->g8->TabIndex = 63;
+			this->g8->TabStop = false;
+			this->g8->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// h8
+			// 
+			this->h8->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"h8.BackgroundImage")));
+			this->h8->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"h8.Image")));
+			this->h8->Location = System::Drawing::Point(380, 380);
+			this->h8->Name = L"h8";
+			this->h8->Size = System::Drawing::Size(50, 50);
+			this->h8->TabIndex = 62;
+			this->h8->TabStop = false;
+			this->h8->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// f8
+			// 
+			this->f8->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"f8.BackgroundImage")));
+			this->f8->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"f8.Image")));
+			this->f8->Location = System::Drawing::Point(280, 380);
+			this->f8->Name = L"f8";
+			this->f8->Size = System::Drawing::Size(50, 50);
+			this->f8->TabIndex = 61;
+			this->f8->TabStop = false;
+			this->f8->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// e8
+			// 
+			this->e8->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"e8.BackgroundImage")));
+			this->e8->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"e8.Image")));
+			this->e8->Location = System::Drawing::Point(230, 380);
+			this->e8->Name = L"e8";
+			this->e8->Size = System::Drawing::Size(50, 50);
+			this->e8->TabIndex = 60;
+			this->e8->TabStop = false;
+			this->e8->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// g7
+			// 
+			this->g7->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"g7.BackgroundImage")));
+			this->g7->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"g7.Image")));
+			this->g7->Location = System::Drawing::Point(330, 330);
+			this->g7->Name = L"g7";
+			this->g7->Size = System::Drawing::Size(50, 50);
+			this->g7->TabIndex = 59;
+			this->g7->TabStop = false;
+			this->g7->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// h7
+			// 
+			this->h7->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"h7.BackgroundImage")));
+			this->h7->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"h7.Image")));
+			this->h7->Location = System::Drawing::Point(380, 330);
+			this->h7->Name = L"h7";
+			this->h7->Size = System::Drawing::Size(50, 50);
+			this->h7->TabIndex = 58;
+			this->h7->TabStop = false;
+			this->h7->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// f7
+			// 
+			this->f7->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"f7.BackgroundImage")));
+			this->f7->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"f7.Image")));
+			this->f7->Location = System::Drawing::Point(280, 330);
+			this->f7->Name = L"f7";
+			this->f7->Size = System::Drawing::Size(50, 50);
+			this->f7->TabIndex = 57;
+			this->f7->TabStop = false;
+			this->f7->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// e7
+			// 
+			this->e7->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"e7.BackgroundImage")));
+			this->e7->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"e7.Image")));
+			this->e7->Location = System::Drawing::Point(230, 330);
+			this->e7->Name = L"e7";
+			this->e7->Size = System::Drawing::Size(50, 50);
+			this->e7->TabIndex = 56;
+			this->e7->TabStop = false;
+			this->e7->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// g6
+			// 
+			this->g6->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"g6.BackgroundImage")));
+			this->g6->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"g6.Image")));
+			this->g6->Location = System::Drawing::Point(330, 280);
+			this->g6->Name = L"g6";
+			this->g6->Size = System::Drawing::Size(50, 50);
+			this->g6->TabIndex = 55;
+			this->g6->TabStop = false;
+			this->g6->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// h6
+			// 
+			this->h6->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"h6.BackgroundImage")));
+			this->h6->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"h6.Image")));
+			this->h6->Location = System::Drawing::Point(380, 280);
+			this->h6->Name = L"h6";
+			this->h6->Size = System::Drawing::Size(50, 50);
+			this->h6->TabIndex = 54;
+			this->h6->TabStop = false;
+			this->h6->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// f6
+			// 
+			this->f6->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"f6.BackgroundImage")));
+			this->f6->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"f6.Image")));
+			this->f6->Location = System::Drawing::Point(280, 280);
+			this->f6->Name = L"f6";
+			this->f6->Size = System::Drawing::Size(50, 50);
+			this->f6->TabIndex = 53;
+			this->f6->TabStop = false;
+			this->f6->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// e6
+			// 
+			this->e6->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"e6.BackgroundImage")));
+			this->e6->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"e6.Image")));
+			this->e6->Location = System::Drawing::Point(230, 280);
+			this->e6->Name = L"e6";
+			this->e6->Size = System::Drawing::Size(50, 50);
+			this->e6->TabIndex = 52;
+			this->e6->TabStop = false;
+			this->e6->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// g5
+			// 
+			this->g5->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"g5.BackgroundImage")));
+			this->g5->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"g5.Image")));
+			this->g5->Location = System::Drawing::Point(330, 230);
+			this->g5->Name = L"g5";
+			this->g5->Size = System::Drawing::Size(50, 50);
+			this->g5->TabIndex = 51;
+			this->g5->TabStop = false;
+			this->g5->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// h5
+			// 
+			this->h5->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"h5.BackgroundImage")));
+			this->h5->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"h5.Image")));
+			this->h5->Location = System::Drawing::Point(380, 230);
+			this->h5->Name = L"h5";
+			this->h5->Size = System::Drawing::Size(50, 50);
+			this->h5->TabIndex = 50;
+			this->h5->TabStop = false;
+			this->h5->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// f5
+			// 
+			this->f5->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"f5.BackgroundImage")));
+			this->f5->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"f5.Image")));
+			this->f5->Location = System::Drawing::Point(280, 230);
+			this->f5->Name = L"f5";
+			this->f5->Size = System::Drawing::Size(50, 50);
+			this->f5->TabIndex = 49;
+			this->f5->TabStop = false;
+			this->f5->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// e5
+			// 
+			this->e5->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"e5.BackgroundImage")));
+			this->e5->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"e5.Image")));
+			this->e5->Location = System::Drawing::Point(230, 230);
+			this->e5->Name = L"e5";
+			this->e5->Size = System::Drawing::Size(50, 50);
+			this->e5->TabIndex = 48;
+			this->e5->TabStop = false;
+			this->e5->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// c8
+			// 
+			this->c8->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"c8.BackgroundImage")));
+			this->c8->Location = System::Drawing::Point(130, 380);
+			this->c8->Name = L"c8";
+			this->c8->Size = System::Drawing::Size(50, 50);
+			this->c8->TabIndex = 47;
+			this->c8->TabStop = false;
+			this->c8->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// d8
+			// 
+			this->d8->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"d8.BackgroundImage")));
+			this->d8->Location = System::Drawing::Point(180, 380);
+			this->d8->Name = L"d8";
+			this->d8->Size = System::Drawing::Size(50, 50);
+			this->d8->TabIndex = 46;
+			this->d8->TabStop = false;
+			this->d8->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// b8
+			// 
+			this->b8->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"b8.BackgroundImage")));
+			this->b8->Location = System::Drawing::Point(80, 380);
+			this->b8->Name = L"b8";
+			this->b8->Size = System::Drawing::Size(50, 50);
+			this->b8->TabIndex = 45;
+			this->b8->TabStop = false;
+			this->b8->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// a8
+			// 
+			this->a8->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"a8.BackgroundImage")));
+			this->a8->Location = System::Drawing::Point(30, 380);
+			this->a8->Name = L"a8";
+			this->a8->Size = System::Drawing::Size(50, 50);
+			this->a8->TabIndex = 44;
+			this->a8->TabStop = false;
+			this->a8->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// c7
+			// 
+			this->c7->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"c7.BackgroundImage")));
+			this->c7->Location = System::Drawing::Point(130, 330);
+			this->c7->Name = L"c7";
+			this->c7->Size = System::Drawing::Size(50, 50);
+			this->c7->TabIndex = 43;
+			this->c7->TabStop = false;
+			this->c7->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// d7
+			// 
+			this->d7->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"d7.BackgroundImage")));
+			this->d7->Location = System::Drawing::Point(180, 330);
+			this->d7->Name = L"d7";
+			this->d7->Size = System::Drawing::Size(50, 50);
+			this->d7->TabIndex = 42;
+			this->d7->TabStop = false;
+			this->d7->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// b7
+			// 
+			this->b7->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"b7.BackgroundImage")));
+			this->b7->Location = System::Drawing::Point(80, 330);
+			this->b7->Name = L"b7";
+			this->b7->Size = System::Drawing::Size(50, 50);
+			this->b7->TabIndex = 41;
+			this->b7->TabStop = false;
+			this->b7->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// a7
+			// 
+			this->a7->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"a7.BackgroundImage")));
+			this->a7->Location = System::Drawing::Point(30, 330);
+			this->a7->Name = L"a7";
+			this->a7->Size = System::Drawing::Size(50, 50);
+			this->a7->TabIndex = 40;
+			this->a7->TabStop = false;
+			this->a7->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// c6
+			// 
+			this->c6->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"c6.BackgroundImage")));
+			this->c6->Location = System::Drawing::Point(130, 280);
+			this->c6->Name = L"c6";
+			this->c6->Size = System::Drawing::Size(50, 50);
+			this->c6->TabIndex = 39;
+			this->c6->TabStop = false;
+			this->c6->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// d6
+			// 
+			this->d6->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"d6.BackgroundImage")));
+			this->d6->Location = System::Drawing::Point(180, 280);
+			this->d6->Name = L"d6";
+			this->d6->Size = System::Drawing::Size(50, 50);
+			this->d6->TabIndex = 38;
+			this->d6->TabStop = false;
+			this->d6->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// b6
+			// 
+			this->b6->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"b6.BackgroundImage")));
+			this->b6->Location = System::Drawing::Point(80, 280);
+			this->b6->Name = L"b6";
+			this->b6->Size = System::Drawing::Size(50, 50);
+			this->b6->TabIndex = 37;
+			this->b6->TabStop = false;
+			this->b6->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// a6
+			// 
+			this->a6->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"a6.BackgroundImage")));
+			this->a6->Location = System::Drawing::Point(30, 280);
+			this->a6->Name = L"a6";
+			this->a6->Size = System::Drawing::Size(50, 50);
+			this->a6->TabIndex = 36;
+			this->a6->TabStop = false;
+			this->a6->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// c5
+			// 
+			this->c5->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"c5.BackgroundImage")));
+			this->c5->Location = System::Drawing::Point(130, 230);
+			this->c5->Name = L"c5";
+			this->c5->Size = System::Drawing::Size(50, 50);
+			this->c5->TabIndex = 35;
+			this->c5->TabStop = false;
+			this->c5->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// d5
+			// 
+			this->d5->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"d5.BackgroundImage")));
+			this->d5->Location = System::Drawing::Point(180, 230);
+			this->d5->Name = L"d5";
+			this->d5->Size = System::Drawing::Size(50, 50);
+			this->d5->TabIndex = 34;
+			this->d5->TabStop = false;
+			this->d5->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// b5
+			// 
+			this->b5->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"b5.BackgroundImage")));
+			this->b5->Location = System::Drawing::Point(80, 230);
+			this->b5->Name = L"b5";
+			this->b5->Size = System::Drawing::Size(50, 50);
+			this->b5->TabIndex = 33;
+			this->b5->TabStop = false;
+			this->b5->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			// 
+			// a5
+			// 
+			this->a5->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"a5.BackgroundImage")));
+			this->a5->Location = System::Drawing::Point(30, 230);
+			this->a5->Name = L"a5";
+			this->a5->Size = System::Drawing::Size(50, 50);
+			this->a5->TabIndex = 32;
+			this->a5->TabStop = false;
+			this->a5->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// label1
 			// 
@@ -1115,137 +1182,137 @@ namespace BoardGames {
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
-			this->Controls->Add(this->pictureBox33);
-			this->Controls->Add(this->pictureBox34);
-			this->Controls->Add(this->pictureBox35);
-			this->Controls->Add(this->pictureBox36);
-			this->Controls->Add(this->pictureBox37);
-			this->Controls->Add(this->pictureBox38);
-			this->Controls->Add(this->pictureBox39);
-			this->Controls->Add(this->pictureBox40);
-			this->Controls->Add(this->pictureBox41);
-			this->Controls->Add(this->pictureBox42);
-			this->Controls->Add(this->pictureBox43);
-			this->Controls->Add(this->pictureBox44);
-			this->Controls->Add(this->pictureBox45);
-			this->Controls->Add(this->pictureBox46);
-			this->Controls->Add(this->pictureBox47);
-			this->Controls->Add(this->pictureBox48);
-			this->Controls->Add(this->pictureBox49);
-			this->Controls->Add(this->pictureBox50);
-			this->Controls->Add(this->pictureBox51);
-			this->Controls->Add(this->pictureBox52);
-			this->Controls->Add(this->pictureBox53);
-			this->Controls->Add(this->pictureBox54);
-			this->Controls->Add(this->pictureBox55);
-			this->Controls->Add(this->pictureBox56);
-			this->Controls->Add(this->pictureBox57);
-			this->Controls->Add(this->pictureBox58);
-			this->Controls->Add(this->pictureBox59);
-			this->Controls->Add(this->pictureBox60);
-			this->Controls->Add(this->pictureBox61);
-			this->Controls->Add(this->pictureBox62);
-			this->Controls->Add(this->pictureBox63);
-			this->Controls->Add(this->pictureBox64);
-			this->Controls->Add(this->pictureBox17);
-			this->Controls->Add(this->pictureBox18);
-			this->Controls->Add(this->pictureBox19);
-			this->Controls->Add(this->pictureBox20);
-			this->Controls->Add(this->pictureBox21);
-			this->Controls->Add(this->pictureBox22);
-			this->Controls->Add(this->pictureBox23);
-			this->Controls->Add(this->pictureBox24);
-			this->Controls->Add(this->pictureBox25);
-			this->Controls->Add(this->pictureBox26);
-			this->Controls->Add(this->pictureBox27);
-			this->Controls->Add(this->pictureBox28);
-			this->Controls->Add(this->pictureBox29);
-			this->Controls->Add(this->pictureBox30);
-			this->Controls->Add(this->pictureBox31);
-			this->Controls->Add(this->pictureBox32);
-			this->Controls->Add(this->pictureBox9);
-			this->Controls->Add(this->pictureBox10);
-			this->Controls->Add(this->pictureBox11);
-			this->Controls->Add(this->pictureBox12);
-			this->Controls->Add(this->pictureBox13);
-			this->Controls->Add(this->pictureBox14);
-			this->Controls->Add(this->pictureBox15);
-			this->Controls->Add(this->pictureBox16);
-			this->Controls->Add(this->pictureBox5);
-			this->Controls->Add(this->pictureBox6);
-			this->Controls->Add(this->pictureBox7);
-			this->Controls->Add(this->pictureBox8);
-			this->Controls->Add(this->pictureBox3);
-			this->Controls->Add(this->pictureBox4);
-			this->Controls->Add(this->pictureBox2);
-			this->Controls->Add(this->pictureBox1);
+			this->Controls->Add(this->g8);
+			this->Controls->Add(this->h8);
+			this->Controls->Add(this->f8);
+			this->Controls->Add(this->e8);
+			this->Controls->Add(this->g7);
+			this->Controls->Add(this->h7);
+			this->Controls->Add(this->f7);
+			this->Controls->Add(this->e7);
+			this->Controls->Add(this->g6);
+			this->Controls->Add(this->h6);
+			this->Controls->Add(this->f6);
+			this->Controls->Add(this->e6);
+			this->Controls->Add(this->g5);
+			this->Controls->Add(this->h5);
+			this->Controls->Add(this->f5);
+			this->Controls->Add(this->e5);
+			this->Controls->Add(this->c8);
+			this->Controls->Add(this->d8);
+			this->Controls->Add(this->b8);
+			this->Controls->Add(this->a8);
+			this->Controls->Add(this->c7);
+			this->Controls->Add(this->d7);
+			this->Controls->Add(this->b7);
+			this->Controls->Add(this->a7);
+			this->Controls->Add(this->c6);
+			this->Controls->Add(this->d6);
+			this->Controls->Add(this->b6);
+			this->Controls->Add(this->a6);
+			this->Controls->Add(this->c5);
+			this->Controls->Add(this->d5);
+			this->Controls->Add(this->b5);
+			this->Controls->Add(this->a5);
+			this->Controls->Add(this->g);
+			this->Controls->Add(this->h4);
+			this->Controls->Add(this->f4);
+			this->Controls->Add(this->e4);
+			this->Controls->Add(this->g3);
+			this->Controls->Add(this->h3);
+			this->Controls->Add(this->f3);
+			this->Controls->Add(this->e3);
+			this->Controls->Add(this->g2);
+			this->Controls->Add(this->h2);
+			this->Controls->Add(this->f2);
+			this->Controls->Add(this->e2);
+			this->Controls->Add(this->g1);
+			this->Controls->Add(this->h1);
+			this->Controls->Add(this->f1);
+			this->Controls->Add(this->e1);
+			this->Controls->Add(this->c4);
+			this->Controls->Add(this->d);
+			this->Controls->Add(this->b4);
+			this->Controls->Add(this->a4);
+			this->Controls->Add(this->c3);
+			this->Controls->Add(this->d3);
+			this->Controls->Add(this->b3);
+			this->Controls->Add(this->a3);
+			this->Controls->Add(this->c2);
+			this->Controls->Add(this->d2);
+			this->Controls->Add(this->b2);
+			this->Controls->Add(this->a2);
+			this->Controls->Add(this->c1);
+			this->Controls->Add(this->d1);
+			this->Controls->Add(this->b1);
+			this->Controls->Add(this->a1);
 			this->Name = L"MainForm";
 			this->Text = L"MainForm";
 			this->Load += gcnew System::EventHandler(this, &MainForm::MainForm_Load);
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox4))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox5))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox6))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox7))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox8))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox9))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox10))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox11))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox12))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox13))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox14))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox15))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox16))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox17))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox18))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox19))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox20))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox21))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox22))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox23))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox24))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox25))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox26))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox27))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox28))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox29))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox30))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox31))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox32))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox33))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox34))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox35))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox36))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox37))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox38))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox39))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox40))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox41))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox42))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox43))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox44))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox45))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox46))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox47))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox48))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox49))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox50))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox51))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox52))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox53))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox54))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox55))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox56))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox57))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox58))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox59))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox60))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox61))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox62))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox63))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox64))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->a1))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->b1))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->c1))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->d1))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->c2))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->d2))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->b2))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->a2))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->c4))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->d))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->b4))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->a4))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->c3))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->d3))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->b3))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->a3))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->g))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->h4))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->f4))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->e4))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->g3))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->h3))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->f3))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->e3))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->g2))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->h2))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->f2))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->e2))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->g1))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->h1))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->f1))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->e1))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->g8))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->h8))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->f8))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->e8))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->g7))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->h7))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->f7))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->e7))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->g6))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->h6))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->f6))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->e6))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->g5))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->h5))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->f5))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->e5))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->c8))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->d8))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->b8))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->a8))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->c7))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->d7))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->b7))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->a7))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->c6))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->d6))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->b6))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->a6))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->c5))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->d5))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->b5))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->a5))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
