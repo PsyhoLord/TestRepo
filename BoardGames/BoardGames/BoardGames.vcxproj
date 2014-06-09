@@ -90,6 +90,12 @@
       <DependentUpon>MainForm.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="VC_Resources\Chips\Chip_1.png" />
+    <Image Include="VC_Resources\Chips\Chip_2.png" />
+    <Image Include="VC_Resources\Field_BackGrounds\Black_field.png" />
+    <Image Include="VC_Resources\Field_BackGrounds\White_field.png" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

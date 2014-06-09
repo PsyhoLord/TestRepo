@@ -1,7 +1,10 @@
 #pragma once
 
-namespace BoardGames {
+#define IMAGE_WHITE_CHIP "VC_Resources\\Chips\\Chip_1.png"  
+#define IMAGE_BLACK_CHIP "VC_Resources\\Chips\\Chip_2.png"
 
+
+namespace BoardGames {
 	using namespace System;
 	using namespace System::ComponentModel;
 	using namespace System::Collections;
@@ -23,9 +26,15 @@ namespace BoardGames {
 			//
 		}
 	private: System::Windows::Forms::Label^  TestLabel;
-	public:
+	
 		// Creating custom variables
-	private: PictureBox^ Active;
+	private: 
+		// String^ ColorFishka1;
+		// String^ ColorFishka2;
+		// String^ ColorFishka0;
+		
+		System::Object^ Active;
+		
 
 	protected:
 		/// <summary>
@@ -44,160 +53,69 @@ namespace BoardGames {
 	private: System::Windows::Forms::PictureBox^  d8;
 
 
-
-
-	protected:
+	// protected:
 		// TABLE
-
-
-
-
 	private: System::Windows::Forms::PictureBox^  c7;
 	private: System::Windows::Forms::PictureBox^  d7;
-
-
-
 	private: System::Windows::Forms::PictureBox^  b7;
-
-
-
-
 	private: System::Windows::Forms::PictureBox^  a7;
 	private: System::Windows::Forms::PictureBox^  c5;
 	private: System::Windows::Forms::PictureBox^  d5;
-
-
-
-
 	private: System::Windows::Forms::PictureBox^  b5;
-
-
 	private: System::Windows::Forms::PictureBox^  a5;
 	private: System::Windows::Forms::PictureBox^  c6;
 	private: System::Windows::Forms::PictureBox^  d6;
-
-
-
-
 	private: System::Windows::Forms::PictureBox^  b6;
-
 	private: System::Windows::Forms::PictureBox^  a6;
-
 	private: System::Windows::Forms::PictureBox^  g4;
-
 	private: System::Windows::Forms::PictureBox^  h4;
 	private: System::Windows::Forms::PictureBox^  f5;
-
-
 	private: System::Windows::Forms::PictureBox^  e5;
 	private: System::Windows::Forms::PictureBox^  g6;
-
-
-
-
-
-
 	private: System::Windows::Forms::PictureBox^  h3;
 	private: System::Windows::Forms::PictureBox^  f6;
-
-
 	private: System::Windows::Forms::PictureBox^  e6;
 	private: System::Windows::Forms::PictureBox^  g7;
-
-
-
-
-
-
 	private: System::Windows::Forms::PictureBox^  h2;
 	private: System::Windows::Forms::PictureBox^  f7;
-
-
 	private: System::Windows::Forms::PictureBox^  e7;
 	private: System::Windows::Forms::PictureBox^  g8;
-
-
-
-
 	private: System::Windows::Forms::PictureBox^  h1;
 	private: System::Windows::Forms::PictureBox^  f8;
-
-
 	private: System::Windows::Forms::PictureBox^  e8;
-private: System::Windows::Forms::PictureBox^  g1;
-
-
-
+	private: System::Windows::Forms::PictureBox^  g1;
 	private: System::Windows::Forms::PictureBox^  h8;
-private: System::Windows::Forms::PictureBox^  f1;
-
-
+	private: System::Windows::Forms::PictureBox^  f1;
 	private: System::Windows::Forms::PictureBox^  e1;
-private: System::Windows::Forms::PictureBox^  g2;
-
-
+	private: System::Windows::Forms::PictureBox^  g2;
 	private: System::Windows::Forms::PictureBox^  h7;
-private: System::Windows::Forms::PictureBox^  f2;
-
+	private: System::Windows::Forms::PictureBox^  f2;
 	private: System::Windows::Forms::PictureBox^  e2;
-private: System::Windows::Forms::PictureBox^  g3;
-
-
+	private: System::Windows::Forms::PictureBox^  g3;
 	private: System::Windows::Forms::PictureBox^  h6;
-private: System::Windows::Forms::PictureBox^  f3;
-
-private: System::Windows::Forms::PictureBox^  e3;
-
+	private: System::Windows::Forms::PictureBox^  f3;
+	private: System::Windows::Forms::PictureBox^  e3;
 	private: System::Windows::Forms::PictureBox^  g5;
 	private: System::Windows::Forms::PictureBox^  h5;
-private: System::Windows::Forms::PictureBox^  f4;
-
-private: System::Windows::Forms::PictureBox^  e4;
-
+	private: System::Windows::Forms::PictureBox^  f4;
+	private: System::Windows::Forms::PictureBox^  e4;
 	private: System::Windows::Forms::PictureBox^  c1;
 	private: System::Windows::Forms::PictureBox^  d1;
-
-
-
 	private: System::Windows::Forms::PictureBox^  b1;
-
 	private: System::Windows::Forms::PictureBox^  a1;
 	private: System::Windows::Forms::PictureBox^  c2;
-private: System::Windows::Forms::PictureBox^  d2;
-
-
-
-
-
+	private: System::Windows::Forms::PictureBox^  d2;
 	private: System::Windows::Forms::PictureBox^  b2;
-
 	private: System::Windows::Forms::PictureBox^  a2;
-private: System::Windows::Forms::PictureBox^  c3;
-private: System::Windows::Forms::PictureBox^  d3;
+	private: System::Windows::Forms::PictureBox^  c3;
+	private: System::Windows::Forms::PictureBox^  d3;
+	private: System::Windows::Forms::PictureBox^  b3;
+	private: System::Windows::Forms::PictureBox^  a3;
+	private: System::Windows::Forms::PictureBox^  c4;
+	private: System::Windows::Forms::PictureBox^  d4;
+	private: System::Windows::Forms::PictureBox^  b4;
+	private: System::Windows::Forms::PictureBox^  a4;
 
-
-
-
-
-private: System::Windows::Forms::PictureBox^  b3;
-
-
-	private: System::Windows::Forms::PictureBox^  a;
-private: System::Windows::Forms::PictureBox^  c4;
-private: System::Windows::Forms::PictureBox^  d4;
-
-
-
-
-
-
-private: System::Windows::Forms::PictureBox^  b4;
-
-
-private: System::Windows::Forms::PictureBox^  a4;
-
-
-	
 	// Board Marks
 	private: System::Windows::Forms::Label^  label1;
 	private: System::Windows::Forms::Label^  label2;
@@ -216,7 +134,7 @@ private: System::Windows::Forms::PictureBox^  a4;
 	private: System::Windows::Forms::Label^  label15;
 	private: System::Windows::Forms::Label^  label16;
 
-	protected:
+//	protected:
 
 	private:
 		/// <summary>
@@ -292,7 +210,7 @@ private: System::Windows::Forms::PictureBox^  a4;
 			this->c3 = (gcnew System::Windows::Forms::PictureBox());
 			this->d3 = (gcnew System::Windows::Forms::PictureBox());
 			this->b3 = (gcnew System::Windows::Forms::PictureBox());
-			this->a = (gcnew System::Windows::Forms::PictureBox());
+			this->a3 = (gcnew System::Windows::Forms::PictureBox());
 			this->c4 = (gcnew System::Windows::Forms::PictureBox());
 			this->d4 = (gcnew System::Windows::Forms::PictureBox());
 			this->b4 = (gcnew System::Windows::Forms::PictureBox());
@@ -373,7 +291,7 @@ private: System::Windows::Forms::PictureBox^  a4;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->c3))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->d3))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->b3))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->a))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->a3))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->c4))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->d4))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->b4))->BeginInit();
@@ -1002,15 +920,15 @@ private: System::Windows::Forms::PictureBox^  a4;
 			this->b3->TabStop = false;
 			this->b3->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
-			// a
+			// a3
 			// 
-			this->a->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"a.BackgroundImage")));
-			this->a->Location = System::Drawing::Point(30, 280);
-			this->a->Name = L"a";
-			this->a->Size = System::Drawing::Size(50, 50);
-			this->a->TabIndex = 36;
-			this->a->TabStop = false;
-			this->a->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
+			this->a3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"a3.BackgroundImage")));
+			this->a3->Location = System::Drawing::Point(30, 280);
+			this->a3->Name = L"a3";
+			this->a3->Size = System::Drawing::Size(50, 50);
+			this->a3->TabIndex = 36;
+			this->a3->TabStop = false;
+			this->a3->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// c4
 			// 
@@ -1199,7 +1117,7 @@ private: System::Windows::Forms::PictureBox^  a4;
 			// TestLabel
 			// 
 			this->TestLabel->AutoSize = true;
-			this->TestLabel->Location = System::Drawing::Point(489, 30);
+			this->TestLabel->Location = System::Drawing::Point(27, 464);
 			this->TestLabel->Name = L"TestLabel";
 			this->TestLabel->Size = System::Drawing::Size(41, 13);
 			this->TestLabel->TabIndex = 80;
@@ -1209,7 +1127,7 @@ private: System::Windows::Forms::PictureBox^  a4;
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(574, 445);
+			this->ClientSize = System::Drawing::Size(574, 491);
 			this->Controls->Add(this->TestLabel);
 			this->Controls->Add(this->label16);
 			this->Controls->Add(this->label15);
@@ -1254,7 +1172,7 @@ private: System::Windows::Forms::PictureBox^  a4;
 			this->Controls->Add(this->c3);
 			this->Controls->Add(this->d3);
 			this->Controls->Add(this->b3);
-			this->Controls->Add(this->a);
+			this->Controls->Add(this->a3);
 			this->Controls->Add(this->c4);
 			this->Controls->Add(this->d4);
 			this->Controls->Add(this->b4);
@@ -1353,7 +1271,7 @@ private: System::Windows::Forms::PictureBox^  a4;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->c3))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->d3))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->b3))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->a))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->a3))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->c4))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->d4))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->b4))->EndInit();
@@ -1365,58 +1283,136 @@ private: System::Windows::Forms::PictureBox^  a4;
 #pragma endregion
 	private: System::Void MainForm_Load(System::Object^  sender, System::EventArgs^  e) 
 	{
+		// ColorFishka1 = "Brown";
+		// ColorFishka2 = "Blue";
+		// ColorFishka0 = "Null";
+		
 		ColorName();
+//		this->Buff_Fish->Text = NULL;
 	}
-			 private: System::Void ColorName()
+
+	private: System::Void ColorName()
 			 {
-				 String^ ColorFishka1 = "Brown";
-				 String^ ColorFishka2 = "Blue";
+			//IMAGE_WHITE_CHIP		
+			//IMAGE_BLACK_CHIP
+		// Black command
+				 // A line
+				 this->a8->Text = IMAGE_BLACK_CHIP;
+				 this->a7->Text = IMAGE_BLACK_CHIP;
+				 this->a6->Text = IMAGE_BLACK_CHIP;
+				 this->a5->Text = IMAGE_BLACK_CHIP;
+				/* this->a4->Text = NULL;
+				 this->a3->Text = NULL;
+				 this->a2->Text = NULL;
+				 this->a1->Text = NULL;*/
+				 // B line
+				 this->b8->Text = IMAGE_BLACK_CHIP;
+				 this->b7->Text = IMAGE_BLACK_CHIP;
+				 this->b6->Text = IMAGE_BLACK_CHIP;
+				 this->b5->Text = IMAGE_BLACK_CHIP;
+				/* this->b4->Text = NULL;
+				 this->b3->Text = NULL;
+				 this->b2->Text = NULL;
+				 this->b1->Text = NULL;*/
+				 // C line
+				 this->c8->Text = IMAGE_BLACK_CHIP;
+				 this->c7->Text = IMAGE_BLACK_CHIP;
+				 this->c6->Text = IMAGE_BLACK_CHIP;
+				 this->c5->Text = IMAGE_BLACK_CHIP;
+				/* this->c4->Text = NULL;
+				 this->c3->Text = NULL;
+				 this->c2->Text = NULL;
+				 this->c1->Text = NULL;*/
+				 // D line
+				 this->d8->Text = IMAGE_BLACK_CHIP;
+				 this->d7->Text = IMAGE_BLACK_CHIP;
+				 this->d6->Text = IMAGE_BLACK_CHIP;
+				 this->d5->Text = IMAGE_BLACK_CHIP;
+				/* this->d4->Text = NULL;
+				 this->d3->Text = NULL;
+				 this->d2->Text = NULL;
+				 this->d1->Text = NULL;*/
+		// White command
+				 // E line
+				 this->e1->Text = IMAGE_WHITE_CHIP;
+				 this->e2->Text = IMAGE_WHITE_CHIP;
+				 this->e3->Text = IMAGE_WHITE_CHIP;
+				 this->e4->Text = IMAGE_WHITE_CHIP;
+				/* this->e5->Text = NULL;
+				 this->e6->Text = NULL;
+				 this->e7->Text = NULL;
+				 this->e8->Text = NULL;*/
+				 // F line
+				 this->f1->Text = IMAGE_WHITE_CHIP;
+				 this->f2->Text = IMAGE_WHITE_CHIP;
+				 this->f3->Text = IMAGE_WHITE_CHIP;
+				 this->f4->Text = IMAGE_WHITE_CHIP;
+				/* this->f5->Text = NULL;
+				 this->f6->Text = NULL;
+				 this->f7->Text = NULL;
+				 this->f8->Text = NULL;*/
+				 // G line
+				 this->g1->Text = IMAGE_WHITE_CHIP;
+				 this->g2->Text = IMAGE_WHITE_CHIP;
+				 this->g3->Text = IMAGE_WHITE_CHIP;
+				 this->g4->Text = IMAGE_WHITE_CHIP;
+				 /*this->g5->Text = NULL;
+				 this->g6->Text = NULL;
+				 this->g7->Text = NULL;
+				 this->g8->Text = NULL;*/
+				 // H line
+				 this->h1->Text = IMAGE_WHITE_CHIP;
+				 this->h2->Text = IMAGE_WHITE_CHIP;
+				 this->h3->Text = IMAGE_WHITE_CHIP;
+				 this->h4->Text = IMAGE_WHITE_CHIP;
+				 /*this->h5->Text = NULL;
+				 this->h6->Text = NULL;
+				 this->h7->Text = NULL;
+				 this->h8->Text = NULL;*/
 
-				 this->a8->Text = ColorFishka1;
-				 this->a7->Text = ColorFishka1;
-				 this->a6->Text = ColorFishka1;
-				 this->a5->Text = ColorFishka1;
-
-				 this->b8->Text = ColorFishka1;
-				 this->b7->Text = ColorFishka1;
-				 this->b6->Text = ColorFishka1;
-				 this->b5->Text = ColorFishka1;
-
-				 this->c8->Text = ColorFishka1;
-				 this->c7->Text = ColorFishka1;
-				 this->c6->Text = ColorFishka1;
-				 this->c5->Text = ColorFishka1;
-
-				 this->d8->Text = ColorFishka1;
-				 this->d7->Text = ColorFishka1;
-				 this->d6->Text = ColorFishka1;
-				 this->d5->Text = ColorFishka1;
-
-				 this->e1->Text = ColorFishka2;
-				 this->e2->Text = ColorFishka2;
-				 this->e3->Text = ColorFishka2;
-				 this->e4->Text = ColorFishka2;
-
-				 this->h1->Text = ColorFishka2;
-				 this->h2->Text = ColorFishka2;
-				 this->h3->Text = ColorFishka2;
-				 this->h4->Text = ColorFishka2;
-
-				 this->f1->Text = ColorFishka2;
-				 this->f2->Text = ColorFishka2;
-				 this->f3->Text = ColorFishka2;
-				 this->f4->Text = ColorFishka2;
-
-				 this->g1->Text = ColorFishka2;
-				 this->g2->Text = ColorFishka2;
-				 this->g3->Text = ColorFishka2;
-				 this->g4->Text = ColorFishka2;
+				 //ReloadAll
 			 }
 
+	
+
+	private: System::Void Reload(PictureBox^ ChoiceFish, String^ ImageName)
+	{
+		if (ImageName)
+			(ChoiceFish)->Image = System::Drawing::Image::FromFile(ImageName);
+			//(ChoiceFish)->Text = ImageName;
+		else (ChoiceFish)->Image = nullptr;
+
+		(ChoiceFish)->Text = ImageName;
+
+	}
+
+			 
 private: System::Void Square_Click(System::Object^  sender, System::EventArgs^  e) 
 {
-	Active = (PictureBox^)sender;
-	this->TestLabel->Text = Active->Text;
+	PictureBox^ PB;
+	PB = (PictureBox^)sender;
+	
+	if (PB->Text->Length)
+	{
+		Active = PB;
+		TestLabel->Text = ((PictureBox^)Active)->Text;
+	}
+	else
+	{
+		if (Active)
+		//if (((PictureBox^)Active)->Text)
+		{
+			TestLabel->Text = ((PictureBox^)Active)->Text;
+			Reload(PB, ((PictureBox^)Active)->Text);
+			((PictureBox^)Active)->Text = nullptr;
+			Reload((PictureBox^)Active, nullptr);
+			//Active->Image = nullptr;
+			Active = nullptr;
+		}
+	}
+		//this->TestLabel->Text = this->Active->Text;
+	
+	
 }
 };
 }
