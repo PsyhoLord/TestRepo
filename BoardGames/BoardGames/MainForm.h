@@ -287,7 +287,7 @@ namespace BoardGames {
 			this->pictureBox1->Size = System::Drawing::Size(50, 50);
 			this->pictureBox1->TabIndex = 0;
 			this->pictureBox1->TabStop = false;
-			this->pictureBox1->Click += gcnew System::EventHandler(this, &MainForm::pictureBox1_Click);
+			this->pictureBox1->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox2
 			// 
@@ -298,6 +298,7 @@ namespace BoardGames {
 			this->pictureBox2->Size = System::Drawing::Size(50, 50);
 			this->pictureBox2->TabIndex = 1;
 			this->pictureBox2->TabStop = false;
+			this->pictureBox2->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox3
 			// 
@@ -308,6 +309,7 @@ namespace BoardGames {
 			this->pictureBox3->Size = System::Drawing::Size(50, 50);
 			this->pictureBox3->TabIndex = 3;
 			this->pictureBox3->TabStop = false;
+			this->pictureBox3->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox4
 			// 
@@ -318,6 +320,7 @@ namespace BoardGames {
 			this->pictureBox4->Size = System::Drawing::Size(50, 50);
 			this->pictureBox4->TabIndex = 2;
 			this->pictureBox4->TabStop = false;
+			this->pictureBox4->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox5
 			// 
@@ -328,6 +331,7 @@ namespace BoardGames {
 			this->pictureBox5->Size = System::Drawing::Size(50, 50);
 			this->pictureBox5->TabIndex = 7;
 			this->pictureBox5->TabStop = false;
+			this->pictureBox5->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox6
 			// 
@@ -338,6 +342,7 @@ namespace BoardGames {
 			this->pictureBox6->Size = System::Drawing::Size(50, 50);
 			this->pictureBox6->TabIndex = 6;
 			this->pictureBox6->TabStop = false;
+			this->pictureBox6->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox7
 			// 
@@ -348,6 +353,7 @@ namespace BoardGames {
 			this->pictureBox7->Size = System::Drawing::Size(50, 50);
 			this->pictureBox7->TabIndex = 5;
 			this->pictureBox7->TabStop = false;
+			this->pictureBox7->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox8
 			// 
@@ -358,6 +364,7 @@ namespace BoardGames {
 			this->pictureBox8->Size = System::Drawing::Size(50, 50);
 			this->pictureBox8->TabIndex = 4;
 			this->pictureBox8->TabStop = false;
+			this->pictureBox8->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox9
 			// 
@@ -368,6 +375,7 @@ namespace BoardGames {
 			this->pictureBox9->Size = System::Drawing::Size(50, 50);
 			this->pictureBox9->TabIndex = 15;
 			this->pictureBox9->TabStop = false;
+			this->pictureBox9->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox10
 			// 
@@ -378,6 +386,7 @@ namespace BoardGames {
 			this->pictureBox10->Size = System::Drawing::Size(50, 50);
 			this->pictureBox10->TabIndex = 14;
 			this->pictureBox10->TabStop = false;
+			this->pictureBox10->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox11
 			// 
@@ -388,6 +397,7 @@ namespace BoardGames {
 			this->pictureBox11->Size = System::Drawing::Size(50, 50);
 			this->pictureBox11->TabIndex = 13;
 			this->pictureBox11->TabStop = false;
+			this->pictureBox11->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox12
 			// 
@@ -398,6 +408,7 @@ namespace BoardGames {
 			this->pictureBox12->Size = System::Drawing::Size(50, 50);
 			this->pictureBox12->TabIndex = 12;
 			this->pictureBox12->TabStop = false;
+			this->pictureBox12->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox13
 			// 
@@ -408,6 +419,7 @@ namespace BoardGames {
 			this->pictureBox13->Size = System::Drawing::Size(50, 50);
 			this->pictureBox13->TabIndex = 11;
 			this->pictureBox13->TabStop = false;
+			this->pictureBox13->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox14
 			// 
@@ -418,6 +430,7 @@ namespace BoardGames {
 			this->pictureBox14->Size = System::Drawing::Size(50, 50);
 			this->pictureBox14->TabIndex = 10;
 			this->pictureBox14->TabStop = false;
+			this->pictureBox14->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox15
 			// 
@@ -428,6 +441,7 @@ namespace BoardGames {
 			this->pictureBox15->Size = System::Drawing::Size(50, 50);
 			this->pictureBox15->TabIndex = 9;
 			this->pictureBox15->TabStop = false;
+			this->pictureBox15->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox16
 			// 
@@ -438,6 +452,7 @@ namespace BoardGames {
 			this->pictureBox16->Size = System::Drawing::Size(50, 50);
 			this->pictureBox16->TabIndex = 8;
 			this->pictureBox16->TabStop = false;
+			this->pictureBox16->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox17
 			// 
@@ -447,6 +462,7 @@ namespace BoardGames {
 			this->pictureBox17->Size = System::Drawing::Size(50, 50);
 			this->pictureBox17->TabIndex = 31;
 			this->pictureBox17->TabStop = false;
+			this->pictureBox17->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox18
 			// 
@@ -456,6 +472,7 @@ namespace BoardGames {
 			this->pictureBox18->Size = System::Drawing::Size(50, 50);
 			this->pictureBox18->TabIndex = 30;
 			this->pictureBox18->TabStop = false;
+			this->pictureBox18->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox19
 			// 
@@ -465,6 +482,7 @@ namespace BoardGames {
 			this->pictureBox19->Size = System::Drawing::Size(50, 50);
 			this->pictureBox19->TabIndex = 29;
 			this->pictureBox19->TabStop = false;
+			this->pictureBox19->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox20
 			// 
@@ -474,6 +492,7 @@ namespace BoardGames {
 			this->pictureBox20->Size = System::Drawing::Size(50, 50);
 			this->pictureBox20->TabIndex = 28;
 			this->pictureBox20->TabStop = false;
+			this->pictureBox20->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox21
 			// 
@@ -483,6 +502,7 @@ namespace BoardGames {
 			this->pictureBox21->Size = System::Drawing::Size(50, 50);
 			this->pictureBox21->TabIndex = 27;
 			this->pictureBox21->TabStop = false;
+			this->pictureBox21->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox22
 			// 
@@ -492,6 +512,7 @@ namespace BoardGames {
 			this->pictureBox22->Size = System::Drawing::Size(50, 50);
 			this->pictureBox22->TabIndex = 26;
 			this->pictureBox22->TabStop = false;
+			this->pictureBox22->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox23
 			// 
@@ -501,6 +522,7 @@ namespace BoardGames {
 			this->pictureBox23->Size = System::Drawing::Size(50, 50);
 			this->pictureBox23->TabIndex = 25;
 			this->pictureBox23->TabStop = false;
+			this->pictureBox23->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox24
 			// 
@@ -510,6 +532,7 @@ namespace BoardGames {
 			this->pictureBox24->Size = System::Drawing::Size(50, 50);
 			this->pictureBox24->TabIndex = 24;
 			this->pictureBox24->TabStop = false;
+			this->pictureBox24->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox25
 			// 
@@ -519,6 +542,7 @@ namespace BoardGames {
 			this->pictureBox25->Size = System::Drawing::Size(50, 50);
 			this->pictureBox25->TabIndex = 23;
 			this->pictureBox25->TabStop = false;
+			this->pictureBox25->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox26
 			// 
@@ -528,6 +552,7 @@ namespace BoardGames {
 			this->pictureBox26->Size = System::Drawing::Size(50, 50);
 			this->pictureBox26->TabIndex = 22;
 			this->pictureBox26->TabStop = false;
+			this->pictureBox26->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox27
 			// 
@@ -537,6 +562,7 @@ namespace BoardGames {
 			this->pictureBox27->Size = System::Drawing::Size(50, 50);
 			this->pictureBox27->TabIndex = 21;
 			this->pictureBox27->TabStop = false;
+			this->pictureBox27->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox28
 			// 
@@ -546,6 +572,7 @@ namespace BoardGames {
 			this->pictureBox28->Size = System::Drawing::Size(50, 50);
 			this->pictureBox28->TabIndex = 20;
 			this->pictureBox28->TabStop = false;
+			this->pictureBox28->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox29
 			// 
@@ -555,6 +582,7 @@ namespace BoardGames {
 			this->pictureBox29->Size = System::Drawing::Size(50, 50);
 			this->pictureBox29->TabIndex = 19;
 			this->pictureBox29->TabStop = false;
+			this->pictureBox29->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox30
 			// 
@@ -564,6 +592,7 @@ namespace BoardGames {
 			this->pictureBox30->Size = System::Drawing::Size(50, 50);
 			this->pictureBox30->TabIndex = 18;
 			this->pictureBox30->TabStop = false;
+			this->pictureBox30->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox31
 			// 
@@ -573,6 +602,7 @@ namespace BoardGames {
 			this->pictureBox31->Size = System::Drawing::Size(50, 50);
 			this->pictureBox31->TabIndex = 17;
 			this->pictureBox31->TabStop = false;
+			this->pictureBox31->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox32
 			// 
@@ -582,6 +612,7 @@ namespace BoardGames {
 			this->pictureBox32->Size = System::Drawing::Size(50, 50);
 			this->pictureBox32->TabIndex = 16;
 			this->pictureBox32->TabStop = false;
+			this->pictureBox32->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox33
 			// 
@@ -592,6 +623,7 @@ namespace BoardGames {
 			this->pictureBox33->Size = System::Drawing::Size(50, 50);
 			this->pictureBox33->TabIndex = 63;
 			this->pictureBox33->TabStop = false;
+			this->pictureBox33->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox34
 			// 
@@ -602,6 +634,7 @@ namespace BoardGames {
 			this->pictureBox34->Size = System::Drawing::Size(50, 50);
 			this->pictureBox34->TabIndex = 62;
 			this->pictureBox34->TabStop = false;
+			this->pictureBox34->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox35
 			// 
@@ -612,6 +645,7 @@ namespace BoardGames {
 			this->pictureBox35->Size = System::Drawing::Size(50, 50);
 			this->pictureBox35->TabIndex = 61;
 			this->pictureBox35->TabStop = false;
+			this->pictureBox35->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox36
 			// 
@@ -622,6 +656,7 @@ namespace BoardGames {
 			this->pictureBox36->Size = System::Drawing::Size(50, 50);
 			this->pictureBox36->TabIndex = 60;
 			this->pictureBox36->TabStop = false;
+			this->pictureBox36->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox37
 			// 
@@ -632,6 +667,7 @@ namespace BoardGames {
 			this->pictureBox37->Size = System::Drawing::Size(50, 50);
 			this->pictureBox37->TabIndex = 59;
 			this->pictureBox37->TabStop = false;
+			this->pictureBox37->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox38
 			// 
@@ -642,6 +678,7 @@ namespace BoardGames {
 			this->pictureBox38->Size = System::Drawing::Size(50, 50);
 			this->pictureBox38->TabIndex = 58;
 			this->pictureBox38->TabStop = false;
+			this->pictureBox38->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox39
 			// 
@@ -652,6 +689,7 @@ namespace BoardGames {
 			this->pictureBox39->Size = System::Drawing::Size(50, 50);
 			this->pictureBox39->TabIndex = 57;
 			this->pictureBox39->TabStop = false;
+			this->pictureBox39->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox40
 			// 
@@ -662,6 +700,7 @@ namespace BoardGames {
 			this->pictureBox40->Size = System::Drawing::Size(50, 50);
 			this->pictureBox40->TabIndex = 56;
 			this->pictureBox40->TabStop = false;
+			this->pictureBox40->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox41
 			// 
@@ -672,6 +711,7 @@ namespace BoardGames {
 			this->pictureBox41->Size = System::Drawing::Size(50, 50);
 			this->pictureBox41->TabIndex = 55;
 			this->pictureBox41->TabStop = false;
+			this->pictureBox41->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox42
 			// 
@@ -682,6 +722,7 @@ namespace BoardGames {
 			this->pictureBox42->Size = System::Drawing::Size(50, 50);
 			this->pictureBox42->TabIndex = 54;
 			this->pictureBox42->TabStop = false;
+			this->pictureBox42->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox43
 			// 
@@ -692,6 +733,7 @@ namespace BoardGames {
 			this->pictureBox43->Size = System::Drawing::Size(50, 50);
 			this->pictureBox43->TabIndex = 53;
 			this->pictureBox43->TabStop = false;
+			this->pictureBox43->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox44
 			// 
@@ -702,6 +744,7 @@ namespace BoardGames {
 			this->pictureBox44->Size = System::Drawing::Size(50, 50);
 			this->pictureBox44->TabIndex = 52;
 			this->pictureBox44->TabStop = false;
+			this->pictureBox44->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox45
 			// 
@@ -712,6 +755,7 @@ namespace BoardGames {
 			this->pictureBox45->Size = System::Drawing::Size(50, 50);
 			this->pictureBox45->TabIndex = 51;
 			this->pictureBox45->TabStop = false;
+			this->pictureBox45->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox46
 			// 
@@ -722,6 +766,7 @@ namespace BoardGames {
 			this->pictureBox46->Size = System::Drawing::Size(50, 50);
 			this->pictureBox46->TabIndex = 50;
 			this->pictureBox46->TabStop = false;
+			this->pictureBox46->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox47
 			// 
@@ -732,6 +777,7 @@ namespace BoardGames {
 			this->pictureBox47->Size = System::Drawing::Size(50, 50);
 			this->pictureBox47->TabIndex = 49;
 			this->pictureBox47->TabStop = false;
+			this->pictureBox47->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox48
 			// 
@@ -742,6 +788,7 @@ namespace BoardGames {
 			this->pictureBox48->Size = System::Drawing::Size(50, 50);
 			this->pictureBox48->TabIndex = 48;
 			this->pictureBox48->TabStop = false;
+			this->pictureBox48->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox49
 			// 
@@ -751,6 +798,7 @@ namespace BoardGames {
 			this->pictureBox49->Size = System::Drawing::Size(50, 50);
 			this->pictureBox49->TabIndex = 47;
 			this->pictureBox49->TabStop = false;
+			this->pictureBox49->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox50
 			// 
@@ -760,6 +808,7 @@ namespace BoardGames {
 			this->pictureBox50->Size = System::Drawing::Size(50, 50);
 			this->pictureBox50->TabIndex = 46;
 			this->pictureBox50->TabStop = false;
+			this->pictureBox50->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox51
 			// 
@@ -769,6 +818,7 @@ namespace BoardGames {
 			this->pictureBox51->Size = System::Drawing::Size(50, 50);
 			this->pictureBox51->TabIndex = 45;
 			this->pictureBox51->TabStop = false;
+			this->pictureBox51->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox52
 			// 
@@ -778,6 +828,7 @@ namespace BoardGames {
 			this->pictureBox52->Size = System::Drawing::Size(50, 50);
 			this->pictureBox52->TabIndex = 44;
 			this->pictureBox52->TabStop = false;
+			this->pictureBox52->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox53
 			// 
@@ -787,6 +838,7 @@ namespace BoardGames {
 			this->pictureBox53->Size = System::Drawing::Size(50, 50);
 			this->pictureBox53->TabIndex = 43;
 			this->pictureBox53->TabStop = false;
+			this->pictureBox53->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox54
 			// 
@@ -796,6 +848,7 @@ namespace BoardGames {
 			this->pictureBox54->Size = System::Drawing::Size(50, 50);
 			this->pictureBox54->TabIndex = 42;
 			this->pictureBox54->TabStop = false;
+			this->pictureBox54->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox55
 			// 
@@ -805,6 +858,7 @@ namespace BoardGames {
 			this->pictureBox55->Size = System::Drawing::Size(50, 50);
 			this->pictureBox55->TabIndex = 41;
 			this->pictureBox55->TabStop = false;
+			this->pictureBox55->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox56
 			// 
@@ -814,6 +868,7 @@ namespace BoardGames {
 			this->pictureBox56->Size = System::Drawing::Size(50, 50);
 			this->pictureBox56->TabIndex = 40;
 			this->pictureBox56->TabStop = false;
+			this->pictureBox56->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox57
 			// 
@@ -823,6 +878,7 @@ namespace BoardGames {
 			this->pictureBox57->Size = System::Drawing::Size(50, 50);
 			this->pictureBox57->TabIndex = 39;
 			this->pictureBox57->TabStop = false;
+			this->pictureBox57->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox58
 			// 
@@ -832,6 +888,7 @@ namespace BoardGames {
 			this->pictureBox58->Size = System::Drawing::Size(50, 50);
 			this->pictureBox58->TabIndex = 38;
 			this->pictureBox58->TabStop = false;
+			this->pictureBox58->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox59
 			// 
@@ -841,6 +898,7 @@ namespace BoardGames {
 			this->pictureBox59->Size = System::Drawing::Size(50, 50);
 			this->pictureBox59->TabIndex = 37;
 			this->pictureBox59->TabStop = false;
+			this->pictureBox59->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox60
 			// 
@@ -850,6 +908,7 @@ namespace BoardGames {
 			this->pictureBox60->Size = System::Drawing::Size(50, 50);
 			this->pictureBox60->TabIndex = 36;
 			this->pictureBox60->TabStop = false;
+			this->pictureBox60->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox61
 			// 
@@ -859,6 +918,7 @@ namespace BoardGames {
 			this->pictureBox61->Size = System::Drawing::Size(50, 50);
 			this->pictureBox61->TabIndex = 35;
 			this->pictureBox61->TabStop = false;
+			this->pictureBox61->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox62
 			// 
@@ -868,6 +928,7 @@ namespace BoardGames {
 			this->pictureBox62->Size = System::Drawing::Size(50, 50);
 			this->pictureBox62->TabIndex = 34;
 			this->pictureBox62->TabStop = false;
+			this->pictureBox62->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox63
 			// 
@@ -877,6 +938,7 @@ namespace BoardGames {
 			this->pictureBox63->Size = System::Drawing::Size(50, 50);
 			this->pictureBox63->TabIndex = 33;
 			this->pictureBox63->TabStop = false;
+			this->pictureBox63->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// pictureBox64
 			// 
@@ -886,6 +948,7 @@ namespace BoardGames {
 			this->pictureBox64->Size = System::Drawing::Size(50, 50);
 			this->pictureBox64->TabIndex = 32;
 			this->pictureBox64->TabStop = false;
+			this->pictureBox64->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
 			// 
 			// label1
 			// 
@@ -1188,9 +1251,12 @@ namespace BoardGames {
 
 		}
 #pragma endregion
-	private: System::Void MainForm_Load(System::Object^  sender, System::EventArgs^  e) {
+	private: System::Void MainForm_Load(System::Object^  sender, System::EventArgs^  e) 
+	{
 	}
-private: System::Void pictureBox1_Click(System::Object^  sender, System::EventArgs^  e) {
+private: System::Void Square_Click(System::Object^  sender, System::EventArgs^  e) 
+{
+
 }
 };
 }
