@@ -1319,9 +1319,7 @@ namespace BoardGames {
 
 	private: System::Void ColorName()
 			 {
-			//IMAGE_WHITE_CHIP		
-			//IMAGE_BLACK_CHIP
-		// Black command
+			// Black command
 				 // A line
 				 this->a8->Text = IMAGE_BLACK_CHIP;
 				 this->a7->Text = IMAGE_BLACK_CHIP;
@@ -1358,7 +1356,7 @@ namespace BoardGames {
 				 this->d3->Text = NULL;
 				 this->d2->Text = NULL;
 				 this->d1->Text = NULL;*/
-		// White command
+			// White command
 				 // E line
 				 this->e1->Text = IMAGE_WHITE_CHIP;
 				 this->e2->Text = IMAGE_WHITE_CHIP;
@@ -1398,9 +1396,15 @@ namespace BoardGames {
 
 				 
 			 }
-
 	
 
+	private: bool RefreshAll()
+	{
+
+		return true;
+	}
+
+	// Reloading given picturebox of square on table with given image
 	private: System::Void ReloadWithImage(PictureBox^ SelectedChip, String^ ImageName)
 	{
 		SelectedChip->Text = ImageName;
@@ -1408,13 +1412,13 @@ namespace BoardGames {
 		else SelectedChip->Image = nullptr;
 	}
 
-	
+	// Reloading given picturebox of square on table with image setted in picturebox->text
 	private: System::Void RefreshImage (PictureBox^ SelectedChip)
 	{
 		SelectedChip->Image = System::Drawing::Image::FromFile(SelectedChip->Text);
 	}
 
-			 
+	// 	Handlerfor clicking on board
 	private: System::Void Square_Click(System::Object^  sender, System::EventArgs^  e) 
 	{
 		PictureBox^ PB;
@@ -1442,17 +1446,14 @@ namespace BoardGames {
 	
 	
 	}
+
 	private: System::Void NewGameButton_Click(System::Object^  sender, System::EventArgs^  e)
 	{
 
 	}
 
 			 
-	/*private: bool RefreshAll()
-	{
-
-		return true;
-	}*/
+	
 	private: System::Void ExitButton_Click(System::Object^  sender, System::EventArgs^  e)
 	{
 	}
