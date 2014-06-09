@@ -1448,7 +1448,7 @@ namespace BoardGames {
 	}
 
 			 
-	/*private: bool ReloadAll()
+	/*private: bool RefreshAll()
 	{
 
 		return true;
