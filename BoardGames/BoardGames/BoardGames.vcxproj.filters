@@ -48,5 +48,26 @@
     <Image Include="VC_Resources\Field_BackGrounds\Field_1_w.png">
       <Filter>Файлы ресурсов\Field_BackGrounds</Filter>
     </Image>
+    <Image Include="VC_Resources\Chips\Chip_Blue_S.png">
+      <Filter>Файлы ресурсов\Chips</Filter>
+    </Image>
+    <Image Include="VC_Resources\Chips\Chip_Orig.png">
+      <Filter>Файлы ресурсов\Chips</Filter>
+    </Image>
+    <Image Include="VC_Resources\Chips\Chip_Red.png">
+      <Filter>Файлы ресурсов\Chips</Filter>
+    </Image>
+    <Image Include="VC_Resources\Chips\Chip_Red_S.png">
+      <Filter>Файлы ресурсов\Chips</Filter>
+    </Image>
+    <Image Include="VC_Resources\Chips\Chip_1_s.png">
+      <Filter>Файлы ресурсов\Chips</Filter>
+    </Image>
+    <Image Include="VC_Resources\Chips\Chip_2_s.png">
+      <Filter>Файлы ресурсов\Chips</Filter>
+    </Image>
+    <Image Include="VC_Resources\Chips\Chip_Blue.png">
+      <Filter>Файлы ресурсов\Chips</Filter>
+    </Image>
   </ItemGroup>
 </Project>

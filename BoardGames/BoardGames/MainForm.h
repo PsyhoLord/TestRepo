@@ -1,7 +1,12 @@
 #pragma once
 
-#define IMAGE_WHITE_CHIP "VC_Resources\\Chips\\Chip_1.png"  
-#define IMAGE_BLACK_CHIP "VC_Resources\\Chips\\Chip_2.png"
+#include <string>
+
+#define IMAGE_WHITE_CHIP "VC_Resources\\Chips\\Chip_Red.png"  
+#define IMAGE_WHITE_CHIP_SELECTED "VC_Resources\\Chips\\Chip_Red_S.png"  
+#define IMAGE_BLACK_CHIP "VC_Resources\\Chips\\Chip_Blue.png"
+#define IMAGE_BLACK_CHIP_SELECTED "VC_Resources\\Chips\\Chip_Blue_S.png"
+
 #define BOARD_BACKGROUND_WHITE "VC_Resources\\Field_BackGrounds\\Field_1_w.png"
 #define BOARD_BACKGROUND_BLACK "VC_Resources\\Field_BackGrounds\\Field_1_b.png"
 
@@ -317,6 +322,7 @@ namespace BoardGames {
 			this->a8->Location = System::Drawing::Point(30, 30);
 			this->a8->Name = L"a8";
 			this->a8->Size = System::Drawing::Size(50, 50);
+			this->a8->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 			this->a8->TabIndex = 0;
 			this->a8->TabStop = false;
 			this->a8->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -1392,6 +1398,20 @@ namespace BoardGames {
 				 PictureBoxArray_h[6] = h7;
 				 PictureBoxArray_h[7] = h8;
 
+				 // Move to initialisation
+				 for (int i = 0; i < 8; i++)
+				 {
+					 PictureBoxArray_a[i]->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
+					 PictureBoxArray_b[i]->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
+					 PictureBoxArray_c[i]->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
+					 PictureBoxArray_d[i]->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
+					 PictureBoxArray_e[i]->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
+					 PictureBoxArray_f[i]->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
+					 PictureBoxArray_g[i]->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
+					 PictureBoxArray_h[i]->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
+				 }
+				 /*======================================*/
+				 
 				 // Starting new game
 				 NewGameButton_Click(nullptr,nullptr);
 		}
@@ -1428,7 +1448,7 @@ namespace BoardGames {
 		return true;
 	}
 
-	// 	Handlerfor clicking on board
+	// EVENT HANDLER: Click on a Board
 	private: System::Void Square_Click(System::Object^  sender, System::EventArgs^  e) 
 	{
 		PictureBox^ PB;
@@ -1436,6 +1456,10 @@ namespace BoardGames {
 	
 		if (PB->Text->Length)
 		{
+			/*if (Active);
+			{
+				if (((PictureBox^)Active)->Text->CompareTo(IMAGE_BLACK_CHIP_SELECTED));
+			}*/
 			Active = PB;
 			TestLabel->Text = ((PictureBox^)Active)->Text;
 		}
@@ -1457,6 +1481,7 @@ namespace BoardGames {
 	
 	}
 
+	// EVENT HANDLER: New Game
 	private: System::Void NewGameButton_Click(System::Object^  sender, System::EventArgs^  e)
 	{
 		//PictureBoxArray_a[7]->Image = nullptr;
@@ -1487,12 +1512,11 @@ namespace BoardGames {
 			PictureBoxArray_g[i]->Text = IMAGE_WHITE_CHIP;
 			PictureBoxArray_h[i]->Text = IMAGE_WHITE_CHIP;
 		}
-
+		
 		RefreshAll();
 	}
-
 			 
-	
+	// EVENT HANDLER: Exit Game
 	private: System::Void ExitButton_Click(System::Object^  sender, System::EventArgs^  e)
 	{
 		delete (this);
