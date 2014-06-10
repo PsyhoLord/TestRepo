@@ -49,8 +49,17 @@ namespace BoardGames {
 		
 		System::Object^ Active;
 		
-	private: 
-				// *** TABLE *** //
+	private: array< PictureBox^ >^ PictureBoxArray_a = gcnew array< PictureBox^ >(8);
+	private: array< PictureBox^ >^ PictureBoxArray_b = gcnew array< PictureBox^ >(8);
+	private: array< PictureBox^ >^ PictureBoxArray_c = gcnew array< PictureBox^ >(8);
+	private: array< PictureBox^ >^ PictureBoxArray_d = gcnew array< PictureBox^ >(8);
+	private: array< PictureBox^ >^ PictureBoxArray_e = gcnew array< PictureBox^ >(8);
+	private: array< PictureBox^ >^ PictureBoxArray_f = gcnew array< PictureBox^ >(8);
+	private: array< PictureBox^ >^ PictureBoxArray_g = gcnew array< PictureBox^ >(8);
+	private: array< PictureBox^ >^ PictureBoxArray_h = gcnew array< PictureBox^ >(8);
+	//private: array< PictureBox^ >^ PictureBoxBoardArray = gcnew array< PictureBox^ >(8);
+
+			 // *** TABLE *** //
 	private: System::Windows::Forms::PictureBox^ a1;
 	private: System::Windows::Forms::PictureBox^ a2;
 	private: System::Windows::Forms::PictureBox^ a3;
@@ -1309,7 +1318,81 @@ namespace BoardGames {
 #pragma endregion
 	private: System::Void MainForm_Load(System::Object^  sender, System::EventArgs^  e) 
 	{
-		SetImageToPictureText();
+				 PictureBoxArray_a[0] = a1;
+				 PictureBoxArray_a[1] = a2;
+				 PictureBoxArray_a[2] = a3;
+				 PictureBoxArray_a[3] = a4;
+				 PictureBoxArray_a[4] = a5;
+				 PictureBoxArray_a[5] = a6;
+				 PictureBoxArray_a[6] = a7;
+				 PictureBoxArray_a[7] = a8;
+
+				 PictureBoxArray_b[0] = b1;
+				 PictureBoxArray_b[1] = b2;
+				 PictureBoxArray_b[2] = b3;
+				 PictureBoxArray_b[3] = b4;
+				 PictureBoxArray_b[4] = b5;
+				 PictureBoxArray_b[5] = b6;
+				 PictureBoxArray_b[6] = b7;
+				 PictureBoxArray_b[7] = b8;
+
+				 PictureBoxArray_c[0] = c1;
+				 PictureBoxArray_c[1] = c2;
+				 PictureBoxArray_c[2] = c3;
+				 PictureBoxArray_c[3] = c4;
+				 PictureBoxArray_c[4] = c5;
+				 PictureBoxArray_c[5] = c6;
+				 PictureBoxArray_c[6] = c7;
+				 PictureBoxArray_c[7] = c8;
+
+				 PictureBoxArray_d[0] = d1;
+				 PictureBoxArray_d[1] = d2;
+				 PictureBoxArray_d[2] = d3;
+				 PictureBoxArray_d[3] = d4;
+				 PictureBoxArray_d[4] = d5;
+				 PictureBoxArray_d[5] = d6;
+				 PictureBoxArray_d[6] = d7;
+				 PictureBoxArray_d[7] = d8;
+
+				 PictureBoxArray_e[0] = e1;
+				 PictureBoxArray_e[1] = e2;
+				 PictureBoxArray_e[2] = e3;
+				 PictureBoxArray_e[3] = e4;
+				 PictureBoxArray_e[4] = e5;
+				 PictureBoxArray_e[5] = e6;
+				 PictureBoxArray_e[6] = e7;
+				 PictureBoxArray_e[7] = e8;
+
+				 PictureBoxArray_f[0] = f1;
+				 PictureBoxArray_f[1] = f2;
+				 PictureBoxArray_f[2] = f3;
+				 PictureBoxArray_f[3] = f4;
+				 PictureBoxArray_f[4] = f5;
+				 PictureBoxArray_f[5] = f6;
+				 PictureBoxArray_f[6] = f7;
+				 PictureBoxArray_f[7] = f8;
+
+				 PictureBoxArray_g[0] = g1;
+				 PictureBoxArray_g[1] = g2;
+				 PictureBoxArray_g[2] = g3;
+				 PictureBoxArray_g[3] = g4;
+				 PictureBoxArray_g[4] = g5;
+				 PictureBoxArray_g[5] = g6;
+				 PictureBoxArray_g[6] = g7;
+				 PictureBoxArray_g[7] = g8;
+
+				 PictureBoxArray_h[0] = h1;
+				 PictureBoxArray_h[1] = h2;
+				 PictureBoxArray_h[2] = h3;
+				 PictureBoxArray_h[3] = h4;
+				 PictureBoxArray_h[4] = h5;
+				 PictureBoxArray_h[5] = h6;
+				 PictureBoxArray_h[6] = h7;
+				 PictureBoxArray_h[7] = h8;
+
+				 //PictureBoxArray_a[7]->Image = nullptr;
+
+				 SetImageToPictureText();
 	}
 
 	private: System::Void SetImageToPictureText()
