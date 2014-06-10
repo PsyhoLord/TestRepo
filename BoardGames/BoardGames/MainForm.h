@@ -9,6 +9,8 @@
 #define BOARD_BACKGROUND_BLACK	"VC_Resources\\Field_BackGrounds\\Squares\\Field_1_b.png"
 #define BOARD_BACKGROUND_FULL	"VC_Resources\\Field_BackGrounds\\Full_Boards\\Board_4.png"
 
+#define BUTTON_IMAGE "VC_Resources\\Buttons\\Button_3.png"  
+
 #define BOARD_LEFT_UPPER_X 15
 #define BOARD_LEFT_UPPER_Y 15
 
@@ -146,6 +148,9 @@ namespace BoardGames {
 
 
 private: System::Windows::Forms::PictureBox^  FullBoard;
+private: System::Windows::Forms::Button^  SaveGameButton;
+private: System::Windows::Forms::Button^  LoadGameButton;
+private: System::Windows::Forms::Button^  OptionsButton;
 
 		 // =============================================================================================== //
 
@@ -232,6 +237,9 @@ private: System::Windows::Forms::PictureBox^  FullBoard;
 			this->NewGameButton = (gcnew System::Windows::Forms::Button());
 			this->ExitButton = (gcnew System::Windows::Forms::Button());
 			this->FullBoard = (gcnew System::Windows::Forms::PictureBox());
+			this->SaveGameButton = (gcnew System::Windows::Forms::Button());
+			this->LoadGameButton = (gcnew System::Windows::Forms::Button());
+			this->OptionsButton = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->a8))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->b8))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->c8))->BeginInit();
@@ -983,21 +991,30 @@ private: System::Windows::Forms::PictureBox^  FullBoard;
 			// 
 			// NewGameButton
 			// 
-			this->NewGameButton->Location = System::Drawing::Point(713, 33);
+			this->NewGameButton->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"NewGameButton.BackgroundImage")));
+			this->NewGameButton->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
+			this->NewGameButton->FlatAppearance->BorderSize = 0;
+			this->NewGameButton->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->NewGameButton->Font = (gcnew System::Drawing::Font(L"Colonna MT", 15.75F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			this->NewGameButton->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+			this->NewGameButton->Location = System::Drawing::Point(720, 39);
 			this->NewGameButton->Name = L"NewGameButton";
-			this->NewGameButton->Size = System::Drawing::Size(75, 23);
+			this->NewGameButton->Size = System::Drawing::Size(140, 66);
 			this->NewGameButton->TabIndex = 81;
 			this->NewGameButton->Text = L"New Game";
+			this->NewGameButton->TextImageRelation = System::Windows::Forms::TextImageRelation::TextAboveImage;
 			this->NewGameButton->UseVisualStyleBackColor = true;
 			this->NewGameButton->Click += gcnew System::EventHandler(this, &MainForm::NewGameButton_Click);
 			// 
 			// ExitButton
 			// 
-			this->ExitButton->Location = System::Drawing::Point(698, 645);
+			this->ExitButton->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"ExitButton.BackgroundImage")));
+			this->ExitButton->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
+			this->ExitButton->Location = System::Drawing::Point(734, 588);
 			this->ExitButton->Name = L"ExitButton";
-			this->ExitButton->Size = System::Drawing::Size(75, 23);
+			this->ExitButton->Size = System::Drawing::Size(126, 59);
 			this->ExitButton->TabIndex = 82;
-			this->ExitButton->Text = L"Exit";
 			this->ExitButton->UseVisualStyleBackColor = true;
 			this->ExitButton->Click += gcnew System::EventHandler(this, &MainForm::ExitButton_Click);
 			// 
@@ -1009,11 +1026,69 @@ private: System::Windows::Forms::PictureBox^  FullBoard;
 			this->FullBoard->TabIndex = 83;
 			this->FullBoard->TabStop = false;
 			// 
+			// SaveGameButton
+			// 
+			this->SaveGameButton->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"SaveGameButton.BackgroundImage")));
+			this->SaveGameButton->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
+			this->SaveGameButton->Enabled = false;
+			this->SaveGameButton->FlatAppearance->BorderSize = 0;
+			this->SaveGameButton->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->SaveGameButton->Font = (gcnew System::Drawing::Font(L"Colonna MT", 15.75F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			this->SaveGameButton->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+			this->SaveGameButton->Location = System::Drawing::Point(720, 127);
+			this->SaveGameButton->Name = L"SaveGameButton";
+			this->SaveGameButton->Size = System::Drawing::Size(140, 66);
+			this->SaveGameButton->TabIndex = 84;
+			this->SaveGameButton->Text = L"Save Game";
+			this->SaveGameButton->TextImageRelation = System::Windows::Forms::TextImageRelation::TextAboveImage;
+			this->SaveGameButton->UseVisualStyleBackColor = true;
+			// 
+			// LoadGameButton
+			// 
+			this->LoadGameButton->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"LoadGameButton.BackgroundImage")));
+			this->LoadGameButton->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
+			this->LoadGameButton->Enabled = false;
+			this->LoadGameButton->FlatAppearance->BorderSize = 0;
+			this->LoadGameButton->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->LoadGameButton->Font = (gcnew System::Drawing::Font(L"Colonna MT", 15.75F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			this->LoadGameButton->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+			this->LoadGameButton->Location = System::Drawing::Point(720, 218);
+			this->LoadGameButton->Name = L"LoadGameButton";
+			this->LoadGameButton->Size = System::Drawing::Size(140, 66);
+			this->LoadGameButton->TabIndex = 85;
+			this->LoadGameButton->Text = L"Load Game";
+			this->LoadGameButton->TextImageRelation = System::Windows::Forms::TextImageRelation::TextAboveImage;
+			this->LoadGameButton->UseVisualStyleBackColor = true;
+			// 
+			// OptionsButton
+			// 
+			this->OptionsButton->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"OptionsButton.BackgroundImage")));
+			this->OptionsButton->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
+			this->OptionsButton->Enabled = false;
+			this->OptionsButton->FlatAppearance->BorderSize = 0;
+			this->OptionsButton->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->OptionsButton->Font = (gcnew System::Drawing::Font(L"Colonna MT", 15.75F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			this->OptionsButton->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+			this->OptionsButton->Location = System::Drawing::Point(720, 301);
+			this->OptionsButton->Name = L"OptionsButton";
+			this->OptionsButton->Size = System::Drawing::Size(140, 66);
+			this->OptionsButton->TabIndex = 86;
+			this->OptionsButton->Text = L"Options";
+			this->OptionsButton->TextImageRelation = System::Windows::Forms::TextImageRelation::TextAboveImage;
+			this->OptionsButton->UseVisualStyleBackColor = true;
+			// 
 			// MainForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(833, 719);
+			this->AutoSize = true;
+			this->ClientSize = System::Drawing::Size(886, 719);
+			this->Controls->Add(this->OptionsButton);
+			this->Controls->Add(this->LoadGameButton);
+			this->Controls->Add(this->SaveGameButton);
 			this->Controls->Add(this->ExitButton);
 			this->Controls->Add(this->NewGameButton);
 			this->Controls->Add(this->TestLabel);
@@ -1082,6 +1157,7 @@ private: System::Windows::Forms::PictureBox^  FullBoard;
 			this->Controls->Add(this->b8);
 			this->Controls->Add(this->a8);
 			this->Controls->Add(this->FullBoard);
+			this->Cursor = System::Windows::Forms::Cursors::PanNW;
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"MainForm";
 			this->Text = L"MainForm";

@@ -25,6 +25,9 @@
     <Filter Include="Файлы ресурсов\Field_BackGrounds\Full_Boards">
       <UniqueIdentifier>{ba9aa5a3-f40a-491d-ac74-80eeeb8b94a8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Файлы ресурсов\Buttons">
+      <UniqueIdentifier>{382829b6-8c02-4648-952c-4311b2cbe4c0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MainForm.h">
@@ -101,6 +104,39 @@
     </Image>
     <Image Include="VC_Resources\Field_BackGrounds\Full_Boards\Board_4.png">
       <Filter>Файлы ресурсов\Field_BackGrounds\Full_Boards</Filter>
+    </Image>
+    <Image Include="VC_Resources\Field_BackGrounds\Full_Boards\Board_5.png">
+      <Filter>Файлы ресурсов\Field_BackGrounds\Full_Boards</Filter>
+    </Image>
+    <Image Include="VC_Resources\Field_BackGrounds\Squares\Null.png">
+      <Filter>Файлы ресурсов\Field_BackGrounds\Squares</Filter>
+    </Image>
+    <Image Include="VC_Resources\Chips\Chip.png">
+      <Filter>Файлы ресурсов\Chips</Filter>
+    </Image>
+    <Image Include="VC_Resources\Buttons\Button_1.png">
+      <Filter>Файлы ресурсов\Buttons</Filter>
+    </Image>
+    <Image Include="VC_Resources\Buttons\Button_2.png">
+      <Filter>Файлы ресурсов\Buttons</Filter>
+    </Image>
+    <Image Include="VC_Resources\Buttons\Button_3.png">
+      <Filter>Файлы ресурсов\Buttons</Filter>
+    </Image>
+    <Image Include="VC_Resources\Buttons\Button_4.png">
+      <Filter>Файлы ресурсов\Buttons</Filter>
+    </Image>
+    <Image Include="VC_Resources\Buttons\Button_5.png">
+      <Filter>Файлы ресурсов\Buttons</Filter>
+    </Image>
+    <Image Include="VC_Resources\Buttons\Button_6.png">
+      <Filter>Файлы ресурсов\Buttons</Filter>
+    </Image>
+    <Image Include="VC_Resources\Buttons\Button_7.png">
+      <Filter>Файлы ресурсов\Buttons</Filter>
+    </Image>
+    <Image Include="VC_Resources\Buttons\ExitButton_1.gif">
+      <Filter>Файлы ресурсов\Buttons</Filter>
     </Image>
   </ItemGroup>
 </Project>
