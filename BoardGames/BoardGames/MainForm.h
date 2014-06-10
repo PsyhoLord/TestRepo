@@ -1,11 +1,9 @@
 #pragma once
 
-#include <string>
-
-#define IMAGE_WHITE_CHIP "VC_Resources\\Chips\\Chip_Red.png"  
-#define IMAGE_WHITE_CHIP_SELECTED "VC_Resources\\Chips\\Chip_Red_S.png"  
-#define IMAGE_BLACK_CHIP "VC_Resources\\Chips\\Chip_Blue.png"
-#define IMAGE_BLACK_CHIP_SELECTED "VC_Resources\\Chips\\Chip_Blue_S.png"
+#define IMAGE_WHITE_CHIP			"VC_Resources\\Chips\\Chip_Red.png"  
+#define IMAGE_WHITE_CHIP_SELECTED	"VC_Resources\\Chips\\Chip_Red_S.png"  
+#define IMAGE_BLACK_CHIP			"VC_Resources\\Chips\\Chip_Blue.png"
+#define IMAGE_BLACK_CHIP_SELECTED	"VC_Resources\\Chips\\Chip_Blue_S.png"
 
 #define BOARD_BACKGROUND_WHITE "VC_Resources\\Field_BackGrounds\\Field_1_w.png"
 #define BOARD_BACKGROUND_BLACK "VC_Resources\\Field_BackGrounds\\Field_1_b.png"
@@ -1454,26 +1452,45 @@ namespace BoardGames {
 		PictureBox^ PB;
 		PB = (PictureBox^)sender;
 	
-		if (PB->Text->Length)
+		if (PB->Text->Length) // якщо в квадраті щось є
 		{
-			/*if (Active);
+			//if (PB == Active)
+			//{
+
+			//}
+
+			if (Active) // якщо є активна фішка, то
 			{
-				if (((PictureBox^)Active)->Text->CompareTo(IMAGE_BLACK_CHIP_SELECTED));
-			}*/
-			Active = PB;
-			TestLabel->Text = ((PictureBox^)Active)->Text;
+				// робимо її звичайною
+				if (!((PictureBox^)Active)->Text->CompareTo(IMAGE_BLACK_CHIP_SELECTED))
+					((PictureBox^)Active)->Text = IMAGE_BLACK_CHIP;
+				else ((PictureBox^)Active)->Text = IMAGE_WHITE_CHIP;
+				RefreshImage((PictureBox^)Active);
+			}
+			Active = PB; // то це стає активним
+			
+			// і змінює колір
+			if (!PB->Text->CompareTo(IMAGE_BLACK_CHIP))
+				PB->Text = IMAGE_BLACK_CHIP_SELECTED;
+			else PB->Text = IMAGE_WHITE_CHIP_SELECTED;
+			RefreshImage(PB);
+			// TestLabel->Text = ((PictureBox^)Active)->Text; // Тестовий вивід
 		}
-		else
+		else // якщо квадрат є пустим
 		{
-			if (Active)
-			//if (((PictureBox^)Active)->Text)
+			if (Active) // але є активна фішка
 			{
-				TestLabel->Text = ((PictureBox^)Active)->Text;
-				ReloadWithImage(PB, ((PictureBox^)Active)->Text);
-				((PictureBox^)Active)->Text = nullptr;
-				ReloadWithImage((PictureBox^)Active, nullptr);
-				//Active->Image = nullptr;
-				Active = nullptr;
+				// TestLabel->Text = ((PictureBox^)Active)->Text; // Тестовий вивід
+				// Активна перестає бути активною
+				if (!((PictureBox^)Active)->Text->CompareTo(IMAGE_BLACK_CHIP_SELECTED))
+					((PictureBox^)Active)->Text = IMAGE_BLACK_CHIP;
+				else ((PictureBox^)Active)->Text = IMAGE_WHITE_CHIP;
+								
+				PB->Text = ((PictureBox^)Active)->Text;
+				RefreshImage(PB); // Передаємо фішку в пусту
+				((PictureBox^)Active)->Text = nullptr; // знищуємо текст для активної
+				RefreshImage((PictureBox^)Active); // перезавантажуємо колишню активну
+				Active = nullptr; // забуваємо, що вона акивна
 			}
 		}
 			//this->TestLabel->Text = this->Active->Text;
