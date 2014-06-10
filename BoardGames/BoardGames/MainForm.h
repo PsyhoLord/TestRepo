@@ -17,14 +17,26 @@ namespace BoardGames {
 	/// </summary>
 	public ref class MainForm : public System::Windows::Forms::Form
 	{
-	public:
-		MainForm(void)
+		public:	MainForm(void)
 		{
 			InitializeComponent();
 			//
 			//TODO: добавьте код конструктора
 			//
 		}
+
+		protected: ~MainForm()
+		{
+			/// <summary>
+			/// Освободить все используемые ресурсы.
+			/// </summary>
+			if (components)
+			{
+				delete components;
+			}
+		}
+
+	// Buttons & Labels
 	private: System::Windows::Forms::Label^  TestLabel;
 	private: System::Windows::Forms::Button^  NewGameButton;
 	private: System::Windows::Forms::Button^  ExitButton;
@@ -38,87 +50,74 @@ namespace BoardGames {
 		System::Object^ Active;
 		
 
-	protected:
-		/// <summary>
-		/// Освободить все используемые ресурсы.
-		/// </summary>
-		~MainForm()
-		{
-			if (components)
-			{
-				delete components;
-			}
-		}
-	private: System::Windows::Forms::PictureBox^  a8;
-	private: System::Windows::Forms::PictureBox^  b8;
-	private: System::Windows::Forms::PictureBox^  c8;
-	private: System::Windows::Forms::PictureBox^  d8;
-
-
-	// protected:
-		// TABLE
-	private: System::Windows::Forms::PictureBox^  c7;
-	private: System::Windows::Forms::PictureBox^  d7;
-	private: System::Windows::Forms::PictureBox^  b7;
-	private: System::Windows::Forms::PictureBox^  a7;
-	private: System::Windows::Forms::PictureBox^  c5;
-	private: System::Windows::Forms::PictureBox^  d5;
-	private: System::Windows::Forms::PictureBox^  b5;
-	private: System::Windows::Forms::PictureBox^  a5;
-	private: System::Windows::Forms::PictureBox^  c6;
-	private: System::Windows::Forms::PictureBox^  d6;
-	private: System::Windows::Forms::PictureBox^  b6;
-	private: System::Windows::Forms::PictureBox^  a6;
-	private: System::Windows::Forms::PictureBox^  g4;
-	private: System::Windows::Forms::PictureBox^  h4;
-	private: System::Windows::Forms::PictureBox^  f5;
-	private: System::Windows::Forms::PictureBox^  e5;
-	private: System::Windows::Forms::PictureBox^  g6;
-	private: System::Windows::Forms::PictureBox^  h3;
-	private: System::Windows::Forms::PictureBox^  f6;
-	private: System::Windows::Forms::PictureBox^  e6;
-	private: System::Windows::Forms::PictureBox^  g7;
-	private: System::Windows::Forms::PictureBox^  h2;
-	private: System::Windows::Forms::PictureBox^  f7;
-	private: System::Windows::Forms::PictureBox^  e7;
-	private: System::Windows::Forms::PictureBox^  g8;
-	private: System::Windows::Forms::PictureBox^  h1;
-	private: System::Windows::Forms::PictureBox^  f8;
-	private: System::Windows::Forms::PictureBox^  e8;
-	private: System::Windows::Forms::PictureBox^  g1;
-	private: System::Windows::Forms::PictureBox^  h8;
-	private: System::Windows::Forms::PictureBox^  f1;
-	private: System::Windows::Forms::PictureBox^  e1;
-	private: System::Windows::Forms::PictureBox^  g2;
-	private: System::Windows::Forms::PictureBox^  h7;
-	private: System::Windows::Forms::PictureBox^  f2;
-	private: System::Windows::Forms::PictureBox^  e2;
-	private: System::Windows::Forms::PictureBox^  g3;
-	private: System::Windows::Forms::PictureBox^  h6;
-	private: System::Windows::Forms::PictureBox^  f3;
-	private: System::Windows::Forms::PictureBox^  e3;
-	private: System::Windows::Forms::PictureBox^  g5;
-	private: System::Windows::Forms::PictureBox^  h5;
-	private: System::Windows::Forms::PictureBox^  f4;
-	private: System::Windows::Forms::PictureBox^  e4;
-	private: System::Windows::Forms::PictureBox^  c1;
-	private: System::Windows::Forms::PictureBox^  d1;
-	private: System::Windows::Forms::PictureBox^  b1;
-	private: System::Windows::Forms::PictureBox^  a1;
-	private: System::Windows::Forms::PictureBox^  c2;
-	private: System::Windows::Forms::PictureBox^  d2;
-	private: System::Windows::Forms::PictureBox^  b2;
-	private: System::Windows::Forms::PictureBox^  a2;
-	private: System::Windows::Forms::PictureBox^  c3;
-	private: System::Windows::Forms::PictureBox^  d3;
-	private: System::Windows::Forms::PictureBox^  b3;
-	private: System::Windows::Forms::PictureBox^  a3;
-	private: System::Windows::Forms::PictureBox^  c4;
-	private: System::Windows::Forms::PictureBox^  d4;
-	private: System::Windows::Forms::PictureBox^  b4;
-	private: System::Windows::Forms::PictureBox^  a4;
-
-	// Board Marks
+				// *** TABLE *** //
+	private: System::Windows::Forms::PictureBox^ a1;
+	private: System::Windows::Forms::PictureBox^ a2;
+	private: System::Windows::Forms::PictureBox^ a3;
+	private: System::Windows::Forms::PictureBox^ a4;
+	private: System::Windows::Forms::PictureBox^ a5;
+	private: System::Windows::Forms::PictureBox^ a6;
+	private: System::Windows::Forms::PictureBox^ a7;
+	private: System::Windows::Forms::PictureBox^ a8;
+	private: System::Windows::Forms::PictureBox^ b1;
+	private: System::Windows::Forms::PictureBox^ b2;
+	private: System::Windows::Forms::PictureBox^ b3;
+	private: System::Windows::Forms::PictureBox^ b4;
+	private: System::Windows::Forms::PictureBox^ b5;
+	private: System::Windows::Forms::PictureBox^ b6;
+	private: System::Windows::Forms::PictureBox^ b7;
+	private: System::Windows::Forms::PictureBox^ b8;
+	private: System::Windows::Forms::PictureBox^ c1;
+	private: System::Windows::Forms::PictureBox^ c2;
+	private: System::Windows::Forms::PictureBox^ c3;
+	private: System::Windows::Forms::PictureBox^ c4;
+	private: System::Windows::Forms::PictureBox^ c5;
+	private: System::Windows::Forms::PictureBox^ c6;
+	private: System::Windows::Forms::PictureBox^ c7;
+	private: System::Windows::Forms::PictureBox^ c8;
+	private: System::Windows::Forms::PictureBox^ d1;
+	private: System::Windows::Forms::PictureBox^ d2;
+	private: System::Windows::Forms::PictureBox^ d3;
+	private: System::Windows::Forms::PictureBox^ d4;
+	private: System::Windows::Forms::PictureBox^ d5;
+	private: System::Windows::Forms::PictureBox^ d6;
+	private: System::Windows::Forms::PictureBox^ d7;
+	private: System::Windows::Forms::PictureBox^ d8;
+	private: System::Windows::Forms::PictureBox^ e1;
+	private: System::Windows::Forms::PictureBox^ e2;
+	private: System::Windows::Forms::PictureBox^ e3;
+	private: System::Windows::Forms::PictureBox^ e4;
+	private: System::Windows::Forms::PictureBox^ e5;
+	private: System::Windows::Forms::PictureBox^ e6;
+	private: System::Windows::Forms::PictureBox^ e7;
+	private: System::Windows::Forms::PictureBox^ e8;
+	private: System::Windows::Forms::PictureBox^ f1;
+	private: System::Windows::Forms::PictureBox^ f2;
+	private: System::Windows::Forms::PictureBox^ f3;
+	private: System::Windows::Forms::PictureBox^ f4;
+	private: System::Windows::Forms::PictureBox^ f5;
+	private: System::Windows::Forms::PictureBox^ f6;
+	private: System::Windows::Forms::PictureBox^ f7;
+	private: System::Windows::Forms::PictureBox^ f8;
+	private: System::Windows::Forms::PictureBox^ g1;
+	private: System::Windows::Forms::PictureBox^ g2;
+	private: System::Windows::Forms::PictureBox^ g3;
+	private: System::Windows::Forms::PictureBox^ g4;
+	private: System::Windows::Forms::PictureBox^ g5;
+	private: System::Windows::Forms::PictureBox^ g6;
+	private: System::Windows::Forms::PictureBox^ g7;
+	private: System::Windows::Forms::PictureBox^ g8;
+	private: System::Windows::Forms::PictureBox^ h1;
+	private: System::Windows::Forms::PictureBox^ h2;
+	private: System::Windows::Forms::PictureBox^ h3;
+	private: System::Windows::Forms::PictureBox^ h4;
+	private: System::Windows::Forms::PictureBox^ h5;
+	private: System::Windows::Forms::PictureBox^ h6;
+	private: System::Windows::Forms::PictureBox^ h7;
+	private: System::Windows::Forms::PictureBox^ h8;
+// =============================================================================================== //
+	
+			// *** Board Marks *** //
 	private: System::Windows::Forms::Label^  label1;
 	private: System::Windows::Forms::Label^  label2;
 	private: System::Windows::Forms::Label^  label3;
@@ -135,8 +134,7 @@ namespace BoardGames {
 	private: System::Windows::Forms::Label^  label14;
 	private: System::Windows::Forms::Label^  label15;
 	private: System::Windows::Forms::Label^  label16;
-
-//	protected:
+// =============================================================================================== //
 
 	private:
 		/// <summary>
@@ -1306,18 +1304,15 @@ namespace BoardGames {
 			this->PerformLayout();
 
 		}
+// =============================================================================================== //
+
 #pragma endregion
 	private: System::Void MainForm_Load(System::Object^  sender, System::EventArgs^  e) 
 	{
-		// ColorFishka1 = "Brown";
-		// ColorFishka2 = "Blue";
-		// ColorFishka0 = "Null";
-		
-		ColorName();
-//		this->Buff_Fish->Text = NULL;
+		SetImageToPictureText();
 	}
 
-	private: System::Void ColorName()
+	private: System::Void SetImageToPictureText()
 			 {
 			// Black command
 				 // A line
@@ -1325,84 +1320,53 @@ namespace BoardGames {
 				 this->a7->Text = IMAGE_BLACK_CHIP;
 				 this->a6->Text = IMAGE_BLACK_CHIP;
 				 this->a5->Text = IMAGE_BLACK_CHIP;
-				/* this->a4->Text = NULL;
-				 this->a3->Text = NULL;
-				 this->a2->Text = NULL;
-				 this->a1->Text = NULL;*/
+				
 				 // B line
 				 this->b8->Text = IMAGE_BLACK_CHIP;
 				 this->b7->Text = IMAGE_BLACK_CHIP;
 				 this->b6->Text = IMAGE_BLACK_CHIP;
 				 this->b5->Text = IMAGE_BLACK_CHIP;
-				/* this->b4->Text = NULL;
-				 this->b3->Text = NULL;
-				 this->b2->Text = NULL;
-				 this->b1->Text = NULL;*/
+				
 				 // C line
 				 this->c8->Text = IMAGE_BLACK_CHIP;
 				 this->c7->Text = IMAGE_BLACK_CHIP;
 				 this->c6->Text = IMAGE_BLACK_CHIP;
 				 this->c5->Text = IMAGE_BLACK_CHIP;
-				/* this->c4->Text = NULL;
-				 this->c3->Text = NULL;
-				 this->c2->Text = NULL;
-				 this->c1->Text = NULL;*/
+			
 				 // D line
 				 this->d8->Text = IMAGE_BLACK_CHIP;
 				 this->d7->Text = IMAGE_BLACK_CHIP;
 				 this->d6->Text = IMAGE_BLACK_CHIP;
 				 this->d5->Text = IMAGE_BLACK_CHIP;
-				/* this->d4->Text = NULL;
-				 this->d3->Text = NULL;
-				 this->d2->Text = NULL;
-				 this->d1->Text = NULL;*/
+				
 			// White command
 				 // E line
 				 this->e1->Text = IMAGE_WHITE_CHIP;
 				 this->e2->Text = IMAGE_WHITE_CHIP;
 				 this->e3->Text = IMAGE_WHITE_CHIP;
 				 this->e4->Text = IMAGE_WHITE_CHIP;
-				/* this->e5->Text = NULL;
-				 this->e6->Text = NULL;
-				 this->e7->Text = NULL;
-				 this->e8->Text = NULL;*/
+				
 				 // F line
 				 this->f1->Text = IMAGE_WHITE_CHIP;
 				 this->f2->Text = IMAGE_WHITE_CHIP;
 				 this->f3->Text = IMAGE_WHITE_CHIP;
 				 this->f4->Text = IMAGE_WHITE_CHIP;
-				/* this->f5->Text = NULL;
-				 this->f6->Text = NULL;
-				 this->f7->Text = NULL;
-				 this->f8->Text = NULL;*/
+				
 				 // G line
 				 this->g1->Text = IMAGE_WHITE_CHIP;
 				 this->g2->Text = IMAGE_WHITE_CHIP;
 				 this->g3->Text = IMAGE_WHITE_CHIP;
 				 this->g4->Text = IMAGE_WHITE_CHIP;
-				 /*this->g5->Text = NULL;
-				 this->g6->Text = NULL;
-				 this->g7->Text = NULL;
-				 this->g8->Text = NULL;*/
+				
 				 // H line
 				 this->h1->Text = IMAGE_WHITE_CHIP;
 				 this->h2->Text = IMAGE_WHITE_CHIP;
 				 this->h3->Text = IMAGE_WHITE_CHIP;
 				 this->h4->Text = IMAGE_WHITE_CHIP;
-				 /*this->h5->Text = NULL;
-				 this->h6->Text = NULL;
-				 this->h7->Text = NULL;
-				 this->h8->Text = NULL;*/
-
-				 
 			 }
 	
 
-	private: bool RefreshAll()
-	{
-
-		return true;
-	}
+	
 
 	// Reloading given picturebox of square on table with given image
 	private: System::Void ReloadWithImage(PictureBox^ SelectedChip, String^ ImageName)
@@ -1416,6 +1380,73 @@ namespace BoardGames {
 	private: System::Void RefreshImage (PictureBox^ SelectedChip)
 	{
 		SelectedChip->Image = System::Drawing::Image::FromFile(SelectedChip->Text);
+	}
+
+	private: bool RefreshAll()
+	{
+		RefreshImage(a1);
+		RefreshImage(a2);
+		RefreshImage(a3);
+		RefreshImage(a4);
+		RefreshImage(a5);
+		RefreshImage(a6);
+		RefreshImage(a7);
+		RefreshImage(a8);
+		
+		RefreshImage(b1);
+		RefreshImage(b2);
+		RefreshImage(b3);
+		RefreshImage(b4);
+		RefreshImage(b5);
+		RefreshImage(b6);
+		RefreshImage(b7);
+		RefreshImage(b8);
+		
+		RefreshImage(c1);
+		RefreshImage(c2);
+		RefreshImage(c3);
+		RefreshImage(c4);
+		RefreshImage(c5);
+		RefreshImage(c6);
+		RefreshImage(c7);
+		RefreshImage(c8);
+
+		RefreshImage(d1);
+		RefreshImage(d2);
+		RefreshImage(d3);
+		RefreshImage(d4);
+		RefreshImage(d5);
+		RefreshImage(d6);
+		RefreshImage(d7);
+		RefreshImage(d8);
+
+		RefreshImage(e1);
+		RefreshImage(e2);
+		RefreshImage(e3);
+		RefreshImage(e4);
+		RefreshImage(e5);
+		RefreshImage(e6);
+		RefreshImage(e7);
+		RefreshImage(e8);
+
+		RefreshImage(f1);
+		RefreshImage(f2);
+		RefreshImage(f3);
+		RefreshImage(f4);
+		RefreshImage(f5);
+		RefreshImage(f6);
+		RefreshImage(f7);
+		RefreshImage(f8);
+
+		RefreshImage(g1);
+		RefreshImage(g2);
+		RefreshImage(g3);
+		RefreshImage(g4);
+		RefreshImage(g5);
+		RefreshImage(g6);
+		RefreshImage(g7);
+		RefreshImage(g8);
+		return true;
 	}
 
 	// 	Handlerfor clicking on board
