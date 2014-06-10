@@ -12,6 +12,7 @@
 #define BOARD_LEFT_UPPER_X 15
 #define BOARD_LEFT_UPPER_Y 15
 
+
 namespace BoardGames {
 	using namespace System;
 	using namespace System::ComponentModel;
@@ -1292,12 +1293,12 @@ private: System::Windows::Forms::PictureBox^  FullBoard;
 		}
 
 	// Reloading given picturebox of square on table with given image
-	private: System::Void ReloadWithImage(PictureBox^ SelectedChip, String^ ImageName)
+	/*private: System::Void ReloadWithImage(PictureBox^ SelectedChip, String^ ImageName)
 	{
 		SelectedChip->Text = ImageName;
 		if (ImageName) SelectedChip->Image = System::Drawing::Image::FromFile(SelectedChip->Text);
 		else SelectedChip->Image = nullptr;
-	}
+	}*/
 
 	// Reloading given picturebox of square on table with image setted in picturebox->text
 	private: System::Void RefreshImage (PictureBox^ SelectedChip)
