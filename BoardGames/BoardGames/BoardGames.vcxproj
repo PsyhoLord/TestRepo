@@ -100,8 +100,12 @@
     <Image Include="VC_Resources\Chips\Chip_Orig.png" />
     <Image Include="VC_Resources\Chips\Chip_Red.png" />
     <Image Include="VC_Resources\Chips\Chip_Red_S.png" />
-    <Image Include="VC_Resources\Field_BackGrounds\Field_1_b.png" />
-    <Image Include="VC_Resources\Field_BackGrounds\Field_1_w.png" />
+    <Image Include="VC_Resources\Field_BackGrounds\Full_Boards\Board_1.jpg" />
+    <Image Include="VC_Resources\Field_BackGrounds\Full_Boards\Board_2.png" />
+    <Image Include="VC_Resources\Field_BackGrounds\Full_Boards\Board_3.png" />
+    <Image Include="VC_Resources\Field_BackGrounds\Full_Boards\Board_4.png" />
+    <Image Include="VC_Resources\Field_BackGrounds\Squares\Field_1_b.png" />
+    <Image Include="VC_Resources\Field_BackGrounds\Squares\Field_1_w.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

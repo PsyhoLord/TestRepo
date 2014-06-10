@@ -5,8 +5,12 @@
 #define IMAGE_BLACK_CHIP			"VC_Resources\\Chips\\Chip_Blue.png"
 #define IMAGE_BLACK_CHIP_SELECTED	"VC_Resources\\Chips\\Chip_Blue_S.png"
 
-#define BOARD_BACKGROUND_WHITE "VC_Resources\\Field_BackGrounds\\Field_1_w.png"
-#define BOARD_BACKGROUND_BLACK "VC_Resources\\Field_BackGrounds\\Field_1_b.png"
+#define BOARD_BACKGROUND_WHITE	"VC_Resources\\Field_BackGrounds\\Squares\\Field_1_w.png"
+#define BOARD_BACKGROUND_BLACK	"VC_Resources\\Field_BackGrounds\\Squares\\Field_1_b.png"
+#define BOARD_BACKGROUND_FULL	"VC_Resources\\Field_BackGrounds\\Full_Boards\\Board_4.png"
+
+#define BOARD_LEFT_UPPER_X 15
+#define BOARD_LEFT_UPPER_Y 15
 
 namespace BoardGames {
 	using namespace System;
@@ -131,23 +135,19 @@ namespace BoardGames {
 // =============================================================================================== //
 	
 			// *** Board Marks *** //
-	private: System::Windows::Forms::Label^  label1;
-	private: System::Windows::Forms::Label^  label2;
-	private: System::Windows::Forms::Label^  label3;
-	private: System::Windows::Forms::Label^  label4;
-	private: System::Windows::Forms::Label^  label5;
-	private: System::Windows::Forms::Label^  label6;
-	private: System::Windows::Forms::Label^  label7;
-	private: System::Windows::Forms::Label^  label8;
-	private: System::Windows::Forms::Label^  label9;
-	private: System::Windows::Forms::Label^  label10;
-	private: System::Windows::Forms::Label^  label11;
-	private: System::Windows::Forms::Label^  label12;
-	private: System::Windows::Forms::Label^  label13;
-	private: System::Windows::Forms::Label^  label14;
-	private: System::Windows::Forms::Label^  label15;
-	private: System::Windows::Forms::Label^  label16;
-// =============================================================================================== //
+
+
+
+
+
+
+
+
+
+
+private: System::Windows::Forms::PictureBox^  FullBoard;
+
+		 // =============================================================================================== //
 
 	private:
 		/// <summary>
@@ -228,25 +228,10 @@ namespace BoardGames {
 			this->d4 = (gcnew System::Windows::Forms::PictureBox());
 			this->b4 = (gcnew System::Windows::Forms::PictureBox());
 			this->a4 = (gcnew System::Windows::Forms::PictureBox());
-			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->label3 = (gcnew System::Windows::Forms::Label());
-			this->label4 = (gcnew System::Windows::Forms::Label());
-			this->label5 = (gcnew System::Windows::Forms::Label());
-			this->label6 = (gcnew System::Windows::Forms::Label());
-			this->label7 = (gcnew System::Windows::Forms::Label());
-			this->label8 = (gcnew System::Windows::Forms::Label());
-			this->label9 = (gcnew System::Windows::Forms::Label());
-			this->label10 = (gcnew System::Windows::Forms::Label());
-			this->label11 = (gcnew System::Windows::Forms::Label());
-			this->label12 = (gcnew System::Windows::Forms::Label());
-			this->label13 = (gcnew System::Windows::Forms::Label());
-			this->label14 = (gcnew System::Windows::Forms::Label());
-			this->label15 = (gcnew System::Windows::Forms::Label());
-			this->label16 = (gcnew System::Windows::Forms::Label());
 			this->TestLabel = (gcnew System::Windows::Forms::Label());
 			this->NewGameButton = (gcnew System::Windows::Forms::Button());
 			this->ExitButton = (gcnew System::Windows::Forms::Button());
+			this->FullBoard = (gcnew System::Windows::Forms::PictureBox());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->a8))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->b8))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->c8))->BeginInit();
@@ -311,15 +296,16 @@ namespace BoardGames {
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->d4))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->b4))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->a4))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->FullBoard))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// a8
 			// 
 			this->a8->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"a8.BackgroundImage")));
 			this->a8->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"a8.Image")));
-			this->a8->Location = System::Drawing::Point(30, 30);
+			this->a8->Location = System::Drawing::Point(50, 50);
 			this->a8->Name = L"a8";
-			this->a8->Size = System::Drawing::Size(50, 50);
+			this->a8->Size = System::Drawing::Size(75, 75);
 			this->a8->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 			this->a8->TabIndex = 0;
 			this->a8->TabStop = false;
@@ -329,9 +315,9 @@ namespace BoardGames {
 			// 
 			this->b8->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"b8.BackgroundImage")));
 			this->b8->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"b8.Image")));
-			this->b8->Location = System::Drawing::Point(80, 30);
+			this->b8->Location = System::Drawing::Point(116, 50);
 			this->b8->Name = L"b8";
-			this->b8->Size = System::Drawing::Size(50, 50);
+			this->b8->Size = System::Drawing::Size(75, 75);
 			this->b8->TabIndex = 1;
 			this->b8->TabStop = false;
 			this->b8->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -340,9 +326,9 @@ namespace BoardGames {
 			// 
 			this->c8->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"c8.BackgroundImage")));
 			this->c8->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"c8.Image")));
-			this->c8->Location = System::Drawing::Point(130, 30);
+			this->c8->Location = System::Drawing::Point(196, 50);
 			this->c8->Name = L"c8";
-			this->c8->Size = System::Drawing::Size(50, 50);
+			this->c8->Size = System::Drawing::Size(75, 75);
 			this->c8->TabIndex = 3;
 			this->c8->TabStop = false;
 			this->c8->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -351,9 +337,9 @@ namespace BoardGames {
 			// 
 			this->d8->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"d8.BackgroundImage")));
 			this->d8->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"d8.Image")));
-			this->d8->Location = System::Drawing::Point(180, 30);
+			this->d8->Location = System::Drawing::Point(265, 50);
 			this->d8->Name = L"d8";
-			this->d8->Size = System::Drawing::Size(50, 50);
+			this->d8->Size = System::Drawing::Size(75, 75);
 			this->d8->TabIndex = 2;
 			this->d8->TabStop = false;
 			this->d8->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -362,9 +348,9 @@ namespace BoardGames {
 			// 
 			this->c7->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"c7.BackgroundImage")));
 			this->c7->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"c7.Image")));
-			this->c7->Location = System::Drawing::Point(130, 80);
+			this->c7->Location = System::Drawing::Point(190, 115);
 			this->c7->Name = L"c7";
-			this->c7->Size = System::Drawing::Size(50, 50);
+			this->c7->Size = System::Drawing::Size(75, 75);
 			this->c7->TabIndex = 7;
 			this->c7->TabStop = false;
 			this->c7->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -373,9 +359,9 @@ namespace BoardGames {
 			// 
 			this->d7->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"d7.BackgroundImage")));
 			this->d7->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"d7.Image")));
-			this->d7->Location = System::Drawing::Point(180, 80);
+			this->d7->Location = System::Drawing::Point(266, 116);
 			this->d7->Name = L"d7";
-			this->d7->Size = System::Drawing::Size(50, 50);
+			this->d7->Size = System::Drawing::Size(75, 75);
 			this->d7->TabIndex = 6;
 			this->d7->TabStop = false;
 			this->d7->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -384,9 +370,9 @@ namespace BoardGames {
 			// 
 			this->b7->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"b7.BackgroundImage")));
 			this->b7->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"b7.Image")));
-			this->b7->Location = System::Drawing::Point(80, 80);
+			this->b7->Location = System::Drawing::Point(115, 115);
 			this->b7->Name = L"b7";
-			this->b7->Size = System::Drawing::Size(50, 50);
+			this->b7->Size = System::Drawing::Size(75, 75);
 			this->b7->TabIndex = 5;
 			this->b7->TabStop = false;
 			this->b7->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -395,9 +381,9 @@ namespace BoardGames {
 			// 
 			this->a7->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"a7.BackgroundImage")));
 			this->a7->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"a7.Image")));
-			this->a7->Location = System::Drawing::Point(30, 80);
+			this->a7->Location = System::Drawing::Point(50, 121);
 			this->a7->Name = L"a7";
-			this->a7->Size = System::Drawing::Size(50, 50);
+			this->a7->Size = System::Drawing::Size(75, 75);
 			this->a7->TabIndex = 4;
 			this->a7->TabStop = false;
 			this->a7->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -406,9 +392,9 @@ namespace BoardGames {
 			// 
 			this->c5->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"c5.BackgroundImage")));
 			this->c5->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"c5.Image")));
-			this->c5->Location = System::Drawing::Point(130, 180);
+			this->c5->Location = System::Drawing::Point(191, 266);
 			this->c5->Name = L"c5";
-			this->c5->Size = System::Drawing::Size(50, 50);
+			this->c5->Size = System::Drawing::Size(75, 75);
 			this->c5->TabIndex = 15;
 			this->c5->TabStop = false;
 			this->c5->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -417,9 +403,9 @@ namespace BoardGames {
 			// 
 			this->d5->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"d5.BackgroundImage")));
 			this->d5->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"d5.Image")));
-			this->d5->Location = System::Drawing::Point(180, 180);
+			this->d5->Location = System::Drawing::Point(265, 265);
 			this->d5->Name = L"d5";
-			this->d5->Size = System::Drawing::Size(50, 50);
+			this->d5->Size = System::Drawing::Size(75, 75);
 			this->d5->TabIndex = 14;
 			this->d5->TabStop = false;
 			this->d5->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -428,9 +414,9 @@ namespace BoardGames {
 			// 
 			this->b5->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"b5.BackgroundImage")));
 			this->b5->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"b5.Image")));
-			this->b5->Location = System::Drawing::Point(80, 180);
+			this->b5->Location = System::Drawing::Point(116, 266);
 			this->b5->Name = L"b5";
-			this->b5->Size = System::Drawing::Size(50, 50);
+			this->b5->Size = System::Drawing::Size(75, 75);
 			this->b5->TabIndex = 13;
 			this->b5->TabStop = false;
 			this->b5->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -439,9 +425,9 @@ namespace BoardGames {
 			// 
 			this->a5->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"a5.BackgroundImage")));
 			this->a5->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"a5.Image")));
-			this->a5->Location = System::Drawing::Point(30, 180);
+			this->a5->Location = System::Drawing::Point(50, 271);
 			this->a5->Name = L"a5";
-			this->a5->Size = System::Drawing::Size(50, 50);
+			this->a5->Size = System::Drawing::Size(75, 75);
 			this->a5->TabIndex = 12;
 			this->a5->TabStop = false;
 			this->a5->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -450,9 +436,9 @@ namespace BoardGames {
 			// 
 			this->c6->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"c6.BackgroundImage")));
 			this->c6->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"c6.Image")));
-			this->c6->Location = System::Drawing::Point(130, 130);
+			this->c6->Location = System::Drawing::Point(190, 190);
 			this->c6->Name = L"c6";
-			this->c6->Size = System::Drawing::Size(50, 50);
+			this->c6->Size = System::Drawing::Size(75, 75);
 			this->c6->TabIndex = 11;
 			this->c6->TabStop = false;
 			this->c6->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -461,9 +447,9 @@ namespace BoardGames {
 			// 
 			this->d6->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"d6.BackgroundImage")));
 			this->d6->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"d6.Image")));
-			this->d6->Location = System::Drawing::Point(180, 130);
+			this->d6->Location = System::Drawing::Point(266, 191);
 			this->d6->Name = L"d6";
-			this->d6->Size = System::Drawing::Size(50, 50);
+			this->d6->Size = System::Drawing::Size(75, 75);
 			this->d6->TabIndex = 10;
 			this->d6->TabStop = false;
 			this->d6->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -472,9 +458,9 @@ namespace BoardGames {
 			// 
 			this->b6->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"b6.BackgroundImage")));
 			this->b6->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"b6.Image")));
-			this->b6->Location = System::Drawing::Point(80, 130);
+			this->b6->Location = System::Drawing::Point(115, 190);
 			this->b6->Name = L"b6";
-			this->b6->Size = System::Drawing::Size(50, 50);
+			this->b6->Size = System::Drawing::Size(75, 75);
 			this->b6->TabIndex = 9;
 			this->b6->TabStop = false;
 			this->b6->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -483,9 +469,9 @@ namespace BoardGames {
 			// 
 			this->a6->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"a6.BackgroundImage")));
 			this->a6->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"a6.Image")));
-			this->a6->Location = System::Drawing::Point(30, 130);
+			this->a6->Location = System::Drawing::Point(50, 196);
 			this->a6->Name = L"a6";
-			this->a6->Size = System::Drawing::Size(50, 50);
+			this->a6->Size = System::Drawing::Size(75, 75);
 			this->a6->TabIndex = 8;
 			this->a6->TabStop = false;
 			this->a6->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -494,9 +480,9 @@ namespace BoardGames {
 			// 
 			this->g4->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"g4.BackgroundImage")));
 			this->g4->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"g4.Image")));
-			this->g4->Location = System::Drawing::Point(330, 230);
+			this->g4->Location = System::Drawing::Point(491, 341);
 			this->g4->Name = L"g4";
-			this->g4->Size = System::Drawing::Size(50, 50);
+			this->g4->Size = System::Drawing::Size(75, 75);
 			this->g4->TabIndex = 31;
 			this->g4->TabStop = false;
 			this->g4->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -505,9 +491,9 @@ namespace BoardGames {
 			// 
 			this->h4->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"h4.BackgroundImage")));
 			this->h4->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"h4.Image")));
-			this->h4->Location = System::Drawing::Point(380, 230);
+			this->h4->Location = System::Drawing::Point(566, 341);
 			this->h4->Name = L"h4";
-			this->h4->Size = System::Drawing::Size(50, 50);
+			this->h4->Size = System::Drawing::Size(75, 75);
 			this->h4->TabIndex = 30;
 			this->h4->TabStop = false;
 			this->h4->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -515,9 +501,9 @@ namespace BoardGames {
 			// f5
 			// 
 			this->f5->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"f5.BackgroundImage")));
-			this->f5->Location = System::Drawing::Point(280, 180);
+			this->f5->Location = System::Drawing::Point(416, 266);
 			this->f5->Name = L"f5";
-			this->f5->Size = System::Drawing::Size(50, 50);
+			this->f5->Size = System::Drawing::Size(75, 75);
 			this->f5->TabIndex = 29;
 			this->f5->TabStop = false;
 			this->f5->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -525,9 +511,9 @@ namespace BoardGames {
 			// e5
 			// 
 			this->e5->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"e5.BackgroundImage")));
-			this->e5->Location = System::Drawing::Point(230, 180);
+			this->e5->Location = System::Drawing::Point(341, 266);
 			this->e5->Name = L"e5";
-			this->e5->Size = System::Drawing::Size(50, 50);
+			this->e5->Size = System::Drawing::Size(75, 75);
 			this->e5->TabIndex = 28;
 			this->e5->TabStop = false;
 			this->e5->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -535,9 +521,9 @@ namespace BoardGames {
 			// g6
 			// 
 			this->g6->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"g6.BackgroundImage")));
-			this->g6->Location = System::Drawing::Point(330, 130);
+			this->g6->Location = System::Drawing::Point(491, 191);
 			this->g6->Name = L"g6";
-			this->g6->Size = System::Drawing::Size(50, 50);
+			this->g6->Size = System::Drawing::Size(75, 75);
 			this->g6->TabIndex = 27;
 			this->g6->TabStop = false;
 			this->g6->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -546,9 +532,9 @@ namespace BoardGames {
 			// 
 			this->h3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"h3.BackgroundImage")));
 			this->h3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"h3.Image")));
-			this->h3->Location = System::Drawing::Point(380, 280);
+			this->h3->Location = System::Drawing::Point(566, 416);
 			this->h3->Name = L"h3";
-			this->h3->Size = System::Drawing::Size(50, 50);
+			this->h3->Size = System::Drawing::Size(75, 75);
 			this->h3->TabIndex = 26;
 			this->h3->TabStop = false;
 			this->h3->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -556,9 +542,9 @@ namespace BoardGames {
 			// f6
 			// 
 			this->f6->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"f6.BackgroundImage")));
-			this->f6->Location = System::Drawing::Point(280, 130);
+			this->f6->Location = System::Drawing::Point(416, 191);
 			this->f6->Name = L"f6";
-			this->f6->Size = System::Drawing::Size(50, 50);
+			this->f6->Size = System::Drawing::Size(75, 75);
 			this->f6->TabIndex = 25;
 			this->f6->TabStop = false;
 			this->f6->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -566,9 +552,9 @@ namespace BoardGames {
 			// e6
 			// 
 			this->e6->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"e6.BackgroundImage")));
-			this->e6->Location = System::Drawing::Point(230, 130);
+			this->e6->Location = System::Drawing::Point(341, 191);
 			this->e6->Name = L"e6";
-			this->e6->Size = System::Drawing::Size(50, 50);
+			this->e6->Size = System::Drawing::Size(75, 75);
 			this->e6->TabIndex = 24;
 			this->e6->TabStop = false;
 			this->e6->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -576,9 +562,9 @@ namespace BoardGames {
 			// g7
 			// 
 			this->g7->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"g7.BackgroundImage")));
-			this->g7->Location = System::Drawing::Point(330, 80);
+			this->g7->Location = System::Drawing::Point(491, 116);
 			this->g7->Name = L"g7";
-			this->g7->Size = System::Drawing::Size(50, 50);
+			this->g7->Size = System::Drawing::Size(75, 75);
 			this->g7->TabIndex = 23;
 			this->g7->TabStop = false;
 			this->g7->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -587,9 +573,9 @@ namespace BoardGames {
 			// 
 			this->h2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"h2.BackgroundImage")));
 			this->h2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"h2.Image")));
-			this->h2->Location = System::Drawing::Point(380, 330);
+			this->h2->Location = System::Drawing::Point(566, 491);
 			this->h2->Name = L"h2";
-			this->h2->Size = System::Drawing::Size(50, 50);
+			this->h2->Size = System::Drawing::Size(75, 75);
 			this->h2->TabIndex = 22;
 			this->h2->TabStop = false;
 			this->h2->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -597,9 +583,9 @@ namespace BoardGames {
 			// f7
 			// 
 			this->f7->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"f7.BackgroundImage")));
-			this->f7->Location = System::Drawing::Point(280, 80);
+			this->f7->Location = System::Drawing::Point(416, 116);
 			this->f7->Name = L"f7";
-			this->f7->Size = System::Drawing::Size(50, 50);
+			this->f7->Size = System::Drawing::Size(75, 75);
 			this->f7->TabIndex = 21;
 			this->f7->TabStop = false;
 			this->f7->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -607,9 +593,9 @@ namespace BoardGames {
 			// e7
 			// 
 			this->e7->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"e7.BackgroundImage")));
-			this->e7->Location = System::Drawing::Point(230, 80);
+			this->e7->Location = System::Drawing::Point(341, 116);
 			this->e7->Name = L"e7";
-			this->e7->Size = System::Drawing::Size(50, 50);
+			this->e7->Size = System::Drawing::Size(75, 75);
 			this->e7->TabIndex = 20;
 			this->e7->TabStop = false;
 			this->e7->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -617,9 +603,9 @@ namespace BoardGames {
 			// g8
 			// 
 			this->g8->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"g8.BackgroundImage")));
-			this->g8->Location = System::Drawing::Point(330, 30);
+			this->g8->Location = System::Drawing::Point(491, 50);
 			this->g8->Name = L"g8";
-			this->g8->Size = System::Drawing::Size(50, 50);
+			this->g8->Size = System::Drawing::Size(75, 75);
 			this->g8->TabIndex = 19;
 			this->g8->TabStop = false;
 			this->g8->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -628,9 +614,9 @@ namespace BoardGames {
 			// 
 			this->h1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"h1.BackgroundImage")));
 			this->h1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"h1.Image")));
-			this->h1->Location = System::Drawing::Point(380, 380);
+			this->h1->Location = System::Drawing::Point(565, 565);
 			this->h1->Name = L"h1";
-			this->h1->Size = System::Drawing::Size(50, 50);
+			this->h1->Size = System::Drawing::Size(75, 75);
 			this->h1->TabIndex = 18;
 			this->h1->TabStop = false;
 			this->h1->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -638,9 +624,9 @@ namespace BoardGames {
 			// f8
 			// 
 			this->f8->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"f8.BackgroundImage")));
-			this->f8->Location = System::Drawing::Point(280, 30);
+			this->f8->Location = System::Drawing::Point(415, 50);
 			this->f8->Name = L"f8";
-			this->f8->Size = System::Drawing::Size(50, 50);
+			this->f8->Size = System::Drawing::Size(75, 75);
 			this->f8->TabIndex = 17;
 			this->f8->TabStop = false;
 			this->f8->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -648,9 +634,9 @@ namespace BoardGames {
 			// e8
 			// 
 			this->e8->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"e8.BackgroundImage")));
-			this->e8->Location = System::Drawing::Point(230, 30);
+			this->e8->Location = System::Drawing::Point(340, 50);
 			this->e8->Name = L"e8";
-			this->e8->Size = System::Drawing::Size(50, 50);
+			this->e8->Size = System::Drawing::Size(75, 75);
 			this->e8->TabIndex = 16;
 			this->e8->TabStop = false;
 			this->e8->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -659,9 +645,9 @@ namespace BoardGames {
 			// 
 			this->g1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"g1.BackgroundImage")));
 			this->g1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"g1.Image")));
-			this->g1->Location = System::Drawing::Point(330, 380);
+			this->g1->Location = System::Drawing::Point(491, 566);
 			this->g1->Name = L"g1";
-			this->g1->Size = System::Drawing::Size(50, 50);
+			this->g1->Size = System::Drawing::Size(75, 75);
 			this->g1->TabIndex = 63;
 			this->g1->TabStop = false;
 			this->g1->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -669,9 +655,9 @@ namespace BoardGames {
 			// h8
 			// 
 			this->h8->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"h8.BackgroundImage")));
-			this->h8->Location = System::Drawing::Point(380, 30);
+			this->h8->Location = System::Drawing::Point(565, 61);
 			this->h8->Name = L"h8";
-			this->h8->Size = System::Drawing::Size(50, 50);
+			this->h8->Size = System::Drawing::Size(75, 75);
 			this->h8->TabIndex = 62;
 			this->h8->TabStop = false;
 			this->h8->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -680,9 +666,9 @@ namespace BoardGames {
 			// 
 			this->f1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"f1.BackgroundImage")));
 			this->f1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"f1.Image")));
-			this->f1->Location = System::Drawing::Point(280, 380);
+			this->f1->Location = System::Drawing::Point(416, 566);
 			this->f1->Name = L"f1";
-			this->f1->Size = System::Drawing::Size(50, 50);
+			this->f1->Size = System::Drawing::Size(75, 75);
 			this->f1->TabIndex = 61;
 			this->f1->TabStop = false;
 			this->f1->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -691,9 +677,9 @@ namespace BoardGames {
 			// 
 			this->e1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"e1.BackgroundImage")));
 			this->e1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"e1.Image")));
-			this->e1->Location = System::Drawing::Point(230, 380);
+			this->e1->Location = System::Drawing::Point(341, 566);
 			this->e1->Name = L"e1";
-			this->e1->Size = System::Drawing::Size(50, 50);
+			this->e1->Size = System::Drawing::Size(75, 75);
 			this->e1->TabIndex = 60;
 			this->e1->TabStop = false;
 			this->e1->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -702,9 +688,9 @@ namespace BoardGames {
 			// 
 			this->g2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"g2.BackgroundImage")));
 			this->g2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"g2.Image")));
-			this->g2->Location = System::Drawing::Point(330, 330);
+			this->g2->Location = System::Drawing::Point(490, 490);
 			this->g2->Name = L"g2";
-			this->g2->Size = System::Drawing::Size(50, 50);
+			this->g2->Size = System::Drawing::Size(75, 75);
 			this->g2->TabIndex = 59;
 			this->g2->TabStop = false;
 			this->g2->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -712,9 +698,9 @@ namespace BoardGames {
 			// h7
 			// 
 			this->h7->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"h7.BackgroundImage")));
-			this->h7->Location = System::Drawing::Point(380, 80);
+			this->h7->Location = System::Drawing::Point(566, 116);
 			this->h7->Name = L"h7";
-			this->h7->Size = System::Drawing::Size(50, 50);
+			this->h7->Size = System::Drawing::Size(75, 75);
 			this->h7->TabIndex = 58;
 			this->h7->TabStop = false;
 			this->h7->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -723,9 +709,9 @@ namespace BoardGames {
 			// 
 			this->f2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"f2.BackgroundImage")));
 			this->f2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"f2.Image")));
-			this->f2->Location = System::Drawing::Point(280, 330);
+			this->f2->Location = System::Drawing::Point(416, 491);
 			this->f2->Name = L"f2";
-			this->f2->Size = System::Drawing::Size(50, 50);
+			this->f2->Size = System::Drawing::Size(75, 75);
 			this->f2->TabIndex = 57;
 			this->f2->TabStop = false;
 			this->f2->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -734,9 +720,9 @@ namespace BoardGames {
 			// 
 			this->e2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"e2.BackgroundImage")));
 			this->e2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"e2.Image")));
-			this->e2->Location = System::Drawing::Point(230, 330);
+			this->e2->Location = System::Drawing::Point(341, 491);
 			this->e2->Name = L"e2";
-			this->e2->Size = System::Drawing::Size(50, 50);
+			this->e2->Size = System::Drawing::Size(75, 75);
 			this->e2->TabIndex = 56;
 			this->e2->TabStop = false;
 			this->e2->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -745,9 +731,9 @@ namespace BoardGames {
 			// 
 			this->g3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"g3.BackgroundImage")));
 			this->g3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"g3.Image")));
-			this->g3->Location = System::Drawing::Point(330, 280);
+			this->g3->Location = System::Drawing::Point(491, 416);
 			this->g3->Name = L"g3";
-			this->g3->Size = System::Drawing::Size(50, 50);
+			this->g3->Size = System::Drawing::Size(75, 75);
 			this->g3->TabIndex = 55;
 			this->g3->TabStop = false;
 			this->g3->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -755,9 +741,9 @@ namespace BoardGames {
 			// h6
 			// 
 			this->h6->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"h6.BackgroundImage")));
-			this->h6->Location = System::Drawing::Point(380, 130);
+			this->h6->Location = System::Drawing::Point(566, 191);
 			this->h6->Name = L"h6";
-			this->h6->Size = System::Drawing::Size(50, 50);
+			this->h6->Size = System::Drawing::Size(75, 75);
 			this->h6->TabIndex = 54;
 			this->h6->TabStop = false;
 			this->h6->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -766,9 +752,9 @@ namespace BoardGames {
 			// 
 			this->f3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"f3.BackgroundImage")));
 			this->f3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"f3.Image")));
-			this->f3->Location = System::Drawing::Point(280, 280);
+			this->f3->Location = System::Drawing::Point(415, 415);
 			this->f3->Name = L"f3";
-			this->f3->Size = System::Drawing::Size(50, 50);
+			this->f3->Size = System::Drawing::Size(75, 75);
 			this->f3->TabIndex = 53;
 			this->f3->TabStop = false;
 			this->f3->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -777,9 +763,9 @@ namespace BoardGames {
 			// 
 			this->e3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"e3.BackgroundImage")));
 			this->e3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"e3.Image")));
-			this->e3->Location = System::Drawing::Point(230, 280);
+			this->e3->Location = System::Drawing::Point(341, 416);
 			this->e3->Name = L"e3";
-			this->e3->Size = System::Drawing::Size(50, 50);
+			this->e3->Size = System::Drawing::Size(75, 75);
 			this->e3->TabIndex = 52;
 			this->e3->TabStop = false;
 			this->e3->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -787,9 +773,9 @@ namespace BoardGames {
 			// g5
 			// 
 			this->g5->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"g5.BackgroundImage")));
-			this->g5->Location = System::Drawing::Point(330, 180);
+			this->g5->Location = System::Drawing::Point(491, 266);
 			this->g5->Name = L"g5";
-			this->g5->Size = System::Drawing::Size(50, 50);
+			this->g5->Size = System::Drawing::Size(75, 75);
 			this->g5->TabIndex = 51;
 			this->g5->TabStop = false;
 			this->g5->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -797,9 +783,9 @@ namespace BoardGames {
 			// h5
 			// 
 			this->h5->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"h5.BackgroundImage")));
-			this->h5->Location = System::Drawing::Point(380, 180);
+			this->h5->Location = System::Drawing::Point(566, 266);
 			this->h5->Name = L"h5";
-			this->h5->Size = System::Drawing::Size(50, 50);
+			this->h5->Size = System::Drawing::Size(75, 75);
 			this->h5->TabIndex = 50;
 			this->h5->TabStop = false;
 			this->h5->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -808,9 +794,9 @@ namespace BoardGames {
 			// 
 			this->f4->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"f4.BackgroundImage")));
 			this->f4->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"f4.Image")));
-			this->f4->Location = System::Drawing::Point(280, 230);
+			this->f4->Location = System::Drawing::Point(416, 341);
 			this->f4->Name = L"f4";
-			this->f4->Size = System::Drawing::Size(50, 50);
+			this->f4->Size = System::Drawing::Size(75, 75);
 			this->f4->TabIndex = 49;
 			this->f4->TabStop = false;
 			this->f4->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -819,9 +805,9 @@ namespace BoardGames {
 			// 
 			this->e4->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"e4.BackgroundImage")));
 			this->e4->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"e4.Image")));
-			this->e4->Location = System::Drawing::Point(230, 230);
+			this->e4->Location = System::Drawing::Point(340, 340);
 			this->e4->Name = L"e4";
-			this->e4->Size = System::Drawing::Size(50, 50);
+			this->e4->Size = System::Drawing::Size(75, 75);
 			this->e4->TabIndex = 48;
 			this->e4->TabStop = false;
 			this->e4->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -829,9 +815,9 @@ namespace BoardGames {
 			// c1
 			// 
 			this->c1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"c1.BackgroundImage")));
-			this->c1->Location = System::Drawing::Point(130, 380);
+			this->c1->Location = System::Drawing::Point(185, 566);
 			this->c1->Name = L"c1";
-			this->c1->Size = System::Drawing::Size(50, 50);
+			this->c1->Size = System::Drawing::Size(75, 75);
 			this->c1->TabIndex = 47;
 			this->c1->TabStop = false;
 			this->c1->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -839,9 +825,9 @@ namespace BoardGames {
 			// d1
 			// 
 			this->d1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"d1.BackgroundImage")));
-			this->d1->Location = System::Drawing::Point(180, 380);
+			this->d1->Location = System::Drawing::Point(266, 566);
 			this->d1->Name = L"d1";
-			this->d1->Size = System::Drawing::Size(50, 50);
+			this->d1->Size = System::Drawing::Size(75, 75);
 			this->d1->TabIndex = 46;
 			this->d1->TabStop = false;
 			this->d1->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -849,9 +835,9 @@ namespace BoardGames {
 			// b1
 			// 
 			this->b1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"b1.BackgroundImage")));
-			this->b1->Location = System::Drawing::Point(80, 380);
+			this->b1->Location = System::Drawing::Point(110, 565);
 			this->b1->Name = L"b1";
-			this->b1->Size = System::Drawing::Size(50, 50);
+			this->b1->Size = System::Drawing::Size(75, 75);
 			this->b1->TabIndex = 45;
 			this->b1->TabStop = false;
 			this->b1->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -859,9 +845,9 @@ namespace BoardGames {
 			// a1
 			// 
 			this->a1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"a1.BackgroundImage")));
-			this->a1->Location = System::Drawing::Point(30, 380);
+			this->a1->Location = System::Drawing::Point(50, 565);
 			this->a1->Name = L"a1";
-			this->a1->Size = System::Drawing::Size(50, 50);
+			this->a1->Size = System::Drawing::Size(75, 75);
 			this->a1->TabIndex = 44;
 			this->a1->TabStop = false;
 			this->a1->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -869,9 +855,9 @@ namespace BoardGames {
 			// c2
 			// 
 			this->c2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"c2.BackgroundImage")));
-			this->c2->Location = System::Drawing::Point(130, 330);
+			this->c2->Location = System::Drawing::Point(191, 491);
 			this->c2->Name = L"c2";
-			this->c2->Size = System::Drawing::Size(50, 50);
+			this->c2->Size = System::Drawing::Size(75, 75);
 			this->c2->TabIndex = 43;
 			this->c2->TabStop = false;
 			this->c2->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -879,9 +865,9 @@ namespace BoardGames {
 			// d2
 			// 
 			this->d2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"d2.BackgroundImage")));
-			this->d2->Location = System::Drawing::Point(180, 330);
+			this->d2->Location = System::Drawing::Point(266, 491);
 			this->d2->Name = L"d2";
-			this->d2->Size = System::Drawing::Size(50, 50);
+			this->d2->Size = System::Drawing::Size(75, 75);
 			this->d2->TabIndex = 42;
 			this->d2->TabStop = false;
 			this->d2->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -889,9 +875,9 @@ namespace BoardGames {
 			// b2
 			// 
 			this->b2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"b2.BackgroundImage")));
-			this->b2->Location = System::Drawing::Point(80, 330);
+			this->b2->Location = System::Drawing::Point(115, 490);
 			this->b2->Name = L"b2";
-			this->b2->Size = System::Drawing::Size(50, 50);
+			this->b2->Size = System::Drawing::Size(75, 75);
 			this->b2->TabIndex = 41;
 			this->b2->TabStop = false;
 			this->b2->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -899,9 +885,9 @@ namespace BoardGames {
 			// a2
 			// 
 			this->a2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"a2.BackgroundImage")));
-			this->a2->Location = System::Drawing::Point(30, 330);
+			this->a2->Location = System::Drawing::Point(50, 484);
 			this->a2->Name = L"a2";
-			this->a2->Size = System::Drawing::Size(50, 50);
+			this->a2->Size = System::Drawing::Size(75, 75);
 			this->a2->TabIndex = 40;
 			this->a2->TabStop = false;
 			this->a2->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -909,9 +895,9 @@ namespace BoardGames {
 			// c3
 			// 
 			this->c3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"c3.BackgroundImage")));
-			this->c3->Location = System::Drawing::Point(130, 280);
+			this->c3->Location = System::Drawing::Point(191, 416);
 			this->c3->Name = L"c3";
-			this->c3->Size = System::Drawing::Size(50, 50);
+			this->c3->Size = System::Drawing::Size(75, 75);
 			this->c3->TabIndex = 39;
 			this->c3->TabStop = false;
 			this->c3->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -919,9 +905,9 @@ namespace BoardGames {
 			// d3
 			// 
 			this->d3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"d3.BackgroundImage")));
-			this->d3->Location = System::Drawing::Point(180, 280);
+			this->d3->Location = System::Drawing::Point(266, 416);
 			this->d3->Name = L"d3";
-			this->d3->Size = System::Drawing::Size(50, 50);
+			this->d3->Size = System::Drawing::Size(75, 75);
 			this->d3->TabIndex = 38;
 			this->d3->TabStop = false;
 			this->d3->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -929,9 +915,9 @@ namespace BoardGames {
 			// b3
 			// 
 			this->b3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"b3.BackgroundImage")));
-			this->b3->Location = System::Drawing::Point(80, 280);
+			this->b3->Location = System::Drawing::Point(116, 416);
 			this->b3->Name = L"b3";
-			this->b3->Size = System::Drawing::Size(50, 50);
+			this->b3->Size = System::Drawing::Size(75, 75);
 			this->b3->TabIndex = 37;
 			this->b3->TabStop = false;
 			this->b3->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -939,9 +925,9 @@ namespace BoardGames {
 			// a3
 			// 
 			this->a3->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"a3.BackgroundImage")));
-			this->a3->Location = System::Drawing::Point(30, 280);
+			this->a3->Location = System::Drawing::Point(50, 416);
 			this->a3->Name = L"a3";
-			this->a3->Size = System::Drawing::Size(50, 50);
+			this->a3->Size = System::Drawing::Size(75, 75);
 			this->a3->TabIndex = 36;
 			this->a3->TabStop = false;
 			this->a3->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -949,9 +935,9 @@ namespace BoardGames {
 			// c4
 			// 
 			this->c4->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"c4.BackgroundImage")));
-			this->c4->Location = System::Drawing::Point(130, 230);
+			this->c4->Location = System::Drawing::Point(191, 341);
 			this->c4->Name = L"c4";
-			this->c4->Size = System::Drawing::Size(50, 50);
+			this->c4->Size = System::Drawing::Size(75, 75);
 			this->c4->TabIndex = 35;
 			this->c4->TabStop = false;
 			this->c4->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -959,9 +945,9 @@ namespace BoardGames {
 			// d4
 			// 
 			this->d4->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"d4.BackgroundImage")));
-			this->d4->Location = System::Drawing::Point(180, 230);
+			this->d4->Location = System::Drawing::Point(266, 341);
 			this->d4->Name = L"d4";
-			this->d4->Size = System::Drawing::Size(50, 50);
+			this->d4->Size = System::Drawing::Size(75, 75);
 			this->d4->TabIndex = 34;
 			this->d4->TabStop = false;
 			this->d4->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -969,9 +955,9 @@ namespace BoardGames {
 			// b4
 			// 
 			this->b4->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"b4.BackgroundImage")));
-			this->b4->Location = System::Drawing::Point(80, 230);
+			this->b4->Location = System::Drawing::Point(116, 341);
 			this->b4->Name = L"b4";
-			this->b4->Size = System::Drawing::Size(50, 50);
+			this->b4->Size = System::Drawing::Size(75, 75);
 			this->b4->TabIndex = 33;
 			this->b4->TabStop = false;
 			this->b4->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
@@ -979,156 +965,12 @@ namespace BoardGames {
 			// a4
 			// 
 			this->a4->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"a4.BackgroundImage")));
-			this->a4->Location = System::Drawing::Point(30, 230);
+			this->a4->Location = System::Drawing::Point(50, 341);
 			this->a4->Name = L"a4";
-			this->a4->Size = System::Drawing::Size(50, 50);
+			this->a4->Size = System::Drawing::Size(75, 75);
 			this->a4->TabIndex = 32;
 			this->a4->TabStop = false;
 			this->a4->Click += gcnew System::EventHandler(this, &MainForm::Square_Click);
-			// 
-			// label1
-			// 
-			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(47, 9);
-			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(13, 13);
-			this->label1->TabIndex = 64;
-			this->label1->Text = L"a";
-			// 
-			// label2
-			// 
-			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(97, 9);
-			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(13, 13);
-			this->label2->TabIndex = 65;
-			this->label2->Text = L"b";
-			// 
-			// label3
-			// 
-			this->label3->AutoSize = true;
-			this->label3->Location = System::Drawing::Point(147, 9);
-			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(13, 13);
-			this->label3->TabIndex = 66;
-			this->label3->Text = L"c";
-			// 
-			// label4
-			// 
-			this->label4->AutoSize = true;
-			this->label4->Location = System::Drawing::Point(197, 9);
-			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(13, 13);
-			this->label4->TabIndex = 67;
-			this->label4->Text = L"d";
-			// 
-			// label5
-			// 
-			this->label5->AutoSize = true;
-			this->label5->Location = System::Drawing::Point(247, 9);
-			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(13, 13);
-			this->label5->TabIndex = 68;
-			this->label5->Text = L"e";
-			// 
-			// label6
-			// 
-			this->label6->AutoSize = true;
-			this->label6->Location = System::Drawing::Point(297, 9);
-			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(10, 13);
-			this->label6->TabIndex = 69;
-			this->label6->Text = L"f";
-			// 
-			// label7
-			// 
-			this->label7->AutoSize = true;
-			this->label7->Location = System::Drawing::Point(347, 9);
-			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(13, 13);
-			this->label7->TabIndex = 70;
-			this->label7->Text = L"g";
-			// 
-			// label8
-			// 
-			this->label8->AutoSize = true;
-			this->label8->Location = System::Drawing::Point(397, 9);
-			this->label8->Name = L"label8";
-			this->label8->Size = System::Drawing::Size(13, 13);
-			this->label8->TabIndex = 71;
-			this->label8->Text = L"h";
-			// 
-			// label9
-			// 
-			this->label9->AutoSize = true;
-			this->label9->Location = System::Drawing::Point(12, 47);
-			this->label9->Name = L"label9";
-			this->label9->Size = System::Drawing::Size(13, 13);
-			this->label9->TabIndex = 72;
-			this->label9->Text = L"8";
-			// 
-			// label10
-			// 
-			this->label10->AutoSize = true;
-			this->label10->Location = System::Drawing::Point(12, 97);
-			this->label10->Name = L"label10";
-			this->label10->Size = System::Drawing::Size(13, 13);
-			this->label10->TabIndex = 73;
-			this->label10->Text = L"7";
-			// 
-			// label11
-			// 
-			this->label11->AutoSize = true;
-			this->label11->Location = System::Drawing::Point(12, 147);
-			this->label11->Name = L"label11";
-			this->label11->Size = System::Drawing::Size(13, 13);
-			this->label11->TabIndex = 74;
-			this->label11->Text = L"6";
-			// 
-			// label12
-			// 
-			this->label12->AutoSize = true;
-			this->label12->Location = System::Drawing::Point(12, 197);
-			this->label12->Name = L"label12";
-			this->label12->Size = System::Drawing::Size(13, 13);
-			this->label12->TabIndex = 75;
-			this->label12->Text = L"5";
-			// 
-			// label13
-			// 
-			this->label13->AutoSize = true;
-			this->label13->Location = System::Drawing::Point(12, 247);
-			this->label13->Name = L"label13";
-			this->label13->Size = System::Drawing::Size(13, 13);
-			this->label13->TabIndex = 76;
-			this->label13->Text = L"4";
-			// 
-			// label14
-			// 
-			this->label14->AutoSize = true;
-			this->label14->Location = System::Drawing::Point(12, 297);
-			this->label14->Name = L"label14";
-			this->label14->Size = System::Drawing::Size(13, 13);
-			this->label14->TabIndex = 77;
-			this->label14->Text = L"3";
-			// 
-			// label15
-			// 
-			this->label15->AutoSize = true;
-			this->label15->Location = System::Drawing::Point(12, 347);
-			this->label15->Name = L"label15";
-			this->label15->Size = System::Drawing::Size(13, 13);
-			this->label15->TabIndex = 78;
-			this->label15->Text = L"2";
-			// 
-			// label16
-			// 
-			this->label16->AutoSize = true;
-			this->label16->Location = System::Drawing::Point(12, 397);
-			this->label16->Name = L"label16";
-			this->label16->Size = System::Drawing::Size(13, 13);
-			this->label16->TabIndex = 79;
-			this->label16->Text = L"1";
 			// 
 			// TestLabel
 			// 
@@ -1141,7 +983,7 @@ namespace BoardGames {
 			// 
 			// NewGameButton
 			// 
-			this->NewGameButton->Location = System::Drawing::Point(454, 30);
+			this->NewGameButton->Location = System::Drawing::Point(713, 33);
 			this->NewGameButton->Name = L"NewGameButton";
 			this->NewGameButton->Size = System::Drawing::Size(75, 23);
 			this->NewGameButton->TabIndex = 81;
@@ -1151,7 +993,7 @@ namespace BoardGames {
 			// 
 			// ExitButton
 			// 
-			this->ExitButton->Location = System::Drawing::Point(454, 406);
+			this->ExitButton->Location = System::Drawing::Point(698, 645);
 			this->ExitButton->Name = L"ExitButton";
 			this->ExitButton->Size = System::Drawing::Size(75, 23);
 			this->ExitButton->TabIndex = 82;
@@ -1159,30 +1001,22 @@ namespace BoardGames {
 			this->ExitButton->UseVisualStyleBackColor = true;
 			this->ExitButton->Click += gcnew System::EventHandler(this, &MainForm::ExitButton_Click);
 			// 
+			// FullBoard
+			// 
+			this->FullBoard->Location = System::Drawing::Point(15, 15);
+			this->FullBoard->Name = L"FullBoard";
+			this->FullBoard->Size = System::Drawing::Size(660, 660);
+			this->FullBoard->TabIndex = 83;
+			this->FullBoard->TabStop = false;
+			// 
 			// MainForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(574, 491);
+			this->ClientSize = System::Drawing::Size(833, 719);
 			this->Controls->Add(this->ExitButton);
 			this->Controls->Add(this->NewGameButton);
 			this->Controls->Add(this->TestLabel);
-			this->Controls->Add(this->label16);
-			this->Controls->Add(this->label15);
-			this->Controls->Add(this->label14);
-			this->Controls->Add(this->label13);
-			this->Controls->Add(this->label12);
-			this->Controls->Add(this->label11);
-			this->Controls->Add(this->label10);
-			this->Controls->Add(this->label9);
-			this->Controls->Add(this->label8);
-			this->Controls->Add(this->label7);
-			this->Controls->Add(this->label6);
-			this->Controls->Add(this->label5);
-			this->Controls->Add(this->label4);
-			this->Controls->Add(this->label3);
-			this->Controls->Add(this->label2);
-			this->Controls->Add(this->label1);
 			this->Controls->Add(this->g1);
 			this->Controls->Add(this->h8);
 			this->Controls->Add(this->f1);
@@ -1247,6 +1081,7 @@ namespace BoardGames {
 			this->Controls->Add(this->d8);
 			this->Controls->Add(this->b8);
 			this->Controls->Add(this->a8);
+			this->Controls->Add(this->FullBoard);
 			this->Name = L"MainForm";
 			this->Text = L"MainForm";
 			this->Load += gcnew System::EventHandler(this, &MainForm::MainForm_Load);
@@ -1314,6 +1149,7 @@ namespace BoardGames {
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->d4))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->b4))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->a4))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->FullBoard))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -1396,7 +1232,10 @@ namespace BoardGames {
 				 PictureBoxArray_h[6] = h7;
 				 PictureBoxArray_h[7] = h8;
 
-				 // Move to initialisation
+				 // Drawing background
+				 FullBoard->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
+				 FullBoard->Image = System::Drawing::Image::FromFile(BOARD_BACKGROUND_FULL);
+
 				 for (int i = 0; i < 8; i++)
 				 {
 					 // Задання параметру для кожної клітинки поля для рідлаштування розміру фішки
@@ -1408,30 +1247,43 @@ namespace BoardGames {
 					 PictureBoxArray_f[i]->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 					 PictureBoxArray_g[i]->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 					 PictureBoxArray_h[i]->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
+					 				 
 
 					 // Завантаження фону клітинок поля
-					 if (i % 2)
-					 {
-						 PictureBoxArray_a[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_WHITE);
-						 PictureBoxArray_b[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_BLACK);
-						 PictureBoxArray_c[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_WHITE);
-						 PictureBoxArray_d[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_BLACK);
-						 PictureBoxArray_e[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_WHITE);
-						 PictureBoxArray_f[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_BLACK);
-						 PictureBoxArray_g[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_WHITE);
-						 PictureBoxArray_h[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_BLACK);
-					 }
-					 else
-					 {
-						 PictureBoxArray_a[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_BLACK);
-						 PictureBoxArray_b[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_WHITE);
-						 PictureBoxArray_c[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_BLACK);
-						 PictureBoxArray_d[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_WHITE);
-						 PictureBoxArray_e[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_BLACK);
-						 PictureBoxArray_f[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_WHITE);
-						 PictureBoxArray_g[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_BLACK);
-						 PictureBoxArray_h[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_WHITE);
-					 }
+					 //if (BOARD_BACKGROUND_WHITE != nullptr && BOARD_BACKGROUND_BLACK != nullptr)
+						 if (i % 2)
+						 {
+							 PictureBoxArray_a[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_WHITE);
+							 PictureBoxArray_b[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_BLACK);
+							 PictureBoxArray_c[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_WHITE);
+							 PictureBoxArray_d[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_BLACK);
+							 PictureBoxArray_e[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_WHITE);
+							 PictureBoxArray_f[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_BLACK);
+							 PictureBoxArray_g[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_WHITE);
+							 PictureBoxArray_h[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_BLACK);
+						 }
+						 else
+						 {
+							 PictureBoxArray_a[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_BLACK);
+							 PictureBoxArray_b[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_WHITE);
+							 PictureBoxArray_c[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_BLACK);
+							 PictureBoxArray_d[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_WHITE);
+							 PictureBoxArray_e[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_BLACK);
+							 PictureBoxArray_f[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_WHITE);
+							 PictureBoxArray_g[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_BLACK);
+							 PictureBoxArray_h[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_WHITE);
+						 }
+					// else
+					 /*{
+						 PictureBoxArray_a[i]->BackgroundImage = System::Drawing::Image::FromFile("VC_Resources\\Field_BackGrounds\\Squares\\NULL.png");
+						 PictureBoxArray_b[i]->BackgroundImage = nullptr;
+						 PictureBoxArray_c[i]->BackgroundImage = nullptr;
+						 PictureBoxArray_d[i]->BackgroundImage = nullptr;
+						 PictureBoxArray_e[i]->BackgroundImage = nullptr;
+						 PictureBoxArray_f[i]->BackgroundImage = nullptr;
+						 PictureBoxArray_g[i]->BackgroundImage = nullptr;
+						 PictureBoxArray_h[i]->BackgroundImage = nullptr;
+					 }*/
 				 }
 				 /*======================================*/
 				 
