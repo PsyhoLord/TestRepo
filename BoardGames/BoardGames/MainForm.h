@@ -49,7 +49,7 @@ namespace BoardGames {
 		
 		System::Object^ Active;
 		
-
+	private: 
 				// *** TABLE *** //
 	private: System::Windows::Forms::PictureBox^ a1;
 	private: System::Windows::Forms::PictureBox^ a2;
