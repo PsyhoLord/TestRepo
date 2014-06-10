@@ -2,7 +2,8 @@
 
 #define IMAGE_WHITE_CHIP "VC_Resources\\Chips\\Chip_1.png"  
 #define IMAGE_BLACK_CHIP "VC_Resources\\Chips\\Chip_2.png"
-
+#define BOARD_BACKGROUND_WHITE "VC_Resources\\Field_BackGrounds\\Field_1_w.png"
+#define BOARD_BACKGROUND_BLACK "VC_Resources\\Field_BackGrounds\\Field_1_b.png"
 
 namespace BoardGames {
 	using namespace System;
@@ -1318,6 +1319,7 @@ namespace BoardGames {
 #pragma endregion
 	private: System::Void MainForm_Load(System::Object^  sender, System::EventArgs^  e) 
 	{
+		// Moving Board PictureBoxes to array
 				 PictureBoxArray_a[0] = a1;
 				 PictureBoxArray_a[1] = a2;
 				 PictureBoxArray_a[2] = a3;
@@ -1390,66 +1392,9 @@ namespace BoardGames {
 				 PictureBoxArray_h[6] = h7;
 				 PictureBoxArray_h[7] = h8;
 
-				 //PictureBoxArray_a[7]->Image = nullptr;
-
-				 SetImageToPictureText();
-	}
-
-	private: System::Void SetImageToPictureText()
-			 {
-			// Black command
-				 // A line
-				 this->a8->Text = IMAGE_BLACK_CHIP;
-				 this->a7->Text = IMAGE_BLACK_CHIP;
-				 this->a6->Text = IMAGE_BLACK_CHIP;
-				 this->a5->Text = IMAGE_BLACK_CHIP;
-				
-				 // B line
-				 this->b8->Text = IMAGE_BLACK_CHIP;
-				 this->b7->Text = IMAGE_BLACK_CHIP;
-				 this->b6->Text = IMAGE_BLACK_CHIP;
-				 this->b5->Text = IMAGE_BLACK_CHIP;
-				
-				 // C line
-				 this->c8->Text = IMAGE_BLACK_CHIP;
-				 this->c7->Text = IMAGE_BLACK_CHIP;
-				 this->c6->Text = IMAGE_BLACK_CHIP;
-				 this->c5->Text = IMAGE_BLACK_CHIP;
-			
-				 // D line
-				 this->d8->Text = IMAGE_BLACK_CHIP;
-				 this->d7->Text = IMAGE_BLACK_CHIP;
-				 this->d6->Text = IMAGE_BLACK_CHIP;
-				 this->d5->Text = IMAGE_BLACK_CHIP;
-				
-			// White command
-				 // E line
-				 this->e1->Text = IMAGE_WHITE_CHIP;
-				 this->e2->Text = IMAGE_WHITE_CHIP;
-				 this->e3->Text = IMAGE_WHITE_CHIP;
-				 this->e4->Text = IMAGE_WHITE_CHIP;
-				
-				 // F line
-				 this->f1->Text = IMAGE_WHITE_CHIP;
-				 this->f2->Text = IMAGE_WHITE_CHIP;
-				 this->f3->Text = IMAGE_WHITE_CHIP;
-				 this->f4->Text = IMAGE_WHITE_CHIP;
-				
-				 // G line
-				 this->g1->Text = IMAGE_WHITE_CHIP;
-				 this->g2->Text = IMAGE_WHITE_CHIP;
-				 this->g3->Text = IMAGE_WHITE_CHIP;
-				 this->g4->Text = IMAGE_WHITE_CHIP;
-				
-				 // H line
-				 this->h1->Text = IMAGE_WHITE_CHIP;
-				 this->h2->Text = IMAGE_WHITE_CHIP;
-				 this->h3->Text = IMAGE_WHITE_CHIP;
-				 this->h4->Text = IMAGE_WHITE_CHIP;
-			 }
-	
-
-	
+				 // Starting new game
+				 NewGameButton_Click(nullptr,nullptr);
+		}
 
 	// Reloading given picturebox of square on table with given image
 	private: System::Void ReloadWithImage(PictureBox^ SelectedChip, String^ ImageName)
@@ -1462,73 +1407,24 @@ namespace BoardGames {
 	// Reloading given picturebox of square on table with image setted in picturebox->text
 	private: System::Void RefreshImage (PictureBox^ SelectedChip)
 	{
+		if (SelectedChip->Text->Length)
 		SelectedChip->Image = System::Drawing::Image::FromFile(SelectedChip->Text);
+		else SelectedChip->Image = nullptr;
 	}
 
 	private: bool RefreshAll()
 	{
-		RefreshImage(a1);
-		RefreshImage(a2);
-		RefreshImage(a3);
-		RefreshImage(a4);
-		RefreshImage(a5);
-		RefreshImage(a6);
-		RefreshImage(a7);
-		RefreshImage(a8);
-		
-		RefreshImage(b1);
-		RefreshImage(b2);
-		RefreshImage(b3);
-		RefreshImage(b4);
-		RefreshImage(b5);
-		RefreshImage(b6);
-		RefreshImage(b7);
-		RefreshImage(b8);
-		
-		RefreshImage(c1);
-		RefreshImage(c2);
-		RefreshImage(c3);
-		RefreshImage(c4);
-		RefreshImage(c5);
-		RefreshImage(c6);
-		RefreshImage(c7);
-		RefreshImage(c8);
-
-		RefreshImage(d1);
-		RefreshImage(d2);
-		RefreshImage(d3);
-		RefreshImage(d4);
-		RefreshImage(d5);
-		RefreshImage(d6);
-		RefreshImage(d7);
-		RefreshImage(d8);
-
-		RefreshImage(e1);
-		RefreshImage(e2);
-		RefreshImage(e3);
-		RefreshImage(e4);
-		RefreshImage(e5);
-		RefreshImage(e6);
-		RefreshImage(e7);
-		RefreshImage(e8);
-
-		RefreshImage(f1);
-		RefreshImage(f2);
-		RefreshImage(f3);
-		RefreshImage(f4);
-		RefreshImage(f5);
-		RefreshImage(f6);
-		RefreshImage(f7);
-		RefreshImage(f8);
-
-		RefreshImage(g1);
-		RefreshImage(g2);
-		RefreshImage(g3);
-		RefreshImage(g4);
-		RefreshImage(g5);
-		RefreshImage(g6);
-		RefreshImage(g7);
-		RefreshImage(g8);
+		for (int i = 0; i < 8; i++)
+		{
+			RefreshImage(PictureBoxArray_a[i]);
+			RefreshImage(PictureBoxArray_b[i]);
+			RefreshImage(PictureBoxArray_c[i]);
+			RefreshImage(PictureBoxArray_d[i]);
+			RefreshImage(PictureBoxArray_e[i]);
+			RefreshImage(PictureBoxArray_f[i]);
+			RefreshImage(PictureBoxArray_g[i]);
+			RefreshImage(PictureBoxArray_h[i]);
+		}
 		return true;
 	}
 
@@ -1563,7 +1459,36 @@ namespace BoardGames {
 
 	private: System::Void NewGameButton_Click(System::Object^  sender, System::EventArgs^  e)
 	{
+		//PictureBoxArray_a[7]->Image = nullptr;
+		Active = nullptr;
 
+		for (int i = 4; i < 8; i++)
+		{
+			PictureBoxArray_a[i]->Text = IMAGE_BLACK_CHIP;
+			PictureBoxArray_b[i]->Text = IMAGE_BLACK_CHIP;
+			PictureBoxArray_c[i]->Text = IMAGE_BLACK_CHIP;
+			PictureBoxArray_d[i]->Text = IMAGE_BLACK_CHIP;
+			
+			PictureBoxArray_e[i]->Text = nullptr;
+			PictureBoxArray_f[i]->Text = nullptr;
+			PictureBoxArray_g[i]->Text = nullptr;
+			PictureBoxArray_h[i]->Text = nullptr;
+		}
+
+		for (int i = 0; i < 4; i++)
+		{
+			PictureBoxArray_a[i]->Text = nullptr;
+			PictureBoxArray_b[i]->Text = nullptr;
+			PictureBoxArray_c[i]->Text = nullptr;
+			PictureBoxArray_d[i]->Text = nullptr;
+			
+			PictureBoxArray_e[i]->Text = IMAGE_WHITE_CHIP;
+			PictureBoxArray_f[i]->Text = IMAGE_WHITE_CHIP;
+			PictureBoxArray_g[i]->Text = IMAGE_WHITE_CHIP;
+			PictureBoxArray_h[i]->Text = IMAGE_WHITE_CHIP;
+		}
+
+		RefreshAll();
 	}
 
 			 

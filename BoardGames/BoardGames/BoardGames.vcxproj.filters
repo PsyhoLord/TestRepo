@@ -42,10 +42,10 @@
     <Image Include="VC_Resources\Chips\Chip_2.png">
       <Filter>Файлы ресурсов\Chips</Filter>
     </Image>
-    <Image Include="VC_Resources\Field_BackGrounds\Black_field.png">
+    <Image Include="VC_Resources\Field_BackGrounds\Field_1_b.png">
       <Filter>Файлы ресурсов\Field_BackGrounds</Filter>
     </Image>
-    <Image Include="VC_Resources\Field_BackGrounds\White_field.png">
+    <Image Include="VC_Resources\Field_BackGrounds\Field_1_w.png">
       <Filter>Файлы ресурсов\Field_BackGrounds</Filter>
     </Image>
   </ItemGroup>
