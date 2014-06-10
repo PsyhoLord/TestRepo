@@ -1,4 +1,6 @@
 #pragma once
+#include "Model.h"
+#include "ViewController.h"
 
 #define IMAGE_WHITE_CHIP			"VC_Resources\\Chips\\Chip_Red.png"  
 #define IMAGE_WHITE_CHIP_SELECTED	"VC_Resources\\Chips\\Chip_Red_S.png"  
