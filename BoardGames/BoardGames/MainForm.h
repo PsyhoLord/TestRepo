@@ -1399,6 +1399,7 @@ namespace BoardGames {
 				 // Move to initialisation
 				 for (int i = 0; i < 8; i++)
 				 {
+					 // Задання параметру для кожної клітинки поля для рідлаштування розміру фішки
 					 PictureBoxArray_a[i]->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 					 PictureBoxArray_b[i]->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 					 PictureBoxArray_c[i]->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
@@ -1407,6 +1408,30 @@ namespace BoardGames {
 					 PictureBoxArray_f[i]->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 					 PictureBoxArray_g[i]->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 					 PictureBoxArray_h[i]->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
+
+					 // Завантаження фону клітинок поля
+					 if (i % 2)
+					 {
+						 PictureBoxArray_a[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_WHITE);
+						 PictureBoxArray_b[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_BLACK);
+						 PictureBoxArray_c[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_WHITE);
+						 PictureBoxArray_d[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_BLACK);
+						 PictureBoxArray_e[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_WHITE);
+						 PictureBoxArray_f[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_BLACK);
+						 PictureBoxArray_g[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_WHITE);
+						 PictureBoxArray_h[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_BLACK);
+					 }
+					 else
+					 {
+						 PictureBoxArray_a[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_BLACK);
+						 PictureBoxArray_b[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_WHITE);
+						 PictureBoxArray_c[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_BLACK);
+						 PictureBoxArray_d[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_WHITE);
+						 PictureBoxArray_e[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_BLACK);
+						 PictureBoxArray_f[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_WHITE);
+						 PictureBoxArray_g[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_BLACK);
+						 PictureBoxArray_h[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_WHITE);
+					 }
 				 }
 				 /*======================================*/
 				 
