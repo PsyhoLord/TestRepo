@@ -1487,6 +1487,7 @@ namespace BoardGames {
 	
 	private: System::Void ExitButton_Click(System::Object^  sender, System::EventArgs^  e)
 	{
+		delete (this);
 	}
 };
 }
