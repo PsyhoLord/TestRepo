@@ -327,7 +327,7 @@ private: System::Windows::Forms::PictureBox^  FullBoard;
 			// 
 			this->c8->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"c8.BackgroundImage")));
 			this->c8->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"c8.Image")));
-			this->c8->Location = System::Drawing::Point(196, 50);
+			this->c8->Location = System::Drawing::Point(190, 50);
 			this->c8->Name = L"c8";
 			this->c8->Size = System::Drawing::Size(75, 75);
 			this->c8->TabIndex = 3;
@@ -338,7 +338,7 @@ private: System::Windows::Forms::PictureBox^  FullBoard;
 			// 
 			this->d8->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"d8.BackgroundImage")));
 			this->d8->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"d8.Image")));
-			this->d8->Location = System::Drawing::Point(265, 50);
+			this->d8->Location = System::Drawing::Point(259, 50);
 			this->d8->Name = L"d8";
 			this->d8->Size = System::Drawing::Size(75, 75);
 			this->d8->TabIndex = 2;
