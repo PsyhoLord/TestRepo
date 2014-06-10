@@ -57,6 +57,7 @@ namespace BoardGames {
 	private: array< PictureBox^ >^ PictureBoxArray_f = gcnew array< PictureBox^ >(8);
 	private: array< PictureBox^ >^ PictureBoxArray_g = gcnew array< PictureBox^ >(8);
 	private: array< PictureBox^ >^ PictureBoxArray_h = gcnew array< PictureBox^ >(8);
+	//private: array< PictureBox^ >^ PictureBoxBoardArray = gcnew array< PictureBox^ >(8);
 
 			 // *** TABLE *** //
 	private: System::Windows::Forms::PictureBox^ a1;
