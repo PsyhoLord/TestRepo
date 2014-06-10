@@ -12,6 +12,10 @@
 #define BOARD_LEFT_UPPER_X 15
 #define BOARD_LEFT_UPPER_Y 15
 
+#define SQUARE_LEFT_UPPER_X 45
+#define SQUARE_LEFT_UPPER_Y 45
+#define SQUARE_LENGTH 75
+
 
 namespace BoardGames {
 	using namespace System;
@@ -136,12 +140,6 @@ namespace BoardGames {
 // =============================================================================================== //
 	
 			// *** Board Marks *** //
-
-
-
-
-
-
 
 
 
@@ -1236,7 +1234,24 @@ private: System::Windows::Forms::PictureBox^  FullBoard;
 				 // Drawing background
 				 FullBoard->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 				 FullBoard->Image = System::Drawing::Image::FromFile(BOARD_BACKGROUND_FULL);
+				 //Задання позиції дошки
+				 FullBoard->Location = System::Drawing::Point(BOARD_LEFT_UPPER_X,BOARD_LEFT_UPPER_Y);
 
+				 for (int i = 0; i < 8; i++)
+				 {
+
+					 // Задання розміру кожної клітини
+					 PictureBoxArray_a[i]->Size = System::Drawing::Size(SQUARE_LENGTH, SQUARE_LENGTH);
+					 PictureBoxArray_b[i]->Size = System::Drawing::Size(SQUARE_LENGTH, SQUARE_LENGTH);
+					 PictureBoxArray_c[i]->Size = System::Drawing::Size(SQUARE_LENGTH, SQUARE_LENGTH);
+					 PictureBoxArray_d[i]->Size = System::Drawing::Size(SQUARE_LENGTH, SQUARE_LENGTH);
+					 PictureBoxArray_e[i]->Size = System::Drawing::Size(SQUARE_LENGTH, SQUARE_LENGTH);
+					 PictureBoxArray_f[i]->Size = System::Drawing::Size(SQUARE_LENGTH, SQUARE_LENGTH);
+					 PictureBoxArray_g[i]->Size = System::Drawing::Size(SQUARE_LENGTH, SQUARE_LENGTH);
+					 PictureBoxArray_h[i]->Size = System::Drawing::Size(SQUARE_LENGTH, SQUARE_LENGTH);
+				 }
+				 
+				 			 
 				 for (int i = 0; i < 8; i++)
 				 {
 					 // Задання параметру для кожної клітинки поля для рідлаштування розміру фішки
@@ -1274,7 +1289,20 @@ private: System::Windows::Forms::PictureBox^  FullBoard;
 							 PictureBoxArray_g[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_BLACK);
 							 PictureBoxArray_h[i]->BackgroundImage = System::Drawing::Image::FromFile(BOARD_BACKGROUND_WHITE);
 						 }
-					// else
+
+						 for (int i = 7; i >= 0 ; i--)
+						 {
+							 //Налаштування позиції кожної фішки на полі
+							 PictureBoxArray_a[i]->Location = System::Drawing::Point(SQUARE_LEFT_UPPER_X, SQUARE_LEFT_UPPER_Y + SQUARE_LENGTH*(7 - i));
+							 PictureBoxArray_b[i]->Location = System::Drawing::Point(SQUARE_LEFT_UPPER_X + SQUARE_LENGTH * 1, SQUARE_LEFT_UPPER_Y + SQUARE_LENGTH*(7 - i));
+							 PictureBoxArray_c[i]->Location = System::Drawing::Point(SQUARE_LEFT_UPPER_X + SQUARE_LENGTH * 2, SQUARE_LEFT_UPPER_Y + SQUARE_LENGTH*(7 - i));
+							 PictureBoxArray_d[i]->Location = System::Drawing::Point(SQUARE_LEFT_UPPER_X + SQUARE_LENGTH * 3, SQUARE_LEFT_UPPER_Y + SQUARE_LENGTH*(7 - i));
+							 PictureBoxArray_e[i]->Location = System::Drawing::Point(SQUARE_LEFT_UPPER_X + SQUARE_LENGTH * 4, SQUARE_LEFT_UPPER_Y + SQUARE_LENGTH*(7 - i));
+							 PictureBoxArray_f[i]->Location = System::Drawing::Point(SQUARE_LEFT_UPPER_X + SQUARE_LENGTH * 5, SQUARE_LEFT_UPPER_Y + SQUARE_LENGTH*(7 - i));
+							 PictureBoxArray_g[i]->Location = System::Drawing::Point(SQUARE_LEFT_UPPER_X + SQUARE_LENGTH * 6, SQUARE_LEFT_UPPER_Y + SQUARE_LENGTH*(7 - i));
+							 PictureBoxArray_h[i]->Location = System::Drawing::Point(SQUARE_LEFT_UPPER_X + SQUARE_LENGTH * 7, SQUARE_LEFT_UPPER_Y + SQUARE_LENGTH*(7 - i));
+						}
+						 // else
 					 /*{
 						 PictureBoxArray_a[i]->BackgroundImage = System::Drawing::Image::FromFile("VC_Resources\\Field_BackGrounds\\Squares\\NULL.png");
 						 PictureBoxArray_b[i]->BackgroundImage = nullptr;
