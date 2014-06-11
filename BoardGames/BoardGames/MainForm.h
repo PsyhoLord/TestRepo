@@ -67,16 +67,17 @@ namespace BoardGames {
 		
 		System::Object^ Active;
 		
-	private: array< PictureBox^ >^ PictureBoxArray_a = gcnew array< PictureBox^ >(8);
-	private: array< PictureBox^ >^ PictureBoxArray_b = gcnew array< PictureBox^ >(8);
-	private: array< PictureBox^ >^ PictureBoxArray_c = gcnew array< PictureBox^ >(8);
-	private: array< PictureBox^ >^ PictureBoxArray_d = gcnew array< PictureBox^ >(8);
-	private: array< PictureBox^ >^ PictureBoxArray_e = gcnew array< PictureBox^ >(8);
-	private: array< PictureBox^ >^ PictureBoxArray_f = gcnew array< PictureBox^ >(8);
-	private: array< PictureBox^ >^ PictureBoxArray_g = gcnew array< PictureBox^ >(8);
-	private: array< PictureBox^ >^ PictureBoxArray_h = gcnew array< PictureBox^ >(8);
-	//private: array< PictureBox^ >^ PictureBoxBoardArray = gcnew array< PictureBox^ >(8);
-
+	public: array< PictureBox^ >^ PictureBoxArray_a = gcnew array< PictureBox^ >(8);
+	public: array< PictureBox^ >^ PictureBoxArray_b = gcnew array< PictureBox^ >(8);
+	public: array< PictureBox^ >^ PictureBoxArray_c = gcnew array< PictureBox^ >(8);
+	public: array< PictureBox^ >^ PictureBoxArray_d = gcnew array< PictureBox^ >(8);
+	public: array< PictureBox^ >^ PictureBoxArray_e = gcnew array< PictureBox^ >(8);
+	public: array< PictureBox^ >^ PictureBoxArray_f = gcnew array< PictureBox^ >(8);
+	public: array< PictureBox^ >^ PictureBoxArray_g = gcnew array< PictureBox^ >(8);
+	public: array< PictureBox^ >^ PictureBoxArray_h = gcnew array< PictureBox^ >(8);
+	//private: array< PictureBox^ >^ PictureBoxArray_ALL = gcnew array< PictureBox^ >(8);
+			 //private: array< PictureBox^ >^ PictureBoxBoardArray = gcnew array< PictureBox^ >(8);
+			 
 			 // *** TABLE *** //
 	private: System::Windows::Forms::PictureBox^ a1;
 	private: System::Windows::Forms::PictureBox^ a2;
@@ -1421,20 +1422,19 @@ private: System::Windows::Forms::Button^  OptionsButton;
 
 	private: bool RefreshAll()
 	{
-		for (int i = 0; i < 8; i++)
-		{
-			RefreshImage(PictureBoxArray_a[i]);
-			RefreshImage(PictureBoxArray_b[i]);
-			RefreshImage(PictureBoxArray_c[i]);
-			RefreshImage(PictureBoxArray_d[i]);
-			RefreshImage(PictureBoxArray_e[i]);
-			RefreshImage(PictureBoxArray_f[i]);
-			RefreshImage(PictureBoxArray_g[i]);
-			RefreshImage(PictureBoxArray_h[i]);
-		}
-		return true;
+				 for (int i = 0; i < 8; i++)
+				 {
+					 RefreshImage(PictureBoxArray_a[i]);
+					 RefreshImage(PictureBoxArray_b[i]);
+					 RefreshImage(PictureBoxArray_c[i]);
+					 RefreshImage(PictureBoxArray_d[i]);
+					 RefreshImage(PictureBoxArray_e[i]);
+					 RefreshImage(PictureBoxArray_f[i]);
+					 RefreshImage(PictureBoxArray_g[i]);
+					 RefreshImage(PictureBoxArray_h[i]);
+				 }
+				 return true;
 	}
-
 	// EVENT HANDLER: Click on a Board
 	private: System::Void Square_Click(System::Object^  sender, System::EventArgs^  e) 
 	{
