@@ -7,6 +7,8 @@
 #define IMAGE_BLACK_CHIP			"VC_Resources\\Chips\\Chip_Blue.png"
 #define IMAGE_BLACK_CHIP_SELECTED	"VC_Resources\\Chips\\Chip_Blue_S.png"
 
+#define IMAGE_TEMP_CHIP	"VC_Resources\\Chips\\Chip_1.png"
+
 #define BOARD_BACKGROUND_WHITE	"VC_Resources\\Field_BackGrounds\\Squares\\Field_1_w.png"
 #define BOARD_BACKGROUND_BLACK	"VC_Resources\\Field_BackGrounds\\Squares\\Field_1_b.png"
 #define BOARD_BACKGROUND_FULL	"VC_Resources\\Field_BackGrounds\\Full_Boards\\Board_4.png"
@@ -35,12 +37,16 @@ namespace BoardGames {
 	/// </summary>
 	public ref class MainForm : public System::Windows::Forms::Form
 	{
+	public:int** arr;
 		public:	MainForm(void)
 		{
 			InitializeComponent();
 			//
 			//TODO: добавьте код конструктора
 			//
+			arr = (int**)malloc(8 * sizeof(int*));
+			for (int i = 0; i < 8; i++)
+				arr[i] = (int*)malloc(8 * sizeof(int));
 		}
 
 		protected: ~MainForm()
@@ -154,6 +160,8 @@ private: System::Windows::Forms::PictureBox^  FullBoard;
 private: System::Windows::Forms::Button^  SaveGameButton;
 private: System::Windows::Forms::Button^  LoadGameButton;
 private: System::Windows::Forms::Button^  OptionsButton;
+
+
 
 		 // =============================================================================================== //
 
@@ -986,7 +994,7 @@ private: System::Windows::Forms::Button^  OptionsButton;
 			// TestLabel
 			// 
 			this->TestLabel->AutoSize = true;
-			this->TestLabel->Location = System::Drawing::Point(27, 464);
+			this->TestLabel->Location = System::Drawing::Point(731, 15);
 			this->TestLabel->Name = L"TestLabel";
 			this->TestLabel->Size = System::Drawing::Size(41, 13);
 			this->TestLabel->TabIndex = 80;
@@ -1088,7 +1096,7 @@ private: System::Windows::Forms::Button^  OptionsButton;
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoSize = true;
-			this->ClientSize = System::Drawing::Size(886, 719);
+			this->ClientSize = System::Drawing::Size(892, 725);
 			this->Controls->Add(this->OptionsButton);
 			this->Controls->Add(this->LoadGameButton);
 			this->Controls->Add(this->SaveGameButton);
@@ -1435,12 +1443,275 @@ private: System::Windows::Forms::Button^  OptionsButton;
 				 }
 				 return true;
 	}
+			
+			 //Створюємо матрицю int значень
+	public: void Value_Board_to_int ()
+	{
+				
+									
+				int jPB = 7;
+				int j_arr = 0;
+				//array A
+				for (int iPB = 7, i_arr = 0; iPB >= 0; iPB--, i_arr++)
+				{
+					if (PictureBoxArray_a[iPB]->Text->Length)
+					{
+						if (PictureBoxArray_a[iPB]->Text == IMAGE_WHITE_CHIP)
+						{
+							*(*(arr + j_arr) + i_arr) = 1;
+							//arr[j_arr][i_arr] = 1;
+						}
+						if (PictureBoxArray_a[iPB]->Text == IMAGE_BLACK_CHIP)
+						{
+							*(*(arr + j_arr) + i_arr) = 2;
+							//arr[j_arr][i_arr] = 2;
+						}
+					}
+					else
+						*(*(arr + j_arr) + i_arr) = 0;
+						//arr[j_arr][i_arr] = 0;
+						
+				}
+				jPB--;
+				j_arr++;
+
+				//array B
+				for (int iPB = 7, i_arr = 0; iPB >= 0; iPB--, i_arr++)
+				{
+					if (PictureBoxArray_b[iPB]->Text->Length)
+					{
+						if (PictureBoxArray_b[iPB]->Text == IMAGE_WHITE_CHIP)
+						{
+							*(*(arr + j_arr) + i_arr) = 1;
+							//arr[j_arr][i_arr] = 1;
+						}
+						if (PictureBoxArray_b[iPB]->Text == IMAGE_BLACK_CHIP)
+						{
+							*(*(arr + j_arr) + i_arr) = 2;
+							//arr[j_arr][i_arr] = 2;
+						}
+					}
+					else *(*(arr + j_arr) + i_arr) = 0;
+						//arr[j_arr][i_arr] = 0;
+				}
+				jPB--;
+				j_arr++;
+
+				//array C
+				for (int iPB = 7, i_arr = 0; iPB >= 0; iPB--, i_arr++)
+				{
+					if (PictureBoxArray_c[iPB]->Text->Length)
+					{
+						if (PictureBoxArray_c[iPB]->Text == IMAGE_WHITE_CHIP)
+						{
+							*(*(arr + j_arr) + i_arr) = 1;
+							//arr[j_arr][i_arr] = 1;
+						}
+						if (PictureBoxArray_c[iPB]->Text == IMAGE_BLACK_CHIP)
+						{
+							*(*(arr + j_arr) + i_arr) = 2;
+							//arr[j_arr][i_arr] = 2;
+						}
+					}
+					else *(*(arr + j_arr) + i_arr) = 0;
+						//arr[j_arr][i_arr] = 0;
+				}
+				jPB--;
+				j_arr++;
+
+				//array D
+				for (int iPB = 7, i_arr = 0; iPB >= 0; iPB--, i_arr++)
+				{
+					if (PictureBoxArray_d[iPB]->Text->Length)
+					{
+						if (PictureBoxArray_d[iPB]->Text == IMAGE_WHITE_CHIP)
+						{
+							*(*(arr + j_arr) + i_arr) = 1;
+							//arr[j_arr][i_arr] = 1;
+						}
+						if (PictureBoxArray_d[iPB]->Text == IMAGE_BLACK_CHIP)
+						{
+							*(*(arr + j_arr) + i_arr) = 2;
+							//arr[j_arr][i_arr] = 2;
+						}
+					}
+					else *(*(arr + j_arr) + i_arr) = 0;
+						//arr[j_arr][i_arr] = 0;
+				}
+				jPB--;
+				j_arr++;
+
+				//array E
+				for (int iPB = 7, i_arr = 0; iPB >= 0; iPB--, i_arr++)
+				{
+					if (PictureBoxArray_e[iPB]->Text->Length)
+					{
+						if (PictureBoxArray_e[iPB]->Text == IMAGE_WHITE_CHIP)
+						{
+							*(*(arr + j_arr) + i_arr) = 1;
+							//arr[j_arr][i_arr] = 1;
+						}
+						if (PictureBoxArray_e[iPB]->Text == IMAGE_BLACK_CHIP)
+						{
+							*(*(arr + j_arr) + i_arr) = 2;
+							//arr[j_arr][i_arr] = 2;
+						}
+					}
+					else *(*(arr + j_arr) + i_arr) = 0;
+						//arr[j_arr][i_arr] = 0;
+				}
+				jPB--;
+				j_arr++;
+
+				//array F
+				for (int iPB = 7, i_arr = 0; iPB >= 0; iPB--, i_arr++)
+				{
+					if (PictureBoxArray_f[iPB]->Text->Length)
+					{
+						if (PictureBoxArray_f[iPB]->Text == IMAGE_WHITE_CHIP)
+						{
+							*(*(arr + j_arr) + i_arr) = 1;
+							//arr[j_arr][i_arr] = 1;
+						}
+						if (PictureBoxArray_f[iPB]->Text == IMAGE_BLACK_CHIP)
+						{
+							*(*(arr + j_arr) + i_arr) = 2;
+							//arr[j_arr][i_arr] = 2;
+						}
+					}
+					else *(*(arr + j_arr) + i_arr) = 0;
+						//arr[j_arr][i_arr] = 0;
+				}
+				jPB--;
+				j_arr++;
+
+				//array G
+				for (int iPB = 7, i_arr = 0; iPB >= 0; iPB--, i_arr++)
+				{
+					if (PictureBoxArray_g[iPB]->Text->Length)
+					{
+						if (PictureBoxArray_g[iPB]->Text == IMAGE_WHITE_CHIP)
+						{
+							*(*(arr + j_arr) + i_arr) = 1;
+							//arr[j_arr][i_arr] = 1;
+						}
+						if (PictureBoxArray_g[iPB]->Text == IMAGE_BLACK_CHIP)
+						{
+							*(*(arr + j_arr) + i_arr) = 2;
+							//arr[j_arr][i_arr] = 2;
+						}
+					}
+					else *(*(arr + j_arr) + i_arr) = 0;
+						//arr[j_arr][i_arr] = 0;
+				}
+				jPB--;
+				j_arr++;
+
+				//array H
+				for (int iPB = 7, i_arr = 0; iPB >= 0; iPB--, i_arr++)
+				{
+					if (PictureBoxArray_h[iPB]->Text->Length)
+					{
+						if (PictureBoxArray_h[iPB]->Text == IMAGE_WHITE_CHIP)
+						{
+							*(*(arr + j_arr) + i_arr) = 1;
+							//arr[j_arr][i_arr] = 1;
+						}
+						if (PictureBoxArray_h[iPB]->Text == IMAGE_BLACK_CHIP)
+						{
+							*(*(arr + j_arr) + i_arr) = 2;
+							//arr[j_arr][i_arr] = 2;
+						}
+					}
+					else *(*(arr + j_arr) + i_arr) = 0;
+						//arr[j_arr][i_arr] = 0;
+				}
+}
+	
+	//Get X in int
+	private: int * Get_X (System::Object^ PB)
+	{
+				 int *X = (int*)malloc(sizeof(int));
+				 *X = (((PictureBox^)PB)->Location.X - SQUARE_LEFT_UPPER_X) / SQUARE_LENGTH;
+				 return X;
+	}
+	//Get Y in int
+	private: int * Get_Y (System::Object^ PB)
+	{
+				 int *Y = (int*)malloc(sizeof(int));
+				*Y = (((PictureBox^)PB)->Location.Y - SQUARE_LEFT_UPPER_Y) / SQUARE_LENGTH;
+				return Y;
+	}
+	private: void Create_Temp_Ghip()
+	{
+				 for (int i = 0; i < 8; i++)
+				 {
+					 for (int j = 0; j < 8; j++)
+					 {
+						 if (*(*(arr + j) + i) == 3)
+							 switch (j)
+						 {
+							 case 0: PictureBoxArray_a[7 - i]->Image = System::Drawing::Image::FromFile(IMAGE_TEMP_CHIP);
+								 break;
+							 case 1: PictureBoxArray_b[7 - i]->Image = System::Drawing::Image::FromFile(IMAGE_TEMP_CHIP);
+								 break;
+							 case 2: PictureBoxArray_c[7 - i]->Image = System::Drawing::Image::FromFile(IMAGE_TEMP_CHIP);
+								 break;
+							 case 3: PictureBoxArray_d[7 - i]->Image = System::Drawing::Image::FromFile(IMAGE_TEMP_CHIP);
+								 break;
+							 case 4: PictureBoxArray_e[7 - i]->Image = System::Drawing::Image::FromFile(IMAGE_TEMP_CHIP);
+								 break;
+							 case 5: PictureBoxArray_f[7 - i]->Image = System::Drawing::Image::FromFile(IMAGE_TEMP_CHIP);
+								 break;
+							 case 6: PictureBoxArray_g[7 - i]->Image = System::Drawing::Image::FromFile(IMAGE_TEMP_CHIP);
+								 break;
+							 case 7: PictureBoxArray_h[7 - i]->Image = System::Drawing::Image::FromFile(IMAGE_TEMP_CHIP);
+								 break;
+							 default:
+								 break;
+						 }
+					 }
+				 }
+	}
+	private: void Delete_Temp_Ghip()
+	{
+				 for (int i = 0; i < 8; i++)
+				 {
+					 for (int j = 0; j < 8; j++)
+					 {
+						 if (*(*(arr + j) + i) == 3)
+							 switch (j)
+						 {
+							 case 0: RefreshImage(PictureBoxArray_a[7 - i]);
+								 break;
+							 case 1: RefreshImage(PictureBoxArray_b[7 - i]);
+								 break;
+							 case 2: RefreshImage(PictureBoxArray_c[7 - i]);
+								 break;
+							 case 3: RefreshImage(PictureBoxArray_d[7 - i]);
+								 break;
+							 case 4: RefreshImage(PictureBoxArray_e[7 - i]);
+								 break;
+							 case 5: RefreshImage(PictureBoxArray_f[7 - i]);
+								 break;
+							 case 6: RefreshImage(PictureBoxArray_g[7 - i]);
+								 break;
+							 case 7: RefreshImage(PictureBoxArray_h[7 - i]);
+								 break;
+							 default:
+								 break;
+						 }
+					 }
+				 }
+	}
+
 	// EVENT HANDLER: Click on a Board
 	private: System::Void Square_Click(System::Object^  sender, System::EventArgs^  e) 
 	{
+		Delete_Temp_Ghip();
 		PictureBox^ PB;
 		PB = (PictureBox^)sender;
-	
+		//TestLabel->Text = ((PictureBox^)PB)->Text;
 		if (PB->Text->Length) // якщо в квадраті щось є
 		{
 			//if (PB == Active)
@@ -1457,6 +1728,23 @@ private: System::Windows::Forms::Button^  OptionsButton;
 				RefreshImage((PictureBox^)Active);
 			}
 			Active = PB; // то це стає активним
+			int *X = (int*)malloc( sizeof(int))
+				, *Y = (int*)malloc(sizeof(int));
+			X = Get_X(Active);
+			Y = Get_Y(Active);
+
+			ViewController VC;
+			VC.GetLocations(X, Y);
+			Value_Board_to_int();
+			//ViewController VC;
+			VC.GetBoard(X,Y,arr);
+			Create_Temp_Ghip();
+
+			//int **arr = (int**)malloc(8 * sizeof(int*));
+			//for (int i = 0; i < 8; i++)
+			//	arr[i] = (int*)malloc(8 * sizeof(int));
+
+			//VC.SetBoard(arr);
 			
 			// і змінює колір
 			if (!PB->Text->CompareTo(IMAGE_BLACK_CHIP))
@@ -1469,6 +1757,7 @@ private: System::Windows::Forms::Button^  OptionsButton;
 		{
 			if (Active) // але є активна фішка
 			{
+				
 				// TestLabel->Text = ((PictureBox^)Active)->Text; // Тестовий вивід
 				// Активна перестає бути активною
 				if (!((PictureBox^)Active)->Text->CompareTo(IMAGE_BLACK_CHIP_SELECTED))

@@ -28,69 +28,70 @@ void Model::Get_Move()
 {
 }
 
-void Model::Get_Move(int x1, int y1)
+void Model::Get_Move(int x1, int y1, int **Board)
 {
 	// Задаем координаты точки
-	p.x = y1;
-	p.y = x1;
+	x = y1;
+	y = x1;
+	//Move(Board);
 
 }
 
 // Делаем шаг в сторону на 1 клетку(вверх, вправо, вниз, влево)
-void Model::Move(int **Board)
+void Model::Move(int x, int y, int **Board)
 {
 	//cout << "point = " << *(*(Board + p.x) + p.y) << endl;
 	// Проверяем на корректность точку 
-	if (Chek_Fishka(p, Board) == true)
+	if (Chek_Fishka(x, y, Board) == true)
 	{
 		// Вывод значения точки
 		//cout << "point = " << *(*(Board + p.x) + p.y) << endl;
 		// 
-		if ((p.y >= 0) && (p.y < length))
-			if ((p.x - 1 >= 0) && (p.x < length))
+		if ((y >= 0) && (y < length))
+			if ((x - 1 >= 0) && (x < length))
 			{
 				// Если значение куда мы хотим пойти пустое, то ходим
-				if (*(*(Board + p.x - 1) + p.y) == 0)
+				if (*(*(Board + x - 1) + y) == 0)
 				{
 					// В место куда мы можем пойти записываем "3"
-					*(*(Board + p.x - 1) + p.y) = 3;
+					*(*(Board + x - 1) + y) = 3;
 					Counter++;
 				}
 
 				//Если, туда, куда мы хочем пойти, занято фишкой, то смотрим куда мы можем перепрыгнуть
-				else Jumping(p, Board);
+				else Jumping(x, y, Board);
 			}
 
-		if ((p.y >= 0) && (p.y + 1 < length))
-			if ((p.x >= 0) && (p.x < length))
+		if ((y >= 0) && (y + 1 < length))
+			if ((x >= 0) && (x < length))
 			{
-				if (*(*(Board + p.x) + p.y + 1) == 0)
+				if (*(*(Board + x) + y + 1) == 0)
 				{
-					*(*(Board + p.x) + p.y + 1) = 3;
+					*(*(Board + x) + y + 1) = 3;
 					Counter++;
 
 				}
-				else Jumping(p, Board);
+				else Jumping(x, y, Board);
 			}
-		if ((p.y >= 0) && (p.y < length))
-			if ((p.x >= 0) && (p.x + 1 < length))
+		if ((y >= 0) && (y < length))
+			if ((x >= 0) && (x + 1 < length))
 			{
-				if (*(*(Board + p.x + 1) + p.y) == 0)
+				if (*(*(Board + x + 1) + y) == 0)
 				{
-					*(*(Board + p.x + 1) + p.y) = 3;
+					*(*(Board + x + 1) + y) = 3;
 					Counter++;
 				}
-				else Jumping(p, Board);
+				else Jumping(x, y, Board);
 			}
-		if ((p.y - 1 >= 0) && (p.y < length))
-			if ((p.x >= 0) && (p.x < length))
+		if ((y - 1 >= 0) && (y < length))
+			if ((x >= 0) && (x < length))
 			{
-				if (*(*(Board + p.x) + p.y - 1) == 0)
+				if (*(*(Board + x) + y - 1) == 0)
 				{
-					*(*(Board + p.x) + p.y - 1) = 3;
+					*(*(Board + x) + y - 1) = 3;
 					Counter++;
 				}
-				else Jumping(p, Board);
+				else Jumping(x, y, Board);
 			}
 
 		//Печатаем матрицу
@@ -106,71 +107,71 @@ void Model::Move(int **Board)
 }
 
 // Вычисляем куда можно прыгнуть
-int Model::Jumping(pointer p, int **Board)
+int Model::Jumping(int x, int y, int **Board)
 {
-	pointer ptemp;
+	int xtemp, ytemp;
 	// Прыжок вверх
 	// Проверка на выход за грницы поля
-	if ((p.y >= 0) && (p.y < length))
-		if ((p.x - 2 >= 0) && (p.x < length))
+	if ((y >= 0) && (y < length))
+		if ((x - 2 >= 0) && (x < length))
 		{
 			// Проверка на место куда можно прыгнуть
-			if (*(*(Board + p.x - 2) + p.y) == 0)
+			if (*(*(Board + x - 2) + y) == 0)
 				// Проверка на значение в месте перед прыжком(там должна быть фишка)
-				if ((*(*(Board + p.x - 1) + p.y) == 1) || (*(*(Board + p.x - 1) + p.y)) == 2)
+				if ((*(*(Board + x - 1) + y) == 1) || (*(*(Board + x - 1) + y)) == 2)
 				{
 					// Заносим в поле куда мы можем пойти
-					*(*(Board + p.x - 2) + p.y) = 3;
+					*(*(Board + x - 2) + y) = 3;
 					Counter++;
-					ptemp.x = p.x - 2;
-					ptemp.y = p.y;
+					xtemp = x - 2;
+					ytemp = y;
 					// И ищем дальше куда мы можем прыгнуть
-					Jumping(ptemp, Board);
+					Jumping(xtemp, ytemp, Board);
 				}
 		}
 
 	// Прыжок вправо
-	if ((p.y >= 0) && (p.y + 2 < length))
-		if ((p.x >= 0) && (p.x < length))
+	if ((y >= 0) && (y + 2 < length))
+		if ((x >= 0) && (x < length))
 		{
-			if (*(*(Board + p.x) + p.y + 2) == 0)
-				if ((*(*(Board + p.x) + p.y + 1) == 1) || (*(*(Board + p.x) + p.y + 1) == 2))
+			if (*(*(Board + x) + y + 2) == 0)
+				if ((*(*(Board + x) + y + 1) == 1) || (*(*(Board + x) + y + 1) == 2))
 				{
-					*(*(Board + p.x) + p.y + 2) = 3;
+					*(*(Board + x) + y + 2) = 3;
 					Counter++;
-					ptemp.x = p.x;
-					ptemp.y = p.y + 2;
-					Jumping(ptemp, Board);
+					xtemp = x;
+					ytemp = y + 2;
+					Jumping(x, y, Board);
 				}
 		}
 
 	//Прыжок вниз
-	if ((p.y >= 0) && (p.y < length))
-		if ((p.x >= 0) && (p.x + 2 < length))
+	if ((y >= 0) && (y < length))
+		if ((x >= 0) && (x + 2 < length))
 		{
-			if (*(*(Board + p.x + 2) + p.y) == 0)
-				if ((*(*(Board + p.x + 1) + p.y) == 1) || (*(*(Board + p.x + 1) + p.y) == 2))
+			if (*(*(Board + x + 2) + y) == 0)
+				if ((*(*(Board + x + 1) + y) == 1) || (*(*(Board + x + 1) + y) == 2))
 				{
-					*(*(Board + p.x + 2) + p.y) = 3;
+					*(*(Board + x + 2) + y) = 3;
 					Counter++;
-					ptemp.x = p.x + 2;
-					ptemp.y = p.y;
-					Jumping(ptemp, Board);
+					xtemp = x + 2;
+					ytemp = y;
+					Jumping(xtemp, ytemp, Board);
 				}
 		}
 
 	//Прыжок влево
-	if ((p.y - 2 >= 0) && (p.y < length))
-		if ((p.x >= 0) && (p.x < length))
+	if ((y - 2 >= 0) && (y < length))
+		if ((x >= 0) && (x < length))
 		{
-			if (*(*(Board + p.x) + p.y - 2) == 0)
-				if ((*(*(Board + p.x) + p.y - 1) == 1) || (*(*(Board + p.x) + p.y - 1) == 2))
+			if (*(*(Board + x) + y - 2) == 0)
+				if ((*(*(Board + x) + y - 1) == 1) || (*(*(Board + x) + y - 1) == 2))
 				{
-					*(*(Board + p.x) + p.y - 2) = 3;
+					*(*(Board + x) + y - 2) = 3;
 					Counter++;
-					ptemp.x = p.x;
-					ptemp.y = p.y - 2;
-					Jumping(ptemp, Board);
+					xtemp = x;
+					ytemp = y - 2;
+					Jumping(xtemp, ytemp, Board);
 				}
 		}
 
@@ -198,20 +199,21 @@ void Model::Print(int **Board)
 }
 
 //Проверяем фишку на корректность 
-bool Model::Chek_Fishka(pointer p, int ** Board)
+bool Model::Chek_Fishka(int x, int y, int ** Board)
 {
-	int F = *(*(Board + p.x) + p.y);
-
-	// Проверка на значение(белая, черная) фишки
-	if ((F == 1) || (F == 2) || (F == 4))
-	{
-
-		// Выход за рамки поля
-		if ((p.x >= 0) && (p.y >= 0) && (p.x < length) && (p.y < length))
-		{
-			return true;
-		}
-	}
-	else return false;
+//	int F = *(*(Board + p.x) + p.y);
+//
+//	// Проверка на значение(белая, черная) фишки
+//	if ((F == 1) || (F == 2) || (F == 4))
+//	{
+//
+//		// Выход за рамки поля
+//		if ((p.x >= 0) && (p.y >= 0) && (p.x < length) && (p.y < length))
+//		{
+//			
+	return true;
+//		}
+//	}
+//	else return false;
 }
 
