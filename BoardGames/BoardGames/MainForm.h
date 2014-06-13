@@ -37,7 +37,10 @@ namespace BoardGames {
 	/// </summary>
 	public ref class MainForm : public System::Windows::Forms::Form
 	{
-	public:int** arr;
+	public:
+		int** arr;
+	private:
+		String^ Gamer;
 		public:	MainForm(void)
 		{
 			InitializeComponent();
@@ -47,6 +50,7 @@ namespace BoardGames {
 			arr = (int**)malloc(8 * sizeof(int*));
 			for (int i = 0; i < 8; i++)
 				arr[i] = (int*)malloc(8 * sizeof(int));
+			Gamer = IMAGE_WHITE_CHIP;
 		}
 
 		protected: ~MainForm()
@@ -1410,6 +1414,7 @@ private: System::Windows::Forms::Button^  OptionsButton;
 				 
 				 // Starting new game
 				 NewGameButton_Click(nullptr,nullptr);
+				 TestLabel->Text = "Gamer1";
 		}
 
 	// Reloading given picturebox of square on table with given image
@@ -1706,7 +1711,7 @@ private: System::Windows::Forms::Button^  OptionsButton;
 					 }
 				 }
 	}
-
+			 //Перевірка фішки, чи вона може здійснити хід
 	private: bool CheckMove(PictureBox^ Actv)
 	{
 				 int* i = Get_X((System::Object^)Actv);
@@ -1730,68 +1735,85 @@ private: System::Windows::Forms::Button^  OptionsButton;
 		PB = (PictureBox^)sender;
 	//	if (!(PB->Text->Length) && !(Active)) 
 		Delete_Temp_Ghip();
-		//TestLabel->Text = ((PictureBox^)PB)->Text;
-		if (PB->Text->Length) // якщо в квадраті щось є
-		{
-			//if (PB == Active)
-			//{
-
-			//}
-
-			if (Active) // якщо є активна фішка, то
+		
+			//TestLabel->Text = ((PictureBox^)PB)->Text;
+			if (PB->Text->Length) // якщо в квадраті щось є
 			{
-				// робимо її звичайною
-				if (!((PictureBox^)Active)->Text->CompareTo(IMAGE_BLACK_CHIP_SELECTED))
-					((PictureBox^)Active)->Text = IMAGE_BLACK_CHIP;
-				else ((PictureBox^)Active)->Text = IMAGE_WHITE_CHIP;
-				RefreshImage((PictureBox^)Active);
+				//if (PB == Active)
+				//{
+
+				//}
+				//Якщо фішка ігрока, черга якого грати, або пусте поле
+				if ((PB->Text == Gamer) || (PB->Text == nullptr))
+					//(((PictureBox^)Active)->Text == Gamer) || 
+				{
+					if (Active) // якщо є активна фішка, то
+					{
+						// робимо її звичайною
+						if (!((PictureBox^)Active)->Text->CompareTo(IMAGE_BLACK_CHIP_SELECTED))
+							((PictureBox^)Active)->Text = IMAGE_BLACK_CHIP;
+						else ((PictureBox^)Active)->Text = IMAGE_WHITE_CHIP;
+						RefreshImage((PictureBox^)Active);
+					}
+
+					Active = PB; // то це стає активним
+					//	Gamer = nullptr;
+					//Створюєм значення для конструктора
+					int *X = (int*)malloc(sizeof(int))
+						, *Y = (int*)malloc(sizeof(int));
+					X = Get_X(Active);
+					Y = Get_Y(Active);
+					ViewController VC;
+					Value_Board_to_int();
+					//ViewController VC;
+
+					//Відправляємо масив і отримуємо цей масив з точками куди можна піти
+					VC.GetBoard(X, Y, arr);
+
+					//Відмічаєм на полі куди можна піти
+					Create_Temp_Ghip();
+
+					// і змінює колір
+					if (!PB->Text->CompareTo(IMAGE_BLACK_CHIP))
+						PB->Text = IMAGE_BLACK_CHIP_SELECTED;
+					else PB->Text = IMAGE_WHITE_CHIP_SELECTED;
+					RefreshImage(PB);
+				}// TestLabel->Text = ((PictureBox^)Active)->Text; // Тестовий вивід
 			}
-			Active = PB; // то це стає активним
-			
-			//Створюєм значення для конструктора
-			int *X = (int*)malloc(sizeof(int))
-				, *Y = (int*)malloc(sizeof(int));
-			X = Get_X(Active);
-			Y = Get_Y(Active);
-			ViewController VC;
-			Value_Board_to_int();
-			//ViewController VC;
-			
-			//Відправляємо масив і отримуємо цей масив з точками куди можна піти
-			VC.GetBoard(X, Y, arr);
-
-			//Відмічаєм на полі куди можна піти
-			Create_Temp_Ghip();
-
-			// і змінює колір
-			if (!PB->Text->CompareTo(IMAGE_BLACK_CHIP))
-				PB->Text = IMAGE_BLACK_CHIP_SELECTED;
-			else PB->Text = IMAGE_WHITE_CHIP_SELECTED;
-			RefreshImage(PB);
-			// TestLabel->Text = ((PictureBox^)Active)->Text; // Тестовий вивід
-		}
-		else // якщо квадрат є пустим
-		{
-			if ((Active) && (CheckMove(PB))) // але є активна фішка
+			else // якщо квадрат є пустим
 			{
-				//Delete_Temp_Ghip();
-				// TestLabel->Text = ((PictureBox^)Active)->Text; // Тестовий вивід
-				// Активна перестає бути активною
-				if (!((PictureBox^)Active)->Text->CompareTo(IMAGE_BLACK_CHIP_SELECTED))
-					((PictureBox^)Active)->Text = IMAGE_BLACK_CHIP;
-				else ((PictureBox^)Active)->Text = IMAGE_WHITE_CHIP;
-								
-				PB->Text = ((PictureBox^)Active)->Text;
-				RefreshImage(PB); // Передаємо фішку в пусту
-				((PictureBox^)Active)->Text = nullptr; // знищуємо текст для активної
-				RefreshImage((PictureBox^)Active); // перезавантажуємо колишню активну
-				Active = nullptr; // забуваємо, що вона акивна
+				if ((Active) && (CheckMove(PB))) // але є активна фішка
+				{
+					//Delete_Temp_Ghip();
+					// TestLabel->Text = ((PictureBox^)Active)->Text; // Тестовий вивід
+					// Активна перестає бути активною
+					if (!((PictureBox^)Active)->Text->CompareTo(IMAGE_BLACK_CHIP_SELECTED))
+						((PictureBox^)Active)->Text = IMAGE_BLACK_CHIP;
+					else ((PictureBox^)Active)->Text = IMAGE_WHITE_CHIP;
+
+					PB->Text = ((PictureBox^)Active)->Text;
+					RefreshImage(PB); // Передаємо фішку в пусту
+					((PictureBox^)Active)->Text = nullptr; // знищуємо текст для активної
+					RefreshImage((PictureBox^)Active); // перезавантажуємо колишню активну
+					Active = nullptr; // забуваємо, що вона акивна
+					
+					//Якщо хід зроблено, то змінюємо ігрока
+					if (Gamer == IMAGE_BLACK_CHIP)
+						Gamer = IMAGE_WHITE_CHIP;
+					else Gamer = IMAGE_BLACK_CHIP;
+					
+					if (Gamer == IMAGE_BLACK_CHIP)
+						TestLabel->Text = "Gamer2";
+					else
+						TestLabel->Text = "Gamer1";
+				}
+				
 			}
-		}
 			//this->TestLabel->Text = this->Active->Text;
-	
-	
-	}
+			/*if (Gamer == IMAGE_WHITE_CHIP)
+				Gamer = IMAGE_BLACK_CHIP;
+				else Gamer = IMAGE_WHITE_CHIP;*/
+}
 
 	// EVENT HANDLER: New Game
 	private: System::Void NewGameButton_Click(System::Object^  sender, System::EventArgs^  e)
