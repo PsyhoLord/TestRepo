@@ -17,3 +17,15 @@ Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c5619
 Class BoardGames.MainForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32** arr : Public
+    System.Windows.Forms.PictureBox[] PictureBoxArray_a : Public
+    System.Windows.Forms.PictureBox[] PictureBoxArray_b : Public
+    System.Windows.Forms.PictureBox[] PictureBoxArray_c : Public
+    System.Windows.Forms.PictureBox[] PictureBoxArray_d : Public
+    System.Windows.Forms.PictureBox[] PictureBoxArray_e : Public
+    System.Windows.Forms.PictureBox[] PictureBoxArray_f : Public
+    System.Windows.Forms.PictureBox[] PictureBoxArray_g : Public
+    System.Windows.Forms.PictureBox[] PictureBoxArray_h : Public
+  Methods:
+    Value_Board_to_int(): PrivateScope, Public, HideBySig
