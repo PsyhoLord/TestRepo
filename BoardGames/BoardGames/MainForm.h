@@ -1642,6 +1642,7 @@ private: System::Windows::Forms::Button^  OptionsButton;
 				*Y = (((PictureBox^)PB)->Location.Y - SQUARE_LEFT_UPPER_Y) / SQUARE_LENGTH;
 				return Y;
 	}
+
 	private: void Create_Temp_Ghip()
 	{
 				 for (int i = 0; i < 8; i++)
@@ -1673,6 +1674,7 @@ private: System::Windows::Forms::Button^  OptionsButton;
 					 }
 				 }
 	}
+
 	private: void Delete_Temp_Ghip()
 	{
 				 for (int i = 0; i < 8; i++)
@@ -1705,12 +1707,29 @@ private: System::Windows::Forms::Button^  OptionsButton;
 				 }
 	}
 
+	private: bool CheckMove(PictureBox^ Actv)
+	{
+				 int* i = Get_X((System::Object^)Actv);
+				 int* j = Get_Y((System::Object^)Actv);
+				 if (*(*(arr + *i) + *j) == 3)
+				 {
+					 return true;
+				 }
+				 else
+				 {
+					 return false;
+				 }
+				 
+	}
+	
 	// EVENT HANDLER: Click on a Board
 	private: System::Void Square_Click(System::Object^  sender, System::EventArgs^  e) 
 	{
-		Delete_Temp_Ghip();
+				 
 		PictureBox^ PB;
 		PB = (PictureBox^)sender;
+	//	if (!(PB->Text->Length) && !(Active)) 
+		Delete_Temp_Ghip();
 		//TestLabel->Text = ((PictureBox^)PB)->Text;
 		if (PB->Text->Length) // якщо в квадраті щось є
 		{
@@ -1728,24 +1747,22 @@ private: System::Windows::Forms::Button^  OptionsButton;
 				RefreshImage((PictureBox^)Active);
 			}
 			Active = PB; // то це стає активним
-			int *X = (int*)malloc( sizeof(int))
+			
+			//Створюєм значення для конструктора
+			int *X = (int*)malloc(sizeof(int))
 				, *Y = (int*)malloc(sizeof(int));
 			X = Get_X(Active);
 			Y = Get_Y(Active);
-
 			ViewController VC;
-			VC.GetLocations(X, Y);
 			Value_Board_to_int();
 			//ViewController VC;
-			VC.GetBoard(X,Y,arr);
+			
+			//Відправляємо масив і отримуємо цей масив з точками куди можна піти
+			VC.GetBoard(X, Y, arr);
+
+			//Відмічаєм на полі куди можна піти
 			Create_Temp_Ghip();
 
-			//int **arr = (int**)malloc(8 * sizeof(int*));
-			//for (int i = 0; i < 8; i++)
-			//	arr[i] = (int*)malloc(8 * sizeof(int));
-
-			//VC.SetBoard(arr);
-			
 			// і змінює колір
 			if (!PB->Text->CompareTo(IMAGE_BLACK_CHIP))
 				PB->Text = IMAGE_BLACK_CHIP_SELECTED;
@@ -1755,9 +1772,9 @@ private: System::Windows::Forms::Button^  OptionsButton;
 		}
 		else // якщо квадрат є пустим
 		{
-			if (Active) // але є активна фішка
+			if ((Active) && (CheckMove(PB))) // але є активна фішка
 			{
-				
+				//Delete_Temp_Ghip();
 				// TestLabel->Text = ((PictureBox^)Active)->Text; // Тестовий вивід
 				// Активна перестає бути активною
 				if (!((PictureBox^)Active)->Text->CompareTo(IMAGE_BLACK_CHIP_SELECTED))

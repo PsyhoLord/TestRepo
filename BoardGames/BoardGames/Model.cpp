@@ -11,22 +11,6 @@ Model::Model()
 }
 //	
 
-int	Table[8][8] =
-{
-	{ 2, 2, 2, 2, 0, 0, 0, 0 },
-	{ 2, 2, 2, 2, 0, 0, 0, 0 },
-	{ 2, 2, 2, 2, 0, 0, 0, 0 },
-	{ 2, 2, 2, 2, 0, 0, 0, 0 },
-
-	{ 0, 0, 0, 0, 1, 1, 1, 1 },
-	{ 0, 0, 0, 0, 1, 1, 1, 1 },
-	{ 0, 0, 0, 0, 1, 1, 1, 1 },
-	{ 0, 0, 0, 0, 1, 1, 1, 1 }
-};
-
-void Model::Get_Move()
-{
-}
 
 void Model::Get_Move(int x1, int y1, int **Board)
 {
@@ -42,11 +26,12 @@ void Model::Move(int x, int y, int **Board)
 {
 	//cout << "point = " << *(*(Board + p.x) + p.y) << endl;
 	// Проверяем на корректность точку 
+	
 	if (Chek_Fishka(x, y, Board) == true)
 	{
 		// Вывод значения точки
 		//cout << "point = " << *(*(Board + p.x) + p.y) << endl;
-		// 
+		// //up
 		if ((y >= 0) && (y < length))
 			if ((x - 1 >= 0) && (x < length))
 			{
@@ -61,7 +46,7 @@ void Model::Move(int x, int y, int **Board)
 				//Если, туда, куда мы хочем пойти, занято фишкой, то смотрим куда мы можем перепрыгнуть
 				else Jumping(x, y, Board);
 			}
-
+			// right
 		if ((y >= 0) && (y + 1 < length))
 			if ((x >= 0) && (x < length))
 			{
@@ -73,6 +58,7 @@ void Model::Move(int x, int y, int **Board)
 				}
 				else Jumping(x, y, Board);
 			}
+			//down
 		if ((y >= 0) && (y < length))
 			if ((x >= 0) && (x + 1 < length))
 			{
@@ -83,6 +69,7 @@ void Model::Move(int x, int y, int **Board)
 				}
 				else Jumping(x, y, Board);
 			}
+			//left
 		if ((y - 1 >= 0) && (y < length))
 			if ((x >= 0) && (x < length))
 			{
@@ -201,19 +188,18 @@ void Model::Print(int **Board)
 //Проверяем фишку на корректность 
 bool Model::Chek_Fishka(int x, int y, int ** Board)
 {
-//	int F = *(*(Board + p.x) + p.y);
-//
-//	// Проверка на значение(белая, черная) фишки
-//	if ((F == 1) || (F == 2) || (F == 4))
-//	{
-//
-//		// Выход за рамки поля
-//		if ((p.x >= 0) && (p.y >= 0) && (p.x < length) && (p.y < length))
-//		{
-//			
-	return true;
-//		}
-//	}
-//	else return false;
+	int F = *(*(Board + x) + y);
+
+	// Проверка на значение(белая, черная) фишки
+	if ((F == 1) || (F == 2) || (F == 4))
+	{
+
+		// Выход за рамки поля
+		if ((x >= 0) && (y >= 0) && (x < length) && (y < length))
+		{
+			return true;
+		}
+	}
+	else return false;
 }
 

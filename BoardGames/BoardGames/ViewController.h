@@ -12,10 +12,9 @@ public:
 	//int X, Y;
 	int **array_points;
 	Model *GameModel;
-	//MainForm^ *NewZ;
+	
 public:
 	ViewController();
-	void ViewController::GetLocations(int *x, int *y);
+	
 	void ViewController::GetBoard(int *x, int *y, int **BoardArr);
-	void ViewController::SetBoard(int **array_points);
 };

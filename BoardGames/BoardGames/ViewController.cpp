@@ -24,11 +24,6 @@ ViewController::ViewController()
 
 
 }
-void ViewController::GetLocations (int *x, int *y)
-{
-	//X = *x;
-	//Y = *y;
-}
 
 void ViewController::GetBoard(int *x, int *y, int **BoardArr)
 {
@@ -41,9 +36,7 @@ void ViewController::GetBoard(int *x, int *y, int **BoardArr)
 			array_points[i][j] = BoardArr[i][j];
 		}
 	}
-	//array_points[0][7] = 4;
-	//New_Form.Value_Board_to_int(arr); //Беремо значення дошки
-
+	
 	Model GameM;
 	//Отримуємо точки куди можна піти
 	
@@ -55,12 +48,7 @@ void ViewController::GetBoard(int *x, int *y, int **BoardArr)
 			BoardArr[i][j] = array_points[i][j];
 		}
 	}
-	//GameM.Move(array_points);
 	
 	
 }
 
-void ViewController::SetBoard(int **arr)
-{
-	
-}
