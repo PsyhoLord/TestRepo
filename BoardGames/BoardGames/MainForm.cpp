@@ -191,7 +191,9 @@ System::Void MainForm::MainForm_Load(System::Object^  sender, System::EventArgs^
 
 	// Starting new game
 	NewGameButton_Click(nullptr, nullptr);
-	TestLabel->Text = "Gamer1";
+	//TestLabel->Text = "Gamer1";
+	StatusBar->ForeColor = System::Drawing::Color::Red;
+	StatusBar->Text = "Red player's move";
 }
 
 System::Void MainForm::RefreshImage(PictureBox^ SelectedChip)
@@ -568,9 +570,17 @@ System::Void MainForm::Square_Click(System::Object^  sender, System::EventArgs^ 
 			else Gamer = IMAGE_BLACK_CHIP;
 
 			if (Gamer == IMAGE_BLACK_CHIP)
-				TestLabel->Text = "Gamer2";
+			{
+				//TestLabel->Text = "Gamer2";
+				StatusBar->ForeColor = System::Drawing::Color::DarkBlue;
+				StatusBar->Text = "Blue player's move";
+			}
 			else
-				TestLabel->Text = "Gamer1";
+			{
+				//TestLabel->Text = "Gamer1";
+				StatusBar->ForeColor = System::Drawing::Color::Red;
+				StatusBar->Text = "Red player's move";
+			}
 		}
 
 	}

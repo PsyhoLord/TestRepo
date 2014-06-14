@@ -41,7 +41,12 @@ namespace BoardGames
 	public ref class MainForm : public System::Windows::Forms::Form
 	{
 		public:	int** arr; // Что ето такое???
-		private: String^ Gamer; //???
+	private: System::Windows::Forms::RichTextBox^  StatusBar;
+	public:
+
+	private: System::Windows::Forms::PictureBox^  pictureBox1;
+	public:
+	private: String^ Gamer; //???
 	
 		public:	MainForm(void); // Конструктор
 		protected: ~MainForm(); // Деструктор
@@ -126,6 +131,8 @@ namespace BoardGames
 					 this->SaveGameButton = (gcnew System::Windows::Forms::Button());
 					 this->LoadGameButton = (gcnew System::Windows::Forms::Button());
 					 this->OptionsButton = (gcnew System::Windows::Forms::Button());
+					 this->StatusBar = (gcnew System::Windows::Forms::RichTextBox());
+					 this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 					 (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->a8))->BeginInit();
 					 (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->b8))->BeginInit();
 					 (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->c8))->BeginInit();
@@ -191,6 +198,7 @@ namespace BoardGames
 					 (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->b4))->BeginInit();
 					 (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->a4))->BeginInit();
 					 (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->FullBoard))->BeginInit();
+					 (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 					 this->SuspendLayout();
 					 // 
 					 // a8
@@ -869,11 +877,15 @@ namespace BoardGames
 					 // TestLabel
 					 // 
 					 this->TestLabel->AutoSize = true;
+					 this->TestLabel->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+						 static_cast<System::Byte>(204)));
+					 this->TestLabel->ForeColor = System::Drawing::Color::Lime;
 					 this->TestLabel->Location = System::Drawing::Point(731, 15);
 					 this->TestLabel->Name = L"TestLabel";
-					 this->TestLabel->Size = System::Drawing::Size(41, 13);
+					 this->TestLabel->Size = System::Drawing::Size(48, 13);
 					 this->TestLabel->TabIndex = 80;
 					 this->TestLabel->Text = L"label17";
+					 this->TestLabel->Visible = false;
 					 // 
 					 // NewGameButton
 					 // 
@@ -966,12 +978,37 @@ namespace BoardGames
 					 this->OptionsButton->TextImageRelation = System::Windows::Forms::TextImageRelation::TextAboveImage;
 					 this->OptionsButton->UseVisualStyleBackColor = true;
 					 // 
+					 // StatusBar
+					 // 
+					 this->StatusBar->BorderStyle = System::Windows::Forms::BorderStyle::None;
+					 this->StatusBar->Font = (gcnew System::Drawing::Font(L"Aharoni", 8.25F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
+						 System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
+					 this->StatusBar->ForeColor = System::Drawing::Color::Red;
+					 this->StatusBar->Location = System::Drawing::Point(734, 405);
+					 this->StatusBar->Name = L"StatusBar";
+					 this->StatusBar->Size = System::Drawing::Size(112, 73);
+					 this->StatusBar->TabIndex = 87;
+					 this->StatusBar->Text = L"";
+					 this->StatusBar->TextChanged += gcnew System::EventHandler(this, &MainForm::richTextBox1_TextChanged);
+					 // 
+					 // pictureBox1
+					 // 
+					 this->pictureBox1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
+					 this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
+					 this->pictureBox1->Location = System::Drawing::Point(720, 388);
+					 this->pictureBox1->Name = L"pictureBox1";
+					 this->pictureBox1->Size = System::Drawing::Size(140, 107);
+					 this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
+					 this->pictureBox1->TabIndex = 88;
+					 this->pictureBox1->TabStop = false;
+					 // 
 					 // MainForm
 					 // 
 					 this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 					 this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 					 this->AutoSize = true;
 					 this->ClientSize = System::Drawing::Size(892, 725);
+					 this->Controls->Add(this->StatusBar);
 					 this->Controls->Add(this->OptionsButton);
 					 this->Controls->Add(this->LoadGameButton);
 					 this->Controls->Add(this->SaveGameButton);
@@ -1043,6 +1080,7 @@ namespace BoardGames
 					 this->Controls->Add(this->b8);
 					 this->Controls->Add(this->a8);
 					 this->Controls->Add(this->FullBoard);
+					 this->Controls->Add(this->pictureBox1);
 					 this->Cursor = System::Windows::Forms::Cursors::PanNW;
 					 this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 					 this->Name = L"MainForm";
@@ -1113,6 +1151,7 @@ namespace BoardGames
 					 (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->b4))->EndInit();
 					 (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->a4))->EndInit();
 					 (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->FullBoard))->EndInit();
+					 (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 					 this->ResumeLayout(false);
 					 this->PerformLayout();
 
@@ -1238,5 +1277,7 @@ namespace BoardGames
 		private: System::Void Square_Click(System::Object^  sender, System::EventArgs^  e); // EVENT HANDLER: Click on a Board
 		private: System::Void NewGameButton_Click(System::Object^  sender, System::EventArgs^  e); // EVENT HANDLER: New Game
 		private: System::Void ExitButton_Click(System::Object^  sender, System::EventArgs^  e); // EVENT HANDLER: Exit Game
-	};
+	private: System::Void richTextBox1_TextChanged(System::Object^  sender, System::EventArgs^  e) {
+	}
+};
 }

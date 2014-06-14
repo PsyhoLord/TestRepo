@@ -122,6 +122,7 @@
     <Image Include="VC_Resources\Field_BackGrounds\Squares\Field_1_b.png" />
     <Image Include="VC_Resources\Field_BackGrounds\Squares\Field_1_w.png" />
     <Image Include="VC_Resources\Field_BackGrounds\Squares\Null.png" />
+    <Image Include="VC_Resources\StatusBar\Border.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

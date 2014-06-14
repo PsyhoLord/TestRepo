@@ -28,6 +28,9 @@
     <Filter Include="Файлы ресурсов\Buttons">
       <UniqueIdentifier>{382829b6-8c02-4648-952c-4311b2cbe4c0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Файлы ресурсов\StatusBoard">
+      <UniqueIdentifier>{2691fdcb-e7c5-45d8-a7ed-d49874d51739}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MainForm.h">
@@ -137,6 +140,9 @@
     </Image>
     <Image Include="VC_Resources\Buttons\ExitButton_1.gif">
       <Filter>Файлы ресурсов\Buttons</Filter>
+    </Image>
+    <Image Include="VC_Resources\StatusBar\Border.png">
+      <Filter>Файлы ресурсов\StatusBoard</Filter>
     </Image>
   </ItemGroup>
 </Project>
