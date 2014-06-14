@@ -504,7 +504,7 @@ System::Void MainForm::Square_Click(System::Object^  sender, System::EventArgs^ 
 	Delete_Temp_Ghip();
 
 	//TestLabel->Text = ((PictureBox^)PB)->Text;
-	if (PB->Text->Length) // якщо в квадраті щось є
+	if ((PB->Text->Length)&&(PB!=Active)) // якщо в квадраті щось є
 	{
 		//if (PB == Active)
 		//{
@@ -582,7 +582,15 @@ System::Void MainForm::Square_Click(System::Object^  sender, System::EventArgs^ 
 				StatusBar->Text = "Red player's move";
 			}
 		}
-
+		else if (PB == Active) // якщо є активна фішка, то
+		{
+			// робимо її звичайною
+			if (!((PictureBox^)Active)->Text->CompareTo(IMAGE_BLACK_CHIP_SELECTED))
+				((PictureBox^)Active)->Text = IMAGE_BLACK_CHIP;
+			else ((PictureBox^)Active)->Text = IMAGE_WHITE_CHIP;
+			RefreshImage((PictureBox^)Active);
+			Active = nullptr;
+		}
 	}
 	//this->TestLabel->Text = this->Active->Text;
 	/*if (Gamer == IMAGE_WHITE_CHIP)
