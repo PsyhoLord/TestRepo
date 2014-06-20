@@ -1,20 +1,27 @@
 #pragma once
-//ref
+#include <iostream>
+
+using namespace std;
+
 class Model
 {
-
 public:
-	Model();
-
-	int length;
+	const int length = 8;
+	struct pointer
+	{
 		int x, y;
-		int Counter;
-	
-	void Get_Move();
-	void Get_Move(int x1, int y1, int **Board);
-	void Move(int x, int y, int **Board);
-	int Jumping(int x, int y, int **Board);
+	}p;
+	int Counter = 0;
+
+	Model();
+	Model(int x1, int y1);
+	void Move(int **Board);
+	int Jumping(pointer p, int **Board);
 	void Print(int **Board);
-	bool Chek_Fishka(int x, int y, int **Board);
+	bool Chek_Fishka(pointer p, int **Board);
+	~Model();
+
+
+
 };
 

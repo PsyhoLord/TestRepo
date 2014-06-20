@@ -33,19 +33,20 @@ void ViewController::GetBoard(int *x, int *y, int **BoardArr)
 	{
 		for (int j = 0; j < 8; j++)
 		{
-			array_points[i][j] = BoardArr[i][j];
+			array_points[j][i] = BoardArr[i][j];
 		}
 	}
 	
-	Model GameM;
+	Model GameM(X, Y);
 	//ќтримуЇмо точки куди можна п≥ти
-	
-	GameM.Move(X, Y, array_points);
+
+	GameM.Move(array_points);
+
 	for (int i = 0; i < 8; i++)
 	{
 		for (int j = 0; j < 8; j++)
 		{
-			BoardArr[i][j] = array_points[i][j];
+			BoardArr[i][j] = array_points[j][i];
 		}
 	}
 	
